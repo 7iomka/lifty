@@ -1,12 +1,12 @@
 {
   "name": "lifty.cc",
   "version": "1.0.0",
-  "description": "",
+  "description": "Проект лифтов",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "7iomka",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.15.0",
@@ -48,5 +48,16 @@
   },
   "dependencies": {
     "lodash": "^4.15.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/7iomka/lifty.git"
+  },
+  "keywords": [
+    "лифты"
+  ],
+  "bugs": {
+    "url": "https://github.com/7iomka/lifty/issues"
+  },
+  "homepage": "https://github.com/7iomka/lifty#readme"
 }
