@@ -1,10 +1,20 @@
 // -----------------------------------------------------------------------------
-// This file contains all styles related to the ECRAN 5 - CALCULATOR -  of the site/application.
+// objects
 // -----------------------------------------------------------------------------
 //
 
 .objects {
   background-color:  #006ab2;
+  &:after {
+      content: "";
+      width: 414px;
+      height: 414px;
+      @include gradient-directional(135deg,#009fe3, 0%, #a1daf7, 100%);
+      position: absolute;
+      right: -212px;
+      bottom: -212px;
+      transform: rotate(45deg);
+  }
 }
 
 .objects__title {
@@ -35,38 +45,6 @@
 .objects__list {
     margin-top: 60px;
 }
-
-
-.object__link {
-    display: block;
-    overflow: hidden;
-    position: relative;
-    width: 280px;
-    max-width: 100%;
-    margin-bottom: 8px;
-    &:hover {
-          .object__thumb {
-            transform: scale(1.1,1.1);
-          }
-          .object__overlay {
-            // box-shadow: 0 0 0 2px rgb(248, 211, 71) inset;
-            background-color: rgba(0,0,0,.5);
-          }
-          .object__overlay-icon {
-            transform: scale(1);
-            opacity: 1;
-          }
-        }
-}
-
-.object__thumb {
-    transform: scale(1);
-    transition: transform .75s ease 0s;
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
 .object__title {
     color: white;
     padding: 15px 0;
@@ -74,46 +52,8 @@
     text-align: center;
 }
 
-
-.object__overlay {
-  background-color: rgba(0,0,0,.1);
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  border: none;
-  right: 0;
-  top: 0;
-  transition: background-color .15s ease 0s;
-}
-
-.object__overlay-icon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  font-size: 40px;
-  width: 80px;
-  height: 80px;
-  line-height: 80px;
-  text-align: center;
-  margin-left: -40px;
-  margin-top: -40px;
-  border-radius: 50%;
-  background: $base-red;
-  color: white;
-  opacity: 0;
-  transform: scale(1.5);
-  transition: transform .7s cubic-bezier(0.18, 0.89, 0.32, 1.28), opacity .3s ease 0s;
-}
-.object__overlay-icon-img {
-  vertical-align: middle;
-  margin-top: -8px;
-}
-
 @include media("<medium") {
-  .object__link {
-      display: inline-block;
-      margin: 8px;
-  }
+
 
   .object__gallery {
       text-align: center;

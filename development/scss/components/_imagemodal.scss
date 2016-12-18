@@ -1,0 +1,98 @@
+
+/** image-link with modal **/
+
+/** EXAMPLE **/
+/**
+ *   <a class="imagemodal__link" href="img/reviews/1.jpg">
+ *     <img src="img/reviews/thumbs/1.jpg" alt="" class="imagemodal__thumb">
+ *     <span class="imagemodal__overlay">
+ *     <span class="imagemodal__overlay-icon">
+ *       <img src="img/zoom-icon.png" alt="" class="imagemodal__overlay-icon-img"></span>
+ *     </span>
+ *   </a>
+ */
+
+@mixin imagemodal($classname: imagemodal, $width: 280, $setWidthOnly: false) {
+  @if ($setWidthOnly == true) {
+      .#{$classname}__link {
+        width: #{$width}px;
+      }
+  }
+  @else {
+    .#{$classname}__link {
+        display: block;
+        overflow: hidden;
+        position: relative;
+        width: #{$width}px;
+        max-width: 100%;
+        margin-bottom: 8px;
+        &:hover {
+              .#{$classname}__thumb {
+                transform: scale(1.1,1.1);
+              }
+              .#{$classname}__overlay {
+                // box-shadow: 0 0 0 2px rgb(248, 211, 71) inset;
+                background-color: rgba(0,0,0,.5);
+              }
+              .#{$classname}__overlay-icon {
+                transform: scale(1);
+                opacity: 1;
+              }
+            }
+    }
+
+    .#{$classname}__thumb {
+        transform: scale(1);
+        transition: transform .75s ease 0s;
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+
+
+    .#{$classname}__overlay {
+      background-color: rgba(0,0,0,.1);
+      bottom: 0;
+      left: 0;
+      position: absolute;
+      border: none;
+      right: 0;
+      top: 0;
+      transition: background-color .15s ease 0s;
+    }
+
+    .#{$classname}__overlay-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      font-size: 40px;
+      width: 80px;
+      height: 80px;
+      line-height: 80px;
+      text-align: center;
+      margin-left: -40px;
+      margin-top: -40px;
+      border-radius: 50%;
+      background: $base-red;
+      color: white;
+      opacity: 0;
+      transform: scale(1.5);
+      transition: transform .7s cubic-bezier(0.18, 0.89, 0.32, 1.28), opacity .3s ease 0s;
+    }
+    .#{$classname}__overlay-icon-img {
+      vertical-align: middle;
+      margin-top: -8px;
+    }
+
+    @include media("<medium") {
+      .#{$classname}__link {
+          display: inline-block;
+          margin: 8px;
+      }
+    };
+  }
+
+}
+
+/** call default for all **/
+ @include imagemodal();

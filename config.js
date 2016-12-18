@@ -74,7 +74,7 @@ var jsFiles = [
   // paths.src.jsLibDir + 'jquery.panzoom.min.js',
   paths.src.jsLibDir + 'jquery.mousewheel.min.js',
   paths.src.jsLibDir + 'openseadragon.min.js',
-  // paths.src.jsLibDir + 'lazyYT.js',
+  paths.src.jsLibDir + 'lazyYT.js',
   // paths.src.jsLibDir + 'jquery.qtip.min.js',
   // paths.src.jsLibDir + 'owl.carousel.min.js',
   // paths.src.jsLibDir + 'slick.js',
