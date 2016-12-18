@@ -306,3 +306,33 @@ to {
 .ytp-large-play-button-bg {
     max-width: 100%;
 }
+/** custom **/
+.ytp-gradient-top {
+    display: none;
+}
+@-webkit-keyframes pulse {
+    0%,100% {
+        -webkit-transform: scale(.8);
+        transform: scale(.8);
+        filter: alpha(opacity=85);
+        opacity: .85
+    }
+
+    10% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+        filter: alpha(opacity=1);
+        opacity: 1
+    }
+
+    20% {
+        -webkit-transform: scale(.9);
+        transform: scale(.9);
+        filter: alpha(opacity=1);
+        opacity: 1
+    }
+}
+
+.ytp-large-play-button.ytp-button {
+     animation: pulse 2s linear infinite;
+}

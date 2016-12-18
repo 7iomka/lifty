@@ -379,89 +379,235 @@
 </section>
 
 <section class="reviews s7">
-  <div class="container">
-    <div class="row">
-      <h2 class="reviews__title">
+  <div class="multiple-parallax-overlay">
+        <div class="parallax-element" style="background: url(img/particles/triangles.png) 50% 100% no-repeat;
+    transform: translate(0%, 0%); left: 0;"></div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <h2 class="reviews__title">
         <span class="reviews__title-big">Что говорят</span>
         <span class="reviews__title-postfix">
           <span>наши</span><span>клиенты</span>
         </span>
       </h2>
-          <div class="review-wrapper">
-            <div class="review">
-              <div class="col col--5-of-12">
-                <div class="review__video-part">
-                  <div class="review__video">
-                    <div class="video-container">
-                      <div class="video-inner">
-                        <div class="lazyYT" data-youtube-id="cwED0SsFTFw" data-ratio="16:9"> </div>
-                      </div>
+            <div class="review-wrapper">
+                <div class="review">
+                    <div class="col col--5-of-12">
+                        <div class="row">
+                            <div class="review__video-part">
+                                <div class="review__video-container">
+                                    <div class="review__video">
+                                        <div class="reviewYT" data-youtube-id="tfpW6w8J21I" data-ratio="16:9"></div>
+                                    </div>
+                                </div>
+                                <div class="review__video-author">Дмитрий Подъемников</div>
+                                <div class="review__video-author-role">Генеральнй директор МОРТОН</div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                  <div class="review__video-author">Дмитрий Подъемников</div>
-                  <div class="review__video-author-role">Генеральнй директор МОРТОН</div>
+                    <div class="col col--7-of-12">
+                        <div class="row">
+                            <div class="review__content-part">
+                                <div class="review__goal">
+                                    <a class="imagemodal__link" href="img/reviews/1.jpg"><img src="img/reviews/thumbs/1.jpg" alt="" class="imagemodal__thumb"><span class="imagemodal__overlay"><span class="imagemodal__overlay-icon"><img src="img/zoom-icon.png" alt="" class="imagemodal__overlay-icon-img"></span></span>
+                                    </a>
+                                    <div class="review__text">
+                                        <div class="review__title">Поставка 8 лифтов и монтаж</div>
+                                        <div class="review__goal-desc"><strong>Задача:</strong> В короткий сроки поставить 6 пассажирских лифтов и 2 подъемника для инвалидов для жилого дома и смонтировать их.</div>
+                                    </div>
+                                </div>
+                                <div class="review__result">
+                                    <a class="imagemodal__link" href="img/reviews/1-result.jpg"><img src="img/reviews/thumbs/1-result.jpg" alt="" class="imagemodal__thumb"><span class="imagemodal__overlay"><span class="imagemodal__overlay-icon"><img src="img/zoom-icon.png" alt="" class="imagemodal__overlay-icon-img"></span></span>
+                                    </a>
+                                    <div class="review__result-desc">
+                                        <strong>Выполнение:</strong> В течение такого-то срока компания ЦУ ЩЛЗ поставило нам 8 лифтов, после чего бригада из 5 спецов смонтировала все лифты в течение такого-то срока. В процессе работы были трудности такие-то,
+                                        которые успешно решили.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="col col--7-of-12">
-                <div class="review__content-part">
-                  <div class="review__goal">
-                    <a class="imagemodal__link" href="img/reviews/1.jpg"><img src="img/reviews/thumbs/1.jpg" alt="" class="imagemodal__thumb"><span class="imagemodal__overlay"><span class="imagemodal__overlay-icon"><img src="img/zoom-icon.png" alt="" class="imagemodal__overlay-icon-img"></span></span>
-                    </a>
-                    <div class="review__text">
-                        <div class="review__title">Поставка 8 лифтов и монтаж</div>
-                      <div class="review__goal-desc"><strong>Задача:</strong> В короткий сроки поставить 6 пассажирских лифтов и 2 подъемника для инвалидов для жилого дома и смонтировать их.</div>
-                    </div>
-                  </div>
-                  <div class="review__result">
-                    <a class="imagemodal__link" href="img/reviews/1-result.jpg"><img src="img/reviews/thumbs/1-result.jpg" alt="" class="imagemodal__thumb"><span class="imagemodal__overlay"><span class="imagemodal__overlay-icon"><img src="img/zoom-icon.png" alt="" class="imagemodal__overlay-icon-img"></span></span>
-                    </a>
-                    <div class="review__result-desc">
-                      <strong>Выполнение:</strong> В течение такого-то срока компания ЦУ ЩЛЗ поставило нам 8 лифтов, после чего бригада из 5 спецов смонтировала все лифты в течение такого-то срока. В процессе работы были трудности такие-то, которые успешно решили.
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
-          <div class="review-wrapper">
-            <div class="review">
-              <div class="col col--5-of-12">
-                <div class="review__video-part">
-                  <div class="review__video">
-                    <div class="video-container">
-                      <div class="video-inner">
-                        <div class="lazyYT" data-youtube-id="cwED0SsFTFw" data-ratio="16:9"> </div>
-                      </div>
+            <div class="review-wrapper">
+                <div class="review">
+                    <div class="col col--5-of-12">
+                        <div class="row">
+                            <div class="review__video-part">
+                                <div class="review__video-container">
+                                    <div class="review__video">
+                                        <div class="reviewYT" data-youtube-id="tfpW6w8J21I" data-ratio="16:9"></div>
+                                    </div>
+                                </div>
+                                <div class="review__video-author">Дмитрий Подъемников</div>
+                                <div class="review__video-author-role">Генеральнй директор МОРТОН</div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                  <div class="review__video-author">Дмитрий Подъемников</div>
-                  <div class="review__video-author-role">Генеральнй директор МОРТОН</div>
-                </div>
-              </div>
-              <div class="col col--7-of-12">
-                <div class="review__content-part">
-                  <div class="review__goal">
-                    <a class="imagemodal__link" href="img/reviews/1.jpg"><img src="img/reviews/thumbs/1.jpg" alt="" class="imagemodal__thumb"><span class="imagemodal__overlay"><span class="imagemodal__overlay-icon"><img src="img/zoom-icon.png" alt="" class="imagemodal__overlay-icon-img"></span></span>
-                    </a>
-                    <div class="review__text">
-                        <div class="review__title">Поставка 8 лифтов и монтаж</div>
-                      <div class="review__goal-desc"><strong>Задача:</strong> В короткий сроки поставить 6 пассажирских лифтов и 2 подъемника для инвалидов для жилого дома и смонтировать их.</div>
-                    </div>
-                  </div>
-                  <div class="review__result">
-                    <a class="imagemodal__link" href="img/reviews/1-result.jpg"><img src="img/reviews/thumbs/1-result.jpg" alt="" class="imagemodal__thumb"><span class="imagemodal__overlay"><span class="imagemodal__overlay-icon"><img src="img/zoom-icon.png" alt="" class="imagemodal__overlay-icon-img"></span></span>
-                    </a>
-                    <div class="review__result-desc">
-                      <strong>Выполнение:</strong> В течение такого-то срока компания ЦУ ЩЛЗ поставило нам 8 лифтов, после чего бригада из 5 спецов смонтировала все лифты в течение такого-то срока. В процессе работы были трудности такие-то, которые успешно решили.
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+                    <div class="col col--7-of-12">
+                        <div class="row">
+                            <div class="review__content-part">
+                                <div class="review__goal">
+                                    <a class="imagemodal__link" href="img/reviews/1.jpg"><img src="img/reviews/thumbs/1.jpg" alt="" class="imagemodal__thumb"><span class="imagemodal__overlay"><span class="imagemodal__overlay-icon"><img src="img/zoom-icon.png" alt="" class="imagemodal__overlay-icon-img"></span></span>
+                                    </a>
+                                    <div class="review__text">
+                                        <div class="review__title">Поставка 8 лифтов и монтаж</div>
+                                        <div class="review__goal-desc"><strong>Задача:</strong> В короткий сроки поставить 6 пассажирских лифтов и 2 подъемника для инвалидов для жилого дома и смонтировать их.</div>
+                                    </div>
+                                </div>
+                                <div class="review__result">
+                                    <a class="imagemodal__link" href="img/reviews/1-result.jpg"><img src="img/reviews/thumbs/1-result.jpg" alt="" class="imagemodal__thumb"><span class="imagemodal__overlay"><span class="imagemodal__overlay-icon"><img src="img/zoom-icon.png" alt="" class="imagemodal__overlay-icon-img"></span></span>
+                                    </a>
+                                    <div class="review__result-desc">
+                                        <strong>Выполнение:</strong> В течение такого-то срока компания ЦУ ЩЛЗ поставило нам 8 лифтов, после чего бригада из 5 спецов смонтировала все лифты в течение такого-то срока. В процессе работы были трудности такие-то,
+                                        которые успешно решили.
+                                    </div>
+                                </div>
+                            </div>
 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="reviews__slider">
+                  <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide reviews__slide">
+                        <div class="reviews__image-item">
+                          <a class="imagemodal__link" href="img/image-reviews/1.jpg">
+                              <img class="imagemodal__thumb" src="img/image-reviews/thumbs/1.jpg">
+                              <span class="imagemodal__overlay"><span class="imagemodal__overlay-icon"><img class="imagemodal__overlay-icon-img" src="img/zoom-icon.png" /></span></span>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="swiper-slide reviews__slide">
+                        <div class="reviews__image-item">
+                          <a class="imagemodal__link" href="img/image-reviews/1.jpg">
+                              <img class="imagemodal__thumb" src="img/image-reviews/thumbs/1.jpg">
+                              <span class="imagemodal__overlay"><span class="imagemodal__overlay-icon"><img class="imagemodal__overlay-icon-img" src="img/zoom-icon.png" /></span></span>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="swiper-slide reviews__slide">
+                        <div class="reviews__image-item">
+                          <a class="imagemodal__link" href="img/image-reviews/1.jpg">
+                              <img class="imagemodal__thumb" src="img/image-reviews/thumbs/1.jpg">
+                              <span class="imagemodal__overlay"><span class="imagemodal__overlay-icon"><img class="imagemodal__overlay-icon-img" src="img/zoom-icon.png" /></span></span>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="swiper-slide reviews__slide">
+                        <div class="reviews__image-item">
+                          <a class="imagemodal__link" href="img/image-reviews/1.jpg">
+                              <img class="imagemodal__thumb" src="img/image-reviews/thumbs/1.jpg">
+                              <span class="imagemodal__overlay"><span class="imagemodal__overlay-icon"><img class="imagemodal__overlay-icon-img" src="img/zoom-icon.png" /></span></span>
+                          </a>
+                        </div>
+                      </div>
+
+                    </div>
+                     <div class="swiper-pagination"></div>
+                  </div>
+
+            </div>
+        </div>
+        <div class="row">
+          <div class="site-form-wrapper reviews__form-wrapper">
+            <div class="review__form site-form site-form--light inline-form inline-form--with-left-bg inline--action">
+              <form method="POST" action="/ajax.php" novalidate="novalidate">
+                  <input type="hidden" name="form_task" value="get_audit">
+                  <div class="form-legend">
+                    <span class="site-form__action-prefix">остались вопросы? Оставьте заявку</span>
+                    <span class="site-form__action-result">и получите бесплатную<br>консультацию специалиста!</span>
+                  </div>
+                  <div class="form-group form-group--first">
+                      <div class="form-input-wrapper">
+                          <input type="text" class="form-control required" id="user_name--audit" name="user_name--audit" placeholder="Константин" aria-required="true">
+                      </div>
+                  </div>
+                  <div class="form-group ">
+
+                      <div class="form-input-wrapper">
+                          <input type="text" class="form-control required" id="user_phone--audit" name="user_phone--audit" placeholder="+7 (987) 654 32 10" aria-required="true">
+                      </div>
+                  </div>
+
+                  <div class="form-group form-group--with-btn">
+                    <button type="submit" name="submit-btn" class="btn btn--red btn--medium btn--action-submit progress-button waves-effect waves-circle waves-float" data-loading="Отправка заявки.." data-finished="Заявка отправлена!">Оставить заявку<span class="tz-bar background-horizontal"></span><span class="tz-bar background-horizontal"></span></button>
+                    <div class="form-post-title">Перезвоним в течение 10 минут</div>
+                  </div>
+
+              </form>
+
+
+              </div>
+          </div>
+        </div>
+    </div>
+</section>
+<section class="certificates s8">
+  <div class="container">
+    <div class="row">
+      <h2 class="certificates__title">
+        <span class="certificates__title-big">Наши</span>
+        <span class="certificates__title-postfix">
+          сертификаты
+        </span>
+      </h2>
+      <div class="certificates__slider">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide certificates__slide">
+                  <div class="certificates__item">
+                    <a class="imagemodal__link" href="img/certificates/1.pdf" target="_blank" rel="nofollow">
+                        <img class="imagemodal__thumb" src="img/certificates/thumbs/1.jpg">
+                        <span class="imagemodal__overlay"><span class="imagemodal__overlay-icon"><img class="imagemodal__overlay-icon-img" src="img/zoom-icon.png" /></span></span>
+                    </a>
+                    <div class="certificates__item-title">
+                      <a href="img/certificates/1.pdf" class="certificates__item-title-link" target="_blank" rel="nofollow">Свидетельство о допуске к определенному виду или видам работ, которые оказывают влияние на безопасность объектов капитального ремонта</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide certificates__slide">
+                  <div class="certificates__item">
+                    <a class="imagemodal__link" href="img/certificates/2.pdf" target="_blank" rel="nofollow">
+                        <img class="imagemodal__thumb" src="img/certificates/thumbs/2.jpg">
+                        <span class="imagemodal__overlay"><span class="imagemodal__overlay-icon"><img class="imagemodal__overlay-icon-img" src="img/zoom-icon.png" /></span></span>
+                    </a>
+                    <div class="certificates__item-title">
+                      <a href="img/certificates/2.pdf" class="certificates__item-title-link" target="_blank" rel="nofollow">Сертификат  соответствия  ISO 9011-2011 (iso 9001:2008)</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide certificates__slide">
+                  <div class="certificates__item">
+                    <a class="imagemodal__link" href="img/certificates/3.pdf" target="_blank" rel="nofollow">
+                        <img class="imagemodal__thumb" src="img/certificates/thumbs/3.jpg">
+                        <span class="imagemodal__overlay"><span class="imagemodal__overlay-icon"><img class="imagemodal__overlay-icon-img" src="img/zoom-icon.png" /></span></span>
+                    </a>
+                    <div class="certificates__item-title">
+                      <a href="img/certificates/3.pdf" class="certificates__item-title-link" target="_blank" rel="nofollow">Сертификат официального представителя щербинского лифтостроительного завода</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide certificates__slide">
+                  <div class="certificates__item">
+                    <a class="imagemodal__link" href="img/certificates/4.pdf" target="_blank" rel="nofollow">
+                        <img class="imagemodal__thumb" src="img/certificates/thumbs/4.jpg">
+                        <span class="imagemodal__overlay"><span class="imagemodal__overlay-icon"><img class="imagemodal__overlay-icon-img" src="img/zoom-icon.png" /></span></span>
+                    </a>
+                    <div class="certificates__item-title">
+                      <a href="img/certificates/4.pdf" class="certificates__item-title-link" target="_blank" rel="nofollow">свидетельство о допуске к определенному виду или видам работ, которые оказывают влияние на безопасность объектов капитального строительства</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               <div class="swiper-pagination"></div>
+            </div>
+
+      </div>
     </div>
   </div>
 </section>
-
 <?php include_once("inc/footer.php"); ?>

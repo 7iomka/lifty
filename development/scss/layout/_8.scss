@@ -2,45 +2,62 @@
 // This file contains all styles related to the ECRAN 8 - seo-landing - of the site/application.
 // -----------------------------------------------------------------------------
 //
-.seo-landing {
-  padding: 0;
-  .argument {
-    padding: 45px 0;
-  }
-  .argument {
-    .argument__title {
-        color: $sep-brown;
-    }
-    .argument__img {
-        margin-left: -34px;
-        @include media("<tablet") {
-          margin: 0;
-        };
-    }
-    .argument__details {
-        margin-left: -20px;
-        margin-top: -64px;
-        @include media("<tablet") {
-          margin: 0;
-        };
-    }
-    .argument__desc {
-      max-width: 335px;
-    }
-
-    .argument__sep {
-      margin-top: 14px;
-      margin-bottom: 16px;
-    }
-
-    .seo-landing__btn {
-        position: relative;
-        top: 46px;
-        @include media("<tablet") {
-            top: 0;
-            margin-top: 46px;
-        };
-    }
+.certificates {
+  .certificates__slider .swiper-container {
+      padding-bottom: 50px;
   }
 
+  .certificates__item {
+      text-align: center;
+      .imagemodal__thumb {
+          margin: auto;
+      }
+  }
+
+}
+
+.certificates__title {
+  font-weight: normal;
+      text-align: center;
+      margin-bottom: 50px;
+}
+
+.certificates__title-big {
+    font-size: 110px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline-block;
+    margin-right: -0.24em;
+}
+
+.certificates__title-postfix {
+    font-size: 45px;
+    display: inline-block;
+    text-transform: uppercase;
+    position: relative;
+    padding-left: 45px;
+
+    &:before {
+        content: "";
+        width: 90px;
+        height: 90px;
+        border: 8px solid #009fe3;
+        position: absolute;
+        display: block;
+        z-index: -1;
+        left: 10px;
+        bottom: 0;
+    }
+}
+
+.certificates__item-title-link {
+    font-size: 12px;
+    line-height: 12px;
+    font-family: 'Proxima_Nova', sans-serif;
+}
+
+.certificates__item-title {
+    margin-top: 12px;
+    text-transform: uppercase;
+    text-align: center;
 }

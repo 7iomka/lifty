@@ -148,7 +148,7 @@
 
 
 
-            var vkAPIready = false;
+
             window.onload = function() {
 
                 load_script('js/modernizr.min.js');
@@ -156,45 +156,7 @@
                 importScr('js/all.package.min.js', function () {
                   // after load document script - will load vk/fb & other need scripts or functions
 
-                  // import VKApi
-                  importScr('//vk.com/js/api/openapi.js?130', function(){
-                    vkAPIready = true;
-                  });
-
-                  // when vk Api IsReaDy - init widget
-                  function initComments() {
-                    if(vkAPIready && typeof VK !== "undefined") {
-                      VK.init({
-                          apiId: 5636245,
-                          onlyWidgets: true
-                      });
-                      VK.Widgets.Comments("vk_comments", {
-                          limit: 5,
-                          width: "450",
-                          attach: "*"
-                      });
-                    }
-                    else {
-                      setTimeout(initComments,1000);
-                    }
-                  }
-                  initComments();
-
-
-                  /**
-                   * Facebook SDK
-                   */
-                  (function(d, s, id) {
-                      var js, fjs = d.getElementsByTagName(s)[0];
-                      if (d.getElementById(id)) return;
-                      js = d.createElement(s);
-                      js.id = id;
-                      js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.7";
-                      fjs.parentNode.insertBefore(js, fjs);
-                  }(document, 'script', 'facebook-jssdk'));
                 });
-
-
 
             }
 
