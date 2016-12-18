@@ -15,9 +15,15 @@ $max-width: 960px !default;
 $text-font-stack: 'Roboto', sans-serif !default;
 /// Font-family for headers (h1,h2,h3..)
 /// @type List
-$header-font: 'Bebas_Neue', sans-serif !default;
+$header-font: 'Proxima_Nova', sans-serif !default;
 $label-font: 'Roboto', sans-serif !default;
 
+
+$base-red: #cf2538;
+$accent-red: #f2101c;
+$sep-red: #cf2538;
+
+$dark-blue: #00365a;
 
 $base-brown: #ac9455;
 $accent-brown: #ffefb5;

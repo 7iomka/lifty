@@ -1,0 +1,43 @@
+// -----------------------------------------------------------------------------
+// Image block component
+// -----------------------------------------------------------------------------
+$image-block__controls-bg: #006ab2;
+$image-block__controls-color: white;
+
+.image-block {
+    height: 280px;
+    margin-bottom: 9px;
+    margin-top: 9px;
+    margin-right: 9px;
+    display: block;
+}
+
+.image-block-list {
+    width: 100%;
+}
+
+.image-block__img {
+    max-width: 100%;
+}
+
+
+.image-block__link {
+    position: relative;
+}
+
+.image-block__controls {
+    width: 100%;
+    background: $image-block__controls-bg;
+    color: $image-block__controls-color;
+    position: absolute;
+    bottom: 0;
+    height: 35px;
+    left: 0;
+}
+
+.image-block__control {
+    text-align: center;
+    display: block;
+    height: 100%;
+    line-height: 1.6em;
+}

@@ -9,7 +9,7 @@ $square-item-img-wrapper-height: 80px;
 
 /** square-item-img **/
 $square-item-img-background-color: $white;
-$square-item-img-background-hoverColor: $yellow;
+$square-item-img-background-hoverColor: white;
 
 /** square-item-desc **/
 $square-item-desc-margitTop: 11px;
@@ -35,13 +35,33 @@ $square-item-desc-margitTop: 11px;
 .square-item {
     padding-bottom: $square-item-offset-bottom;
 
+
+  /** table layout **/
+  &.square-item--table-layout {
+    .square-item__img {
+        display: table;
+    }
+    .square-item__img-text {
+        font-family: Roboto;
+        color:  #00365a;
+        font-size: 40px;
+        font-weight: 900;
+        text-align: center;
+        vertical-align: middle;
+        display: table-cell;
+        padding: 0 5px;
+    }
+
+  }
+
   // item image wrapper
   &__img-wrapper {
     width: $square-item-img-wrapper-width;
     height: $square-item-img-wrapper-height;
     position: relative;
-    padding: 0; // make padding for linear-bg outline insead border
-    border: $square-item-img-wrapper-border-width solid $square-item-img-wrapper-border-color;
+    padding: 5px; // make padding for linear-bg outline insead border
+    @extend %blue-gradient--to-top;
+    // border: $square-item-img-wrapper-border-width solid $square-item-img-wrapper-border-color;
   }
 
 
@@ -83,6 +103,9 @@ $square-item-desc-margitTop: 11px;
       color: $dark-black;
       @include media('<480px') {
         margin-bottom: 26px;
+      }
+      span {
+        display: block;
       }
   }
   &__title {

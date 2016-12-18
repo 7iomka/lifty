@@ -79,10 +79,10 @@ a {
     text-decoration: underline;
   }
 
-  &.brown {
-    color: $base-brown;
+  &.red {
+    color: $base-red;
     @include on-event {
-      color: lighten($base-brown, 10%);
+      color: lighten($base-red, 10%);
     }
   }
 
@@ -97,11 +97,11 @@ a {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
-.brown {
-  color: $base-brown;
+.red {
+  color: $base-red;
 }
-.accent-brown {
-  color: $accent-brown;
+.accent-red {
+  color: $accent-red;
 }
 
 .strong {
@@ -111,6 +111,10 @@ p {
     margin: 0 0 .75em;
 }
 
+.site-wrapper {
+    max-width: 1920px;
+    margin: auto;
+}
 section {
     padding: 60px 0;
     overflow: hidden;
@@ -120,10 +124,10 @@ section {
     }
 
     h2 {
-      text-align: center;
+      // text-align: center;
       position: relative;
       // color: $black;
-      color:  #141414;
+      // color:  #141414;
 
       @include media('>=tablet', '<960px') {
         font-size: 50px;
@@ -137,31 +141,31 @@ section {
         font-size: 40px !important;
         margin-bottom: 0.67em;
       }
-      .brown {
-         color: $sep-brown;
+      .red {
+         color: $sep-red;
        }
-        > span {
-          display: block;
-
-
-        }
+        // > span {
+        //   display: block;
+        //
+        //
+        // }
         &.reverse{
           color: $white;
         }
-        &:before {
-          content: "";
-          background-color: $yellow;
-          width: 201px;
-          height: 2px;
-          display: block;
-          position: absolute;
-          top: -10px;
-          left: 0;
-          right: 0;
-          margin: auto;
-          transition: 1s ease all;
-          transition-delay: 0.5s;
-        }
+        // &:before {
+        //   content: "";
+        //   background-color: $yellow;
+        //   width: 201px;
+        //   height: 2px;
+        //   display: block;
+        //   position: absolute;
+        //   top: -10px;
+        //   left: 0;
+        //   right: 0;
+        //   margin: auto;
+        //   transition: 1s ease all;
+        //   transition-delay: 0.5s;
+        // }
         &.beforeAnim:before {
             opacity: 0;
         }

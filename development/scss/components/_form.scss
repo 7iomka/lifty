@@ -1,11 +1,14 @@
-$site-form__input-bg: #212121;
-$site-form__input-bg-focus: lighten(#212121, 5%);
-$site-form__input-color:  #d7d7d7;
+$site-form__input-bg: $white;
+$site-form__input-bg-focus: #f7f7f7;
+$site-form__input-color: #010101;
 $site-form__input-border-color-focus: rgba(172, 148, 85, 0.35);
 $invalid_color_text: #f12b24;
 $invalid_color_bg: rgb(232, 208, 208);
 $label-color: #6a6a6a;
 
+.site-form-wrapper {
+  display: inline-block;
+}
 .site-form {
     // padding: 25px;
   // &.blue-form {
@@ -19,6 +22,28 @@ $label-color: #6a6a6a;
   //     line-height: 34px;
   //     margin-bottom: 13px;
   // }
+  padding: 27px 0;
+  &.inline-form {
+    position: relative;
+    &.inline-form--with-left-bg {
+      &:before {
+          content: "";
+          position: absolute;
+          width: 1920px;
+          height: 250px;
+          background: #00365a;
+          right: -34px;
+          top: 0;
+      }
+      form {
+        position: relative;
+        z-index: 1;
+      }
+    }
+  }
+  &.site-form--light {
+    color: white;
+  }
 
   .form-group {
       // margin-bottom: 13px;
@@ -28,9 +53,14 @@ $label-color: #6a6a6a;
     display: inline-block;
     margin-bottom: 0;
     vertical-align: middle;
+
     @include media('<tablet') {
       display: block;
       margin-bottom: 13px;
+    }
+
+    &.form-group--first {
+        margin-right: 12px;
     }
   }
   label {
@@ -69,7 +99,7 @@ $label-color: #6a6a6a;
       border-radius: 3px;
       background-color: $site-form__input-bg;
       // width: 291px;
-      width: 341px;
+      width: 236px;
       height: 48px;
       padding: 14px;
       outline: none!important;
@@ -133,7 +163,7 @@ $label-color: #6a6a6a;
       bottom: 0;
       margin: auto 15px;
       border-radius: 50%;
-      background-color: $base-brown;
+      background-color: $accent-red;
       width: 4px;
       height: 4px;
     }
@@ -163,13 +193,13 @@ $label-color: #6a6a6a;
 .site-form {
   input {
     &.notEmpty, &:focus {
-      background: #2e2e2e;
+      background: $site-form__input-bg-focus;
       box-shadow: 0 0 0 1px rgba(172, 148, 85, 0.35) inset;
     }
   }
   textarea {
     &.notEmpty, &:focus {
-      background: #2e2e2e;
+      background: $site-form__input-bg-focus;
       box-shadow: 0 0 0 1px rgba(172, 148, 85, 0.35) inset;
     }
   }
@@ -177,18 +207,18 @@ $label-color: #6a6a6a;
       // width: 360px;
       max-width: 100%;
     &.notEmpty {
-      background: #2e2e2e;
-      color: #fff;
+      background: $site-form__input-bg-focus;
+      color: $site-form__input-color;
       box-shadow: 0 0 0 1px #000 inset;
       &:focus {
-        background: #2e2e2e;
-        color: #fff;
+        background: $site-form__input-bg-focus;
+        color: $site-form__input-color;
         box-shadow: 0 0 0 1px #000 inset;
       }
     }
     &.valid:focus {
-      background: #2e2e2e;
-      color: #fff;
+      background: $site-form__input-bg-focus;
+      color: $site-form__input-color;
       box-shadow: 0 0 0 1px #000 inset;
     }
   }
@@ -203,14 +233,50 @@ $label-color: #6a6a6a;
     text-align: left;
     color: #939393;
       &.error {
-        color: #dc5151;
+        color: #feb9b9;
         position: absolute;
         font-size: 11px;
         margin-top: 3px;
-        line-height: 24px;
+        line-height: 100%;
+        padding: 5px;
+        text-align: center;
+        z-index: 2;
+        background: $dark-blue;
+        border-radius: 0 0 5px 5px;
       }
   }
   .form-group {
     margin-bottom: 28px;
   }
+
+
+  /** new elements **/
+  .site-form__action-prefix {
+      font-family: "Bebas_Neue", sans-serif;
+      font-size: 40px;
+      margin-right: 10px;
+  }
+
+  .site-form__action-result {
+      font-size: 17px;
+  }
+
+  .form-legend {
+      margin-bottom: 20px;
+      span {
+          display: inline-block;
+      }
+  }
+
+  .form-block {
+      margin: 15px auto;
+      text-align: center;
+  }
+
+  .form-post-title {
+    font-size: 12px;
+    margin: 12px auto;
+}
+
+
 }

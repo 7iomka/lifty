@@ -1,19 +1,20 @@
 //DEFAULT STYLES FIXED MENU
 #header-nav {
-  position: fixed;
-  left: 0;
-  top: 0;
-  display: block;
-  width: 100%;
-  width: 100vw;
-  background: #202020;
-  z-index: 100;
-  -webkit-transition: -webkit-transform 0.7s 0.3s ease;
-  -moz-transition: -moz-transform 0.7s 0.3s ease;
-  -ms-transition: -ms-transform 0.7s 0.3s ease;
-  transition: transform 0.7s .3s ease;
-  -webkit-backface-visibility: hidden;
-  -webkit-transform: translate3d(0px, 0px, 0px);
+    position: relative;
+    display: block;
+    z-index: 100;
+    -webkit-transition: -webkit-transform 0.7s 0.3s ease;
+    -moz-transition: -moz-transform 0.7s 0.3s ease;
+    -webkit-transition: -webkit-transform 0.7s .3s ease;
+    transition: -webkit-transform 0.7s .3s ease;
+    -o-transition: -o-transform 0.7s .3s ease;
+    -moz-transition: transform 0.7s .3s ease, -moz-transform 0.7s .3s ease;
+    transition: transform 0.7s .3s ease;
+    transition: transform 0.7s .3s ease, -webkit-transform 0.7s .3s ease, -moz-transform 0.7s .3s ease, -o-transform 0.7s .3s ease;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    text-align: right;
+    margin-top: 4px;
   &.hide-nav-bar {
     -webkit-transform: translate(0, -100%);
     -moz-transform: translate(0, -100%);
@@ -56,8 +57,8 @@ nav[role=navigation] {
   }
   li a {
     display: block;
-    padding: 0.65em;
-    font-size: 18px;
+    padding: 0.65em 2px;
+    font-size: 14px;
     &:hover {
       color: #ffefb5;
     }
@@ -114,6 +115,11 @@ nav[role=navigation] {
   }
 }
 
+
+
+
+
+
 @include media("<960px") {
   .menu__item {
     border-bottom: 1px solid rgba(186, 164, 133, 0.18);
@@ -134,6 +140,7 @@ nav[role=navigation] {
   }
   .js nav[role=navigation] {
     max-height: none;
+    text-align: right;
   }
   nav[role=navigation] {
     text-align: center;
@@ -146,15 +153,17 @@ nav[role=navigation] {
       margin: 0 0.25em;
       position: relative;
       &:after {
-          content: "/";
-          color: #ac9455;
-          position: absolute;
-          top: 5px;
-          bottom: 0;
-          right: -20px;
-          height: 25px;
-          width: 25px;
-          margin: auto;
+        content: "/";
+        color: black;
+        position: absolute;
+        top: 0px;
+        bottom: 0;
+        right: -20px;
+        height: 20px;
+        width: 25px;
+        margin: auto;
+        text-align: center;
+        font-size: 16px;
       }
       &.menu__item--last:after {
         display: none;

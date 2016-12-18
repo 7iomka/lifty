@@ -36,6 +36,7 @@
     'components/button',
     'components/form',
     'components/formElements',
+    'components/image-block',
     // 'components/gallery',
     // 'components/galleryRemodal',
     // 'components/jQueryUploader',
@@ -47,13 +48,14 @@
     'components/menu',
     'components/hamburger',
     'components/spinner',
-    // 'components/squareItem',
+    'components/squareItem',
     'components/squareList';
 
 
 // 5. Layout-related sections
 @import
   'layout/header',
+  'layout/1',
   'layout/2',
   'layout/3',
   'layout/4',

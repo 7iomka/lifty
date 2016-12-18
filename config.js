@@ -155,6 +155,9 @@ var jsFilesSeparated = [
         },
         img: {
             optimize: false
+        },
+        build: {
+            clean: true
         }
     },
     production: {

@@ -18,7 +18,10 @@
 }
 
 %blue-gradient {
-    @include gradient-directional(90deg, #263e4f,0%, #1b2e3b, 100%);
+    @include gradient-directional(-90deg, #009fe3,0%, #086994, 100%);
+}
+%blue-gradient--to-top{
+    @include gradient-directional(180deg, #009fe3,0%, #086994, 100%);
 }
 
 %small-text {

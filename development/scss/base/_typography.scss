@@ -2,7 +2,7 @@
  * Basic typography style for copy text
  */
 body {
-  color: $text-color;
+  color: $black;
   font: normal 125% / 1.4 $text-font-stack;
   // font: normal 20px $text-font-stack;
 
@@ -19,7 +19,7 @@ input, textarea, select {
 h1, h2, h3{
   font-family: $header-font;
   line-height: 100%;
-  font-weight: normal;
+  // font-weight: normal;
   margin-top: 20px;
   margin-bottom: 10px;
 }

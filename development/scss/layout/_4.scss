@@ -1,52 +1,58 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the ECRAN 4  - assortiment - of the site/application.
 // -----------------------------------------------------------------------------
-//
 
-.social-comments {
-
-  .fb-container {
-      width: 90%;
-  }
-
-  .vk-container {
-    width: 100%;
-    float: right;
-    max-height: 500px;
-    overflow-y: scroll;
-    overflow-x: hidden;
-  }
-  .vk-container::-webkit-scrollbar {
-      width: 5px!important;
-      margin-left: -12px;
-      background-color: #9dd2f2;
-      position: absolute;
-  }
-  @at-root .is_any_mobile & {
-     .vk-container::-webkit-scrollbar {
-       background-color: transparent;
-     }
-   }
-
-  div#vk_comments,
-  div#vk_comments iframe {
-      max-width: 100%;
-  }
-
-  @include media("<tablet") {
-    .fb-container,
-    .vk-container {
-      float: none;
-      width: 100%;
+.trust {
+  padding: 0;
+}
+.trust__title {
+  font-weight: normal;
+}
+.trust__title-big {
+  font-size: 110px;
+      text-transform: uppercase;
+      font-weight: bold;
+      display: inline-block;
+}
+.trust__title-postfix {
+    font-size: 45px;
+    display: inline-block;
+    text-transform: uppercase;
+    position: relative;
+    padding-left: 50px;
+    &:before {
+        content: "";
+        width: 95px;
+        height: 95px;
+        border: 9px solid #e8e8e8;
+        position: absolute;
+        transform: rotate(45deg);
+        display: block;
+        z-index: -1;
+        left: 10px;
     }
-
-      div#vk_comments,
-      div#vk_comments iframe {
-      width: 100%!important;
+    span {
+        display: block;
     }
+}
 
-      .fb-container {
-        margin-bottom: 40px;
-      }
-  };
+
+.trust__list {
+    margin: 60px 0;
+}
+.trust__block {
+    width: 220px;
+    height: 100px;
+    border: 1px solid #e8e8e8;
+    display: table;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.trust__img-wrapper {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.trust__img {
+    max-width: 90%;
 }

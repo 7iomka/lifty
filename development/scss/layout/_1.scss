@@ -1,0 +1,37 @@
+// -----------------------------------------------------------------------------
+// Assrortiment (home page)
+// -----------------------------------------------------------------------------
+.assortiment {
+  background-color:  #f6f6f6;
+  h2.assortiment__title {
+      font-weight: normal;
+  }
+
+}
+.assortiment__title-big {
+    font-size: 100px;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: bold;
+    vertical-align: baseline;
+}
+
+.assortiment__title-postfix {
+    vertical-align: baseline;
+    display: inline-block;
+    font-size: 45px;
+    font-weight: normal;
+    position: relative;
+    padding-top: 13px;
+    text-transform: uppercase;
+    &:before {
+      content: "";
+      left: 0;
+      top: 0;
+      width: 170px;
+      height: 4px;
+      background: black;
+      display: block;
+      position: absolute;
+    }
+}

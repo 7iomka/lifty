@@ -67,7 +67,7 @@
       font('Roboto/robotoregular.woff2') format('woff2'),
       font('Roboto/robotoregular.woff') format('woff'),
       font('Roboto/robotoregular.ttf') format('truetype'),
-      font('Roboto/robotoregular.svg#proxima_nova_rgregular') format('svg');
+      font('Roboto/robotoregular.svg#robotoregular') format('svg');
       font-weight: 400;
       font-style: normal
 
@@ -80,7 +80,19 @@
       font('Roboto/robotobold.woff2') format('woff2'),
       font('Roboto/robotobold.woff') format('woff'),
       font('Roboto/robotobold.ttf') format('truetype'),
-      font('Roboto/robotobold.svg#proxima_nova_rgregular') format('svg');
+      font('Roboto/robotobold.svg#robotobold') format('svg');
       font-weight: 700;
+      font-style: normal
+}
+
+@font-face {
+  font-family: 'Roboto';
+      src: font('Roboto/Roboto-Black.eot');
+      src: font('Roboto/Roboto-Black.eot?#iefix') format('embedded-opentype'),
+      font('Roboto/Roboto-Black.woff2') format('woff2'),
+      font('Roboto/Roboto-Black.woff') format('woff'),
+      font('Roboto/Roboto-Black.ttf') format('truetype'),
+      font('Roboto/Roboto-Black.svg#roboto_black') format('svg');
+      font-weight: 900;
       font-style: normal
 }
