@@ -1,35 +1,45 @@
+        <footer class="site-footer">
 
-        <footer class="site-footer" id="contacts">
-          <div class="container">
-            <div class="row">
-              <div class="footer-contacts">
-                <div class="footer__contact footer__adress">г.Москва, Гиляровского дом 68 корпус </div>
-                <div class="footer__contact footer__email"><a href="mailto:info@seosintez.ru" class="footer__link">info@seosintez.ru</a></div>
-                <div class="footer__contact footer__phone"><a href="tel:+74951252765" class="footer__link">+7 (495) 125-27-65</a></div>
-              </div>
-              <div class="footer-map-preview">
-                <button class="btn btn--brown btn--large btn--bordered footer-map-preview__btn">
-                  <span class="footer-map-preview__btn__text footer-map-preview__btn__text-default">Развернуть карту</span>
-                  <span class="footer-map-preview__btn__text footer-map-preview__btn__text-expanded">Свернуть карту</span>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="footer-map-fullwidth-container">
-            <div class="footer-map-fullwidth">
-              <div class="footer-map-preloader-overlay hidden">
-                <div class="footer-map-preloader">
-                  <div class="css_spinner wf">
-                    <span class="side s_left"> <span class="fill"></span> </span>
-                    <span class="side s_right"> <span class="fill"></span> </span>
+          <div class="footer__panel">
+              <div class="container">
+                <div class="row">
+                  <!-- footer top items -->
+                  <div class="footer__items">
+                      <div class="col col--1-of-1 ">
+                        <div class="footer__item">
+                            <a href="/" class="footer__link footer__link--logo">
+                                <span><strong>Центральное управление Щербинского лифтостроительного завода</strong></span>
+                            </a>
+                        </div>
+                      </div>
+
+
                   </div>
+                  <!-- /footer items -->
+                  <!-- Menu-->
+                  <div id="footer-nav">
+                        <!-- Menu Items -->
+                        <nav id="footer_menu" role="navigation" class="footer-menu">
+                    			<ul>
+                    				<li class="menu__item"><a href="#home">Сервисное обслуживание</a></li>
+                    				<li class="menu__item"><a href="engineering.php">Проектирование лифтов и шахт</a></li>
+                    				<li class="menu__item"><a href="#portfolio">Поставка лифтов</a></li>
+                    				<li class="menu__item"><a href="#prices">Монтаж и замена лифтов</a></li>
+                    				<li class="menu__item menu__item--last"><a href="#contacts">Контакты</a></li>
+                    			</ul>
+                    		</nav>
+                      <!-- /Menu Items -->
+                	</div>
+                <!-- /Menu -->
+                <!-- Copyright -->
+                <div class="footer__copyright">
+                  Design by <a class="footer__copyright-link" href="http://seosintez.ru">Seosintez.ru</a>
+                </div>
+                <!-- Copyright -->
                 </div>
               </div>
-              <div class="footer-map-fullwidth__map">
-                  <div id="site-map"></div>
-              </div>
             </div>
-          </div>
+
         </footer>
 
 

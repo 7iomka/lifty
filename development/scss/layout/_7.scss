@@ -4,7 +4,11 @@
 //
 
 .reviews {
+  background-image: image('particles/triangles.png');
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
   background-color:  #f6f6f6;
+  background-attachment: fixed;
 
   .review__content-part {
     .imagemodal__link {

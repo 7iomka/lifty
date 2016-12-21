@@ -4,6 +4,7 @@
 //
 
 .services {
+  overflow: hidden;
   &:before {
       content: "";
       width: 414px;

@@ -2,7 +2,11 @@
 // Assrortiment (home page)
 // -----------------------------------------------------------------------------
 .assortiment {
+  background-image: image('particles/triangles.png');
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
   background-color:  #f6f6f6;
+  background-attachment: fixed;
   h2.assortiment__title {
       font-weight: normal;
   }

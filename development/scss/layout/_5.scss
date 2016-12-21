@@ -4,7 +4,12 @@
 //
 
 .objects {
+  background-image: image('particles/triangles-objects.png');
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
   background-color:  #006ab2;
+  background-attachment: fixed;
+  overflow: hidden;
   &:after {
       content: "";
       width: 414px;

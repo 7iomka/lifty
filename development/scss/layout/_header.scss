@@ -135,6 +135,9 @@ a.header__link.header__link--logo span {
     text-transform: uppercase;
     font-size: 70px;
     margin-top: 15px;
+    &.header__title--mod1 {
+      font-size: 65px;
+    }
 }
 
 .header__title-prefix {
@@ -152,6 +155,7 @@ a.header__link.header__link--logo span {
     font-weight: bold;
     position: relative;
     padding-bottom: 24px;
+    min-height: 7px;
 
     &:after {
         position: absolute;
