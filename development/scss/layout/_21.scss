@@ -1,0 +1,82 @@
+/**
+ * service
+ */
+
+ .service {
+   background-image: image('particles/triangles-v2.png');
+   background-position: 0 100%;
+   background-repeat: no-repeat;
+   background-color: #ffffff;
+   background-attachment: fixed;
+   padding-bottom: 0;
+       z-index: 1;
+        @extend .install;
+
+     &__title {
+        font-weight: normal;
+        &:before {
+             content: "";
+             position: absolute;
+             width: 58px;
+             height: 500px;
+             display: block;
+             bottom: 0;
+             left: -108px;
+             background: image('particles/vertical-lines.png') 0 0 no-repeat;
+             z-index: 1;
+         }
+      }
+
+    &__title-big {
+        font-size: 96px;
+        padding-right: 0;
+        font-weight: bold;
+        text-transform: uppercase;
+        position: relative;
+        padding-bottom: 10px;
+        display: inline-block;
+        width: 100%;
+        &:after {
+            content: "";
+            left: auto;
+            bottom: 10px;
+            right: 0;
+            height: 4px;
+            background: black;
+            display: block;
+            position: absolute;
+            background-color: #006ab2;
+            width: 347px;
+        }
+    }
+
+    &__title-postfix {
+        line-height: normal;
+        display: block;
+        font-size: 40px;
+        text-transform: uppercase;
+        text-align: right;
+    }
+
+
+
+    .square-item__desc {
+      padding-left: 54px;
+      padding-top: 25px;
+    }
+    .square-item {
+        padding-right: 0;
+    }
+
+
+    .service__form-wrapper {
+      position: relative;
+      top: 140px;
+      z-index: 2;
+    }
+
+    .service__list {
+      margin-bottom: -130px;
+    }
+
+ }

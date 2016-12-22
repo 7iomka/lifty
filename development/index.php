@@ -2,7 +2,7 @@
 <body class="js">
     <div class="site-wrapper">
 
-        <header class="site-header s1 inverted" id="home">
+        <header class="site-header s1 inverted site-header--home" id="home">
           <div class="header__panel">
             <div class="container">
               <div class="row">
@@ -53,7 +53,7 @@
                   				<li class="menu__item"><a href="#home">Сервисное обслуживание</a></li>
                   				<li class="menu__item"><a href="engineering.php">Проектирование лифтов и шахт</a></li>
                   				<li class="menu__item"><a href="#portfolio">Поставка лифтов</a></li>
-                  				<li class="menu__item"><a href="#prices">Монтаж и замена лифтов</a></li>
+                  				<li class="menu__item"><a href="installation-and-replacement.php">Монтаж и замена лифтов</a></li>
                   				<li class="menu__item menu__item--last"><a href="#contacts">Контакты</a></li>
                   			</ul>
                   		</nav>
@@ -645,7 +645,7 @@
   <div class="container">
     <div class="row">
       <div class="site-form-wrapper reviews__form-wrapper">
-        <div class="review__form site-form site-form--light inline-form inline-form--with-left-bg inline--action">
+        <div class="review__form site-form site-form--light inline-form inline-form--with-inline-btn inline-form--with-left-bg inline--action">
           <form method="POST" action="/ajax.php" novalidate="novalidate">
               <input type="hidden" name="form_task" value="get_audit">
               <div class="form-legend">

@@ -1,0 +1,18 @@
+
+.services.services--engineering {
+  overflow: visible;
+  &:before {
+    display: none;
+  }
+  .vertical-lines {
+      position: absolute;
+      width: 58px;
+      height: 471px;
+      display: block;
+      top: -250px;
+      left: -120px;
+      background: image('particles/parallel-lines.png') 0 0 no-repeat;
+      z-index: 2;
+  }
+
+}

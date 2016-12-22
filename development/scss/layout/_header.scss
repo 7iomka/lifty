@@ -104,12 +104,31 @@ a.header__link.header__link--logo span {
     background: #006ab2;
     margin-top: -67px;
 }
+&.site-header--installation-and-replacement .header__banner{
+  background: white;
+}
+&.site-header--service .header__banner{
+  background: white;
+}
 
 .header__banner-page-image {
     position: absolute;
     top: 0;
     right: 0;
+    height: 100%;
+    padding-bottom: 50px;
+    background: white;
+
+    img {
+      height: 100%;
+    }
 }
+&.site-header--home .header__banner-page-image {
+  background: #f6f6f6;
+}
+
+
+
 
 .header__banner-left-stuff {
     position: absolute;
@@ -127,6 +146,54 @@ a.header__link.header__link--logo span {
     padding-top: 100px;
 }
 
+&.site-header--installation-and-replacement .header__page-content {
+    padding-top: 45px;
+}
+
+/** if slider in header **/
+&.site-header--installation-and-replacement {
+
+  .header__form-wrapper {
+    margin-top: 25px;
+  }
+  .installation-and-replacement-types__slider {
+        text-align: center;
+  }
+  .installation-and-replacement-types__item-title {
+    font-size: 17px;
+    margin-top: 16px;
+    margin-bottom: 12px;
+    color: white;
+  }
+
+
+  .installation-and-replacement-types__slite-img {
+      display: block;
+      margin: auto;
+  }
+
+  .installation-and-replacement-types__item-time {
+      border-radius: 3px;
+      background-color:  #cf2538;
+      display: inline-block;
+      padding: 10px 12px;
+      color: white;
+  }
+  .swiper-pagination {
+      @include media(">=medium") {
+        display: none;
+      };
+      bottom: 0;
+  }
+
+  .swiper-container {
+      @include media("<medium") {
+        padding-bottom: 40px;
+      };
+  }
+}
+/** end if slider **/
+
 .header__title-span {
     display: block;
 }
@@ -137,6 +204,8 @@ a.header__link.header__link--logo span {
     margin-top: 15px;
     &.header__title--mod1 {
       font-size: 65px;
+      float: right;
+      margin-top: 0;
     }
 }
 
@@ -168,6 +237,10 @@ a.header__link.header__link--logo span {
     }
 }
 
+&.site-header--service .header__title-postfix {
+  margin-top: 15px;
+}
+
 
 
 .header__custom-text {
@@ -186,6 +259,7 @@ a.header__link.header__link--logo span {
 
   .header__form {
     padding: 27px 0;
+    margin-bottom: -27px;
     &:before {
       z-index: -1;
     }

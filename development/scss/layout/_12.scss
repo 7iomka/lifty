@@ -1,0 +1,80 @@
+// -----------------------------------------------------------------------------
+// project mines
+// -----------------------------------------------------------------------------
+.project-mines {
+
+    background-image: image('particles/triangles-v2.png');
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+    background-attachment: fixed;
+
+    &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -350px;
+        width: 100%;
+        height: 100%;
+        background: image('particles/squares-multiple.png') 50% 0 no-repeat;
+    }
+
+  .project-mines__title {
+      font-weight: normal;
+  }
+
+  .project-mines__title-big {
+      font-size: 90px;
+      text-transform: uppercase;
+      font-weight: bold;
+      display: inline-block;
+      vertical-align: top;
+      padding: 0 20px;
+      border: 4px solid #009fe2;
+      margin-right: -0.24em;
+  }
+
+  .project-mines__title-postfix {
+      font-size: 40px;
+      vertical-align: -1.8em;
+      display: inline-block;
+      font-weight: normal;
+      position: relative;
+      text-transform: uppercase;
+      padding-left: 18px;
+      margin-right: -0.24em;
+      span {
+          display: block;
+      }
+  }
+
+
+  .project-mines__item-col {
+      padding-left: 0;
+  }
+
+  .project-mines__item {
+      margin-bottom: 38px;
+  }
+
+  .imagemodal__link.project-mines__item-draft {
+      display: inline-block;
+      width: auto;
+      margin-right: -0.24em;
+  }
+
+  .imagemodal__link.project-mines__item-photo {
+      display: inline-block;
+      width: auto;
+      margin-right: -0.24em;
+      margin-left: 8px;
+  }
+
+  .project-mines__item-title {
+      font-size: 18px;
+      line-height: 20px;
+  }
+
+
+
+}

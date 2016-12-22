@@ -30,6 +30,7 @@ $label-color: #6a6a6a;
           content: "";
           position: absolute;
           width: 1920px;
+          // height: 250px;
           height: 250px;
           background: #00365a;
           right: -34px;
@@ -276,6 +277,24 @@ $label-color: #6a6a6a;
   .form-post-title {
     font-size: 12px;
     margin: 12px auto;
+}
+
+
+/** group-btn form inline-form **/
+&.inline-form--with-inline-btn {
+  &.inline-form--with-left-bg {
+    &:before {
+      height: 200px;
+    }
+  }
+  .form-group.form-group--with-btn {
+      vertical-align: top;
+      margin-left: 20px;
+      margin-top: -3px;
+  }
+  .form-post-title {
+      text-align: center;
+  }
 }
 
 

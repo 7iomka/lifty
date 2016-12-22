@@ -565,6 +565,29 @@ jQuery(document).ready(function($) {
 
             });
 
+        // ----------------------------------------------------------------------------
+        // installation-and-replacement-types slider
+        // ----------------------------------------------------------------------------
+        var reviewsSlider = new Swiper('.installation-and-replacement-types__slider .swiper-container', {
+               slidesPerView: 3,
+               paginationClickable: true,
+               spaceBetween: 15,
+               pagination: '.installation-and-replacement-types__slider .swiper-pagination',
+               // Small screens, center to align and loop elements
+               breakpoints: {
+
+                 992: {
+                    slidesPerView: 2,
+
+                 },
+                 768: {
+                     slidesPerView: 1,
+                 }
+               },
+               onSlideChangeEnd: function (s) { s.fixLoop(); }
+
+            });
+
 
       // ----------------------------------------------------------------------------
       // Init gallery for each review

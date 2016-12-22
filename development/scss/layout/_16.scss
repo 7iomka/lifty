@@ -1,0 +1,109 @@
+/**
+ * Install
+ */
+.install {
+  background-image: image('particles/triangles-v2.png');
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  background-attachment: fixed;
+  padding-bottom: 160px;
+
+    &__title {
+       font-weight: normal;
+       &:before {
+            content: "";
+            position: absolute;
+            width: 58px;
+            height: 500px;
+            display: block;
+            bottom: 0;
+            left: -108px;
+            background: image('particles/vertical-lines.png') 0 0 no-repeat;
+            z-index: 1;
+        }
+     }
+
+   &__title-big {
+       font-size: 110px;
+       font-weight: bold;
+       text-transform: uppercase;
+       padding-right: 95px;
+       position: relative;
+       padding-bottom: 10px;
+       display: inline-block;
+       width: 100%;
+       &:after {
+           content: "";
+           left: auto;
+           bottom: 10px;
+           right: 0;
+           height: 4px;
+           background: black;
+           display: block;
+           position: absolute;
+           background-color: #006ab2;
+           width: 347px;
+       }
+   }
+
+   &__title-postfix {
+       line-height: normal;
+       display: block;
+       font-size: 40px;
+       text-transform: uppercase;
+       text-align: right;
+   }
+
+   /** square-list **/
+   .square-item__img-wrapper {
+    width: 112px;
+    height: 112px;
+    padding: 8px;
+    transform: rotate(45deg);
+    display: table;
+  }
+
+  .square-item {
+    margin-bottom: 35px;
+  }
+
+  .square-item__img-src {
+      transform: rotate(-45deg);
+      margin: 0 auto;
+      display: block;
+  }
+
+  .square-item.square-item--table-layout .square-item__img {
+      display: table-cell;
+      vertical-align: middle;
+  }
+    .square-item__num {
+      transform: rotate(-45deg);
+      position: absolute;
+      top: 35px;
+      left: -35px;
+      color: #565656;
+      font-size: 20px;
+      font-weight: 900;
+  }
+
+  .square-item__desc {
+      padding-left: 112px;
+      font-size: 18px;
+      line-height: 20px;
+  }
+
+  /** reverse - only for large **/
+  .square-item--reverse {
+    @include media(">=large"){
+      .square-item__desc {
+          padding-left: 45px;
+      }
+
+      .square-item__img-wrapper {
+          margin: 0 0 auto auto;
+      }
+    }
+  }
+}
