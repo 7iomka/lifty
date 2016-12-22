@@ -141,8 +141,12 @@ REMODAL with header like a browser --- CURRENT USE
 
 .remodal.remodal--browser {
       padding: 0;
-      background-color: #2e303c;
-
+      padding: 0;
+      background-image: image('particles/triangles-objects.png');
+      background-position: 0% 0%;
+      background-color: #006ab2;
+      background-attachment: fixed;
+      background-size: cover;
     //different outlined classes
     .outlined {
       background: #ac9455;

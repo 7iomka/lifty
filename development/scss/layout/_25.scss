@@ -1,12 +1,18 @@
 /** excursion **/
 
 .excursion {
+  background-image: image('particles/triangles.png');
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-top: 30px;
+  background-color: transparent;
   &__title {
        font-weight: normal;
      }
 
    &__title-big {
-       font-size: 96px;
+       font-size: 69px;
        padding-right: 0;
        font-weight: bold;
        text-transform: uppercase;
@@ -17,7 +23,7 @@
        &:after {
            content: "";
            left: auto;
-           bottom: 10px;
+           bottom: 5px;
            right: 0;
            height: 4px;
            background: black;
@@ -32,8 +38,62 @@
        line-height: normal;
        display: block;
        font-size: 40px;
+       line-height: 40px;
+       padding-top: 5px;
        text-transform: uppercase;
        text-align: right;
    }
+
+.escursion__map-container {
+  margin: 54px 0;
+}
+
+   /** excursion block **/
+   .excursion__map-panel {
+    background-color: #24598a;
+    color: white;
+    text-align: center;
+    font-family: 'Proxima_Nova',sans-serif;
+    padding: 15px 0;
+  }
+
+
+  .excursion__map-adress {
+      display: inline-block;
+      padding-left: 25px;
+      background: image('icon--map-pin.png') 0 0 no-repeat;
+      line-height: 30px;
+  }
+
+  .excursion__map-panel-header {
+      line-height: 40px;
+      margin-bottom: 0;
+      font-weight: bold;
+      line-height: 30px;
+  }
+
+  .excursion__map-inline-contact {
+      display: inline-block;
+      margin-right: -0.24em;
+      line-height: 30px;
+      background-position: 0 40%;
+      background-repeat: no-repeat;
+      padding-left: 25px;
+      padding-right: 25px;
+  }
+
+  .excursion__contacts-link {
+      color: white;
+  }
+
+  .excursion__phone {
+      background-image: image('icon--phone.png');
+  }
+
+  .excursion__email {
+      background-image: image('icon--mail.png');
+      padding-left: 30px;
+  }
+
 
 }

@@ -16,7 +16,12 @@ header.site-header {
   left: auto;
   right: auto;
 
-
+&.site-header--contacts {
+  background-image: image('particles/triangles.png');
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 
 
 /////////// remove fallback styles
@@ -204,9 +209,16 @@ a.header__link.header__link--logo span {
     margin-top: 15px;
     &.header__title--mod1 {
       font-size: 65px;
+
+    }
+}
+&.site-header--installation-and-replacement {
+  .header__title {
+    &.header__title--mod1 {
       float: right;
       margin-top: 0;
     }
+  }
 }
 
 .header__title-prefix {

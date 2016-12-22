@@ -94,7 +94,7 @@
                                     <input type="text" class="form-control required" id="user_phone--callback" name="user_phone--callback" placeholder="+7 (900) 123 45 67">
                                   </div>
                               </div>
-                              <button type="submit" name="submit-btn" class="btn btn--brown btn--large btn--bordered btn--submit-action progress-button" data-loading="Отправка заявки.." data-finished="Заявка отправлена!">Отправить заявку</button>
+                              <button type="submit" name="submit-btn" class="btn btn--red btn--large btn--submit-action progress-button" data-loading="Отправка заявки.." data-finished="Заявка отправлена!">Отправить заявку</button>
                           </form>
 
                       </div>

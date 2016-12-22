@@ -4,19 +4,20 @@
 <head>
     <meta charset="utf-8">
     <title>Создание и продвижение сайтов. Реклама сайтов в Яндекс Директ и Google AdWords</title>
-    <meta name="keywords" content="создание и продвижение сайтов. реклама сайтов в яндекс директ" />
-    <meta name="description" content="Агентство  интернет-маркетинга SEOSINTEZ. Создание сайтов любой тематики и сложности. SEO продвижение сайтов. Настройка и сопровождение рекламных кампаний в Яндекс Директ и Google AdWords" />
-    <meta name=viewport content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Щербинский лифтостроительный завод ЩЛЗ лифты пассажирские лифты грузовые лифты больничные подъемник">
+    <meta name="description" content="один из основных производителей лифтового оборудования изготавливает наиболее широкую в России и за ее пределами гамму лифтов и подъемников с электрическим и гидравлическим приводом">
+    <!-- <meta name=viewport content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta content="yes" name="apple-mobile-web-app-capable">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> -->
     <!-- Favicons -->
     <!-- <link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64" href="/favicon.ico"> -->
     <style>
-    header.site-header { left: 0; top: 0px; position: absolute; z-index: 999; width: 100%; height: 100%; background-color: #141414; } .brown { color: #ac9455; } header.site-header .top-pulled, header.site-header #header-nav, header.site-header .header-parallax-container, header.site-header .top-logo { opacity: 0; }
+    /*header.site-header { left: 0; top: 0px; position: absolute; z-index: 999; width: 100%; height: 100%; background-color: #141414; } .brown { color: #ac9455; } header.site-header .top-pulled, header.site-header #header-nav, header.site-header .header-parallax-container, header.site-header .top-logo { opacity: 0; }*/
     </style>
-    <link rel="preload" href="css/main.css" as="style" onload="this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="css/main.css" media="all" title="no title" charset="utf-8"></noscript>
+    <link rel="stylesheet" href="css/main.css" media="all" title="no title" charset="utf-8">
+    <!-- <link rel="preload" href="css/main.css" as="style" onload="this.rel='stylesheet'"> -->
+    <!-- <noscript><link rel="stylesheet" href="css/main.css" media="all" title="no title" charset="utf-8"></noscript>
        <script>
        /*! loadCSS: load a CSS file asynchronously. [c]2016 @scottjehl, Filament Group, Inc. Licensed MIT */
        (function(w){
@@ -141,7 +142,7 @@
 
        </script>
 
-       <script></script><!-- here to ensure a non-blocking load still occurs in IE and Edge, even if scripts follow loadCSS in head -->
-
+       <script></script>
+ -->
 
 </head>

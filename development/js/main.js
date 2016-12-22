@@ -689,6 +689,24 @@ jQuery(document).ready(function($) {
       }
 
 
+
+    // ------------------------------------------------------------------------
+    // Toggle contacts filials and do action-map
+    // ------------------------------------------------------------------------
+    if($('.coverage__filials').length) {
+      $('.filial_h').on('click', function (e) {
+
+        e.preventDefault();
+        var $filial_info = $(this).next('.filial_info');
+        if(!$filial_info.hasClass('active')) {
+          $('.filial_h.active').removeClass('active');
+          $('.filial_info.active').removeClass('active').slideToggle();
+          $filial_info.addClass('active').slideToggle();
+          $(this).addClass('active');
+        }
+      })
+    }
+
     // ------------------------------------------------------------------------
     // ANIMATIONS REVEAL
     // ------------------------------------------------------------------------

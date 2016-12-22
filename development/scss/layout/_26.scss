@@ -1,0 +1,84 @@
+/**
+ * coverage
+ */
+
+.coverage {
+  &__title {
+    font-weight: normal;
+  }
+
+&__title-inner {
+     display: inline-block;
+     position: relative;
+     &:after {
+         content: "";
+         width: 95px;
+         height: 95px;
+         border: 9px solid #009fe3;
+         position: absolute;
+         transform: rotate(45deg);
+         display: block;
+         z-index: 1;
+         right: -80px;
+         top: 45px;
+     }
+ }
+
+ &__title-big {
+     font-weight: bold;
+     font-size: 100px;
+     text-transform: uppercase;
+     display: inline-block;
+ }
+
+
+  &__title-postfix {
+      font-size: 45px;
+      text-transform: uppercase;
+      display: block;
+      text-align: right;
+      position: relative;
+      z-index: 2;
+  }
+  .coverage__map-container {
+      margin: 65px 0 45px;
+  }
+  /** filials **/
+  .coverage__filials-wrapper {
+      margin-top: 45px;
+  }
+  .coverage__filials {
+    font-family: 'Proxima_Nova',sans-serif;
+  }
+
+  .filial_info {
+    font-size: 17px;
+    line-height: 25px;
+    display: none;
+
+    address {
+        display: block;
+        font-style: normal;
+    }
+    p {
+        line-height: 25px;
+    }
+  }
+
+  .filial_h {
+      font-size: 18px;
+      font-weight: bold;
+      line-height: normal;
+      padding: 10px 0 15px;
+      display: block;
+      text-decoration: underline;
+      &:hover, &.active {
+        color: #24598a;
+      }
+  }
+
+
+
+
+
+}
