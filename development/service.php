@@ -464,45 +464,45 @@
                       <div class="swiper-wrapper">
                         <div class="swiper-slide certificates__slide">
                           <div class="certificates__item">
-                            <a class="imagemodal__link" href="img/certificates/1.pdf" target="_blank" rel="nofollow">
+                            <a class="imagemodal__link" href="img/certificates/1.jpg" target="_blank" rel="nofollow">
                                 <img class="imagemodal__thumb" src="img/certificates/thumbs/1.jpg">
                                 <span class="imagemodal__overlay"><span class="imagemodal__overlay-icon"><img class="imagemodal__overlay-icon-img" src="img/zoom-icon.png" /></span></span>
                             </a>
                             <div class="certificates__item-title">
-                              <a href="img/certificates/1.pdf" class="certificates__item-title-link" target="_blank" rel="nofollow">Свидетельство о допуске к определенному виду или видам работ, которые оказывают влияние на безопасность объектов капитального ремонта</a>
+                              <a href="img/certificates/1.pdf" class="certificates__item-title-link" title="Открыть в pdf" target="_blank" rel="nofollow">Свидетельство о допуске к определенному виду или видам работ, которые оказывают влияние на безопасность объектов капитального ремонта</a>
                             </div>
                           </div>
                         </div>
                         <div class="swiper-slide certificates__slide">
                           <div class="certificates__item">
-                            <a class="imagemodal__link" href="img/certificates/2.pdf" target="_blank" rel="nofollow">
+                            <a class="imagemodal__link" href="img/certificates/2.jpg" target="_blank" rel="nofollow">
                                 <img class="imagemodal__thumb" src="img/certificates/thumbs/2.jpg">
                                 <span class="imagemodal__overlay"><span class="imagemodal__overlay-icon"><img class="imagemodal__overlay-icon-img" src="img/zoom-icon.png" /></span></span>
                             </a>
                             <div class="certificates__item-title">
-                              <a href="img/certificates/2.pdf" class="certificates__item-title-link" target="_blank" rel="nofollow">Сертификат  соответствия  ISO 9011-2011 (iso 9001:2008)</a>
+                              <a href="img/certificates/2.pdf" class="certificates__item-title-link" title="Открыть в pdf" target="_blank" rel="nofollow">Сертификат  соответствия  ISO 9011-2011 (iso 9001:2008)</a>
                             </div>
                           </div>
                         </div>
                         <div class="swiper-slide certificates__slide">
                           <div class="certificates__item">
-                            <a class="imagemodal__link" href="img/certificates/3.pdf" target="_blank" rel="nofollow">
+                            <a class="imagemodal__link" href="img/certificates/3.jpg" target="_blank" rel="nofollow">
                                 <img class="imagemodal__thumb" src="img/certificates/thumbs/3.jpg">
                                 <span class="imagemodal__overlay"><span class="imagemodal__overlay-icon"><img class="imagemodal__overlay-icon-img" src="img/zoom-icon.png" /></span></span>
                             </a>
                             <div class="certificates__item-title">
-                              <a href="img/certificates/3.pdf" class="certificates__item-title-link" target="_blank" rel="nofollow">Сертификат официального представителя щербинского лифтостроительного завода</a>
+                              <a href="img/certificates/3.pdf" class="certificates__item-title-link" title="Открыть в pdf" target="_blank" rel="nofollow">Сертификат официального представителя щербинского лифтостроительного завода</a>
                             </div>
                           </div>
                         </div>
                         <div class="swiper-slide certificates__slide">
                           <div class="certificates__item">
-                            <a class="imagemodal__link" href="img/certificates/4.pdf" target="_blank" rel="nofollow">
+                            <a class="imagemodal__link" href="img/certificates/4.jpg" target="_blank" rel="nofollow">
                                 <img class="imagemodal__thumb" src="img/certificates/thumbs/4.jpg">
                                 <span class="imagemodal__overlay"><span class="imagemodal__overlay-icon"><img class="imagemodal__overlay-icon-img" src="img/zoom-icon.png" /></span></span>
                             </a>
                             <div class="certificates__item-title">
-                              <a href="img/certificates/4.pdf" class="certificates__item-title-link" target="_blank" rel="nofollow">свидетельство о допуске к определенному виду или видам работ, которые оказывают влияние на безопасность объектов капитального строительства</a>
+                              <a href="img/certificates/4.pdf" class="certificates__item-title-link" title="Открыть в pdf" target="_blank" rel="nofollow">свидетельство о допуске к определенному виду или видам работ, которые оказывают влияние на безопасность объектов капитального строительства</a>
                             </div>
                           </div>
                         </div>

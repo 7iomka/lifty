@@ -87,7 +87,7 @@
                 <!-- /Menu -->
                 <!-- Copyright -->
                 <div class="footer__copyright">
-                  Design by <a class="footer__copyright-link" href="http://seosintez.ru">Seosintez.ru</a>
+                  Design by <a class="footer__copyright-link" target="_blank" href="http://seosintez.ru">Seosintez.ru</a>
                 </div>
                 <!-- Copyright -->
                 </div>
