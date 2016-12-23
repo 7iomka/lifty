@@ -70,13 +70,13 @@
                       </div>
                       <div class="form-group form-group--first">
                           <div class="form-input-wrapper">
-                              <input type="text" class="form-control required" id="user_name--prices" name="user_name--prices" placeholder="Константин" aria-required="true">
+                              <input type="text" class="form-control required" id="user_name--prices" name="user_name--prices" placeholder="Имя" aria-required="true">
                           </div>
                       </div>
                       <div class="form-group ">
 
                           <div class="form-input-wrapper">
-                              <input type="text" class="form-control required" id="user_phone--prices" name="user_phone--prices" placeholder="+7 (987) 654 32 10" aria-required="true">
+                              <input type="text" class="form-control required" id="user_phone--prices" name="user_phone--prices" placeholder="Телефон" aria-required="true">
                           </div>
                       </div>
 
@@ -113,8 +113,8 @@
                         </div>
                       </div>
                         <div class="square-item__desc">
-                          <span>года работаем</span>
-                          <span>для вас</span>
+                          <span>Экспертные решения в </span>
+                          <span>каждом регионе</span>
                         </div>
                       </div>
                       <div class="col col--4-of-12 col--s-1-of-1 square-item square-item--table-layout square-item__2">
@@ -124,9 +124,8 @@
                           </div>
                         </div>
                         <div class="square-item__desc">
-                          <span>лифтов</span>
-                          <span>эксплуатируются по</span>
-                          <span>всей стране</span>
+                          <span>Реализовали более 100 </span>
+                          <span>специальных проектов</span>
                         </div>
                       </div>
                       <div class="col col--4-of-12 col--s-1-of-1 square-item square-item--table-layout square-item__3">
@@ -136,7 +135,10 @@
                           </div>
                         </div>
                         <div class="square-item__desc">
-                        вывыв
+                          <span>Строго соблюдаем все</span>
+                          <span>нормы и правила</span>
+                          <span>проектирования (ГОСТ,</span>
+                          <span>СНИП и ТР)</span>
                         </div>
                       </div>
 
@@ -232,13 +234,13 @@
                         </div>
                         <div class="form-group form-group--first">
                             <div class="form-input-wrapper">
-                                <input type="text" class="form-control required" id="user_name--prices" name="user_name--prices" placeholder="Константин" aria-required="true">
+                                <input type="text" class="form-control required" id="user_name--prices" name="user_name--prices" placeholder="Имя" aria-required="true">
                             </div>
                         </div>
                         <div class="form-group ">
 
                             <div class="form-input-wrapper">
-                                <input type="text" class="form-control required" id="user_phone--prices" name="user_phone--prices" placeholder="+7 (987) 654 32 10" aria-required="true">
+                                <input type="text" class="form-control required" id="user_phone--prices" name="user_phone--prices" placeholder="Телефон" aria-required="true">
                             </div>
                         </div>
 
@@ -316,13 +318,13 @@
                     </div>
                     <div class="form-group form-group--first">
                         <div class="form-input-wrapper">
-                            <input type="text" class="form-control required" id="user_name--album" name="user_name--album" placeholder="Константин" aria-required="true">
+                            <input type="text" class="form-control required" id="user_name--album" name="user_name--album" placeholder="Имя" aria-required="true">
                         </div>
                     </div>
                     <div class="form-group ">
 
                         <div class="form-input-wrapper">
-                            <input type="text" class="form-control required" id="user_phone--album" name="user_phone--album" placeholder="+7 (987) 654 32 10" aria-required="true">
+                            <input type="text" class="form-control required" id="user_phone--album" name="user_phone--album" placeholder="Телефон" aria-required="true">
                         </div>
                     </div>
 
@@ -588,13 +590,13 @@
                   </div>
                   <div class="form-group form-group--first">
                       <div class="form-input-wrapper">
-                          <input type="text" class="form-control required" id="user_name--consult" name="user_name--consult" placeholder="Константин" aria-required="true">
+                          <input type="text" class="form-control required" id="user_name--consult" name="user_name--consult" placeholder="Имя" aria-required="true">
                       </div>
                   </div>
                   <div class="form-group ">
 
                       <div class="form-input-wrapper">
-                          <input type="text" class="form-control required" id="user_phone--consult" name="user_phone--consult" placeholder="+7 (987) 654 32 10" aria-required="true">
+                          <input type="text" class="form-control required" id="user_phone--consult" name="user_phone--consult" placeholder="Телефон" aria-required="true">
                       </div>
                   </div>
 

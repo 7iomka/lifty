@@ -104,13 +104,13 @@
                             </div>
                             <div class="form-group form-group--first">
                                 <div class="form-input-wrapper">
-                                    <input type="text" class="form-control required" id="user_name--visit" name="user_name--visit" placeholder="Константин" aria-required="true">
+                                    <input type="text" class="form-control required" id="user_name--visit" name="user_name--visit" placeholder="Имя" aria-required="true">
                                 </div>
                             </div>
                             <div class="form-group ">
 
                                 <div class="form-input-wrapper">
-                                    <input type="text" class="form-control required" id="user_phone--visit" name="user_phone--visit" placeholder="+7 (987) 654 32 10" aria-required="true">
+                                    <input type="text" class="form-control required" id="user_phone--visit" name="user_phone--visit" placeholder="Телефон" aria-required="true">
                                 </div>
                             </div>
 
@@ -227,13 +227,13 @@
                         </div>
                         <div class="form-group form-group--first">
                             <div class="form-input-wrapper">
-                                <input type="text" class="form-control required" id="user_name--prices" name="user_name--prices" placeholder="Константин" aria-required="true">
+                                <input type="text" class="form-control required" id="user_name--prices" name="user_name--prices" placeholder="Имя" aria-required="true">
                             </div>
                         </div>
                         <div class="form-group ">
 
                             <div class="form-input-wrapper">
-                                <input type="text" class="form-control required" id="user_phone--prices" name="user_phone--prices" placeholder="+7 (987) 654 32 10" aria-required="true">
+                                <input type="text" class="form-control required" id="user_phone--prices" name="user_phone--prices" placeholder="Телефон" aria-required="true">
                             </div>
                         </div>
 
@@ -364,13 +364,13 @@
                         </div>
                         <div class="form-group form-group--first">
                             <div class="form-input-wrapper">
-                                <input type="text" class="form-control required" id="user_name--install" name="user_name--install" placeholder="Константин" aria-required="true">
+                                <input type="text" class="form-control required" id="user_name--install" name="user_name--install" placeholder="Имя" aria-required="true">
                             </div>
                         </div>
                         <div class="form-group ">
 
                             <div class="form-input-wrapper">
-                                <input type="text" class="form-control required" id="user_phone--install" name="user_phone--install" placeholder="+7 (987) 654 32 10" aria-required="true">
+                                <input type="text" class="form-control required" id="user_phone--install" name="user_phone--install" placeholder="Телефон" aria-required="true">
                             </div>
                         </div>
 
@@ -576,13 +576,13 @@
                       </div>
                       <div class="form-group form-group--first">
                           <div class="form-input-wrapper">
-                              <input type="text" class="form-control required" id="user_name--consult" name="user_name--consult" placeholder="Константин" aria-required="true">
+                              <input type="text" class="form-control required" id="user_name--consult" name="user_name--consult" placeholder="Имя" aria-required="true">
                           </div>
                       </div>
                       <div class="form-group ">
 
                           <div class="form-input-wrapper">
-                              <input type="text" class="form-control required" id="user_phone--consult" name="user_phone--consult" placeholder="+7 (987) 654 32 10" aria-required="true">
+                              <input type="text" class="form-control required" id="user_phone--consult" name="user_phone--consult" placeholder="Телефон" aria-required="true">
                           </div>
                       </div>
 

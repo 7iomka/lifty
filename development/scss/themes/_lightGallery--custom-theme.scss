@@ -11,7 +11,7 @@
 }
 
 .lg-backdrop {
-    background-color: #003c64;
+    background-color: rgba(0, 0, 0, 0.65);
 }
 .lg-progress-bar .lg-progress {
     background-color: #c5313d;
@@ -21,8 +21,11 @@
 }
 
 .lg-outer .lg-thumb-outer {
-    background-color: rgba(0, 0, 0, 0.39);
+        background-color: rgba(0,0,0,.26);
 }
 .lg-thumb.group {
     margin: auto;
+}
+.lg-toolbar {
+      background-color: rgba(0, 0, 0, 0.26);
 }

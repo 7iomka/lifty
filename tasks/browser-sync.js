@@ -7,6 +7,7 @@ gulp.task('browser-sync', ['styles', 'scripts'], function() {
 		return global.browserSync.init({
         injectChanges: true,
 				proxy: config.constants.proxy, // localhost served url
+				port: 3002,
 				notify: false,
 				reloadDelay: 2000,
 				// reqHeaders: function (config) {

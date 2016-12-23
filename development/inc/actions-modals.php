@@ -79,13 +79,13 @@
                           <div class="form-group form-group--first">
                             <label for="user_name--order">Как Вас зовут:</label>
                             <div class="form-input-wrapper">
-                              <input type="text" class="form-control required" id="user_name--order" name="user_name--order" placeholder="Иван Петрович">
+                              <input type="text" class="form-control required" id="user_name--order" name="user_name--order" placeholder="Имя">
                             </div>
                           </div>
                           <div class="form-group ">
                             <label for="user_phone--order">Номер телефона:</label>
                             <div class="form-input-wrapper">
-                              <input type="text" class="form-control required" id="user_phone--order" name="user_phone--order" placeholder="+7 (900) 123 45 67">
+                              <input type="text" class="form-control required" id="user_phone--order" name="user_phone--order" placeholder="Телефон">
                             </div>
                           </div>
                           <button type="submit" name="submit-btn" class="btn btn--red btn--large btn--submit-action progress-button" data-loading="Отправка заявки.." data-finished="Заявка отправлена!">Отправить заявку</button>
@@ -122,13 +122,13 @@
                               <div class="form-group form-group--first">
                                   <label for="user_name--callback">Как Вас зовут:</label>
                                   <div class="form-input-wrapper">
-                                    <input type="text" class="form-control required" id="user_name--callback" name="user_name--callback" placeholder="Иван Петрович">
+                                    <input type="text" class="form-control required" id="user_name--callback" name="user_name--callback" placeholder="Имя">
                                   </div>
                               </div>
                               <div class="form-group ">
                                   <label for="user_phone--callback">Номер телефона:</label>
                                   <div class="form-input-wrapper">
-                                    <input type="text" class="form-control required" id="user_phone--callback" name="user_phone--callback" placeholder="+7 (900) 123 45 67">
+                                    <input type="text" class="form-control required" id="user_phone--callback" name="user_phone--callback" placeholder="Телефон">
                                   </div>
                               </div>
                               <button type="submit" name="submit-btn" class="btn btn--red btn--large btn--submit-action progress-button" data-loading="Отправка заявки.." data-finished="Заявка отправлена!">Отправить заявку</button>
