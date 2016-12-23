@@ -17,13 +17,26 @@
  * 2. Center it in the viewport
  * 3. Leave some space on the edges, especially valuable on small screens
  */
-.container {
-  max-width: $max-width; /* 1 */
-  margin-left: auto; /* 2 */
-  margin-right: auto; /* 2 */
-  width: 100%; /* 1 */
-  position: relative;
- }
+ $responsive: "off";
+  @if $responsive == "on" {
+
+    .container {
+      max-width: $max-width; /* 1 */
+      margin-left: auto; /* 2 */
+      margin-right: auto; /* 2 */
+      width: 100%; /* 1 */
+      position: relative;
+    }
+
+  }
+  @else {
+    .container {
+      width: $max-width; /* 1 */
+      margin-left: auto; /* 2 */
+      margin-right: auto; /* 2 */
+      position: relative;
+    }
+  }
 
  .container:after,
  .row:before {

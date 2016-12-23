@@ -10,6 +10,7 @@ $image-block__controls-color: white;
     margin-top: 9px;
     margin-right: 9px;
     display: block;
+    position: relative;
 }
 
 .image-block-list {
@@ -22,7 +23,6 @@ $image-block__controls-color: white;
 
 
 .image-block__link {
-    position: relative;
 }
 
 .image-block__controls {
@@ -40,4 +40,57 @@ $image-block__controls-color: white;
     display: block;
     height: 100%;
     line-height: 1.6em;
+}
+
+
+
+/** hover actions **/
+
+.image-block__img-wrapper:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 280px;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.75s ease all;
+    opacity: 0;
+}
+
+.image-block:hover .image-block__img-wrapper:after {
+    opacity: 1;
+}
+
+.image-block__control {
+    position: relative;
+    transition: 0.5s ease;
+}
+
+.image-block__control:after {
+    content: "\e095";
+    font-family: 'lg';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: absolute;
+    transform: translate(20px, 0);
+    margin-top: 6px;
+    transition: 0.5s cubic-bezier(0.1, 0.42, 0.34, 1.3);
+    opacity: 0;
+}
+
+.image-block:hover .image-block__control:after {
+    opacity: 1;
+    transform: translate(12px, 0);
+}
+
+.image-block:hover span.image-block__control {
+    transform: translate(-12px,0);
 }

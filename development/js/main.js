@@ -118,14 +118,15 @@ jQuery(document).ready(function($) {
           // ------------------------------------------------------------------
 
           //  >>> SEPARATE SETTINGS FOR ORDER TARIFS <<<
-          var $orderRemodalContainer = $('.remodal--get-order'),
+          var $orderRemodalContainer = $('.remodal--order'),
               $orderRemodalInstance = $orderRemodalContainer.remodal({hashTracking: false}),
-              $orderBtn = $('.pricest__list-btn');
+              $orderBtn = $('.assortiment .image-block__link, .install-types .image-block__link');
 
               $orderBtn.on('click', function (e) {
                 e.preventDefault();
-                $orderRemodalContainer.find('#tarif').val($(this).data('order-id'));
-                $orderRemodalContainer.find('#selected_tarif-title').text($(this).data('order-title'));
+                $orderRemodalContainer.find('.site-form__header').text($(this).data('order-name'));
+                $orderRemodalContainer.find('.remodal__order-gallery-img').attr('src',$(this).find('.image-block__img').attr('src'));
+                // $orderRemodalContainer.find('#selected_tarif-title').text($(this).data('order-title'));
                 $orderRemodalInstance.open();
               })
 
@@ -240,306 +241,6 @@ jQuery(document).ready(function($) {
 
 
 
-          // ----------------------------------------------------------------------------
-          // OpenSeadragon (deep zooming) - base settings
-          // ----------------------------------------------------------------------------
-          /** Init global viewer instance **/
-          // var viewer;
-          // var viewerHasStarted = false;
-          //
-          // /** Translate buttons labels **/
-          // OpenSeadragon.setString("Tooltips.Home","Сбросить");
-          // OpenSeadragon.setString("Tooltips.ZoomOut","Уменьшить");
-          // OpenSeadragon.setString("Tooltips.ZoomIn", "Увеличить");
-          //
-          //
-          //
-          // /**
-          //  * Custom event handler for reset-viewport button
-          //  */
-          // /**
-          //  * @param Boolean withAnimation
-          //  */
-          // function resetViewportToStartPosition(disableScaleAnimation) {
-          //       // disable animation (default true)
-          //       var disableScaleAnimation = disableScaleAnimation == false ? false : true;
-          //       var oldBounds = viewer.viewport.getBounds();
-          //       var newBounds = new OpenSeadragon.Rect(0, 0, 1, oldBounds.height / oldBounds.width);
-          //       viewer.viewport.fitBounds(newBounds, disableScaleAnimation);
-          // }
-          //
-          // /**
-          //  * @param  String containerId
-          //  * @param  String imageUrl
-          //  */
-          // function initDeepZoom(containerId, imageUrl, callback) {
-          //   // write to global - basic settings with necessary parametrs
-          //
-          //
-          //     viewer = OpenSeadragon({
-          //       id:  containerId,
-          //       tileSources: {
-          //         type: 'image',
-          //         url: imageUrl,
-          //       },
-          //       toolbar:        "remodal-zoom-toolbar",
-          //       zoomInButton : "zoom-in--remodal",
-          //       zoomOutButton : "zoom-out--remodal",
-          //       // custom not extist for prevent error
-          //       // homeButton:     "not1",
-          //       // fullPageButton: "not2",
-          //       // nextButton:     "not3",
-          //       // previousButton: "not4",
-          //
-          //       visibilityRatio : 1,
-          //       defaultZoomLevel : 1,
-          //       // minZoomLevel : 1,
-          //       // allowZoomToConstraintsOnResize : true,
-          //       showNavigator : true,
-          //       showFullScreenControl: false,
-          //       showFullPageControl: false,
-          //       showHomeControl: false,
-          //       showRotationControl: false,
-          //       // zoomPerScroll: 1,
-          //       navigatorPosition : "TOP_RIGHT",
-          //
-          //     });
-          //     // events stuff
-          //     (function(_viewer) {
-          //       var viewer =_viewer,
-          //       zoom,
-          //       oldContainerSize,
-          //       containerSize;
-          //
-          //       viewer.addHandler("open", function () {
-          //         setTimeout(function () {
-          //           resetViewportToStartPosition();
-          //         },0);
-          //       });
-          //
-          //       viewer.addHandler('resize', function(e) {
-          //         zoom = e.eventSource.viewport.getZoom();
-          //         oldContainerSize = containerSize;
-          //         containerSize = e.newContainerSize;
-          //
-          //       });
-          //
-          //       viewer.addHandler('fullpage', function (viewer) {
-          //           if (viewer.isFullPage()) {
-          //               viewer.setControlsEnabled(true);
-          //               viewer.setMouseNavEnabled(true);
-          //           } else {
-          //               viewer.setControlsEnabled(false);
-          //               viewer.setMouseNavEnabled(false);
-          //           }
-          //       });
-          //       viewer.addHandler('animation', function(e) {
-          //         zoom = e.eventSource.viewport.getZoom();
-          //       });
-          //       viewer.addHandler('tile-loaded', function(e) {
-          //
-          //         typeof callback === 'function' ? callback() : console.log('scene initialized');
-          //       });
-          //     })(viewer);
-          //
-          //     if(!viewerHasStarted) viewerHasStarted = true;
-          //
-          //
-          //
-          //
-          // }
-          //
-          //
-          //
-          // /**
-          //  * custom events for navigation in zoom-remodal
-          //  */
-          // $('.lg-icon--remodal').on('click', function () {
-          //   //
-          //   if($(this).hasClass('lg-actual-size--remodal')) {
-          //     resetViewportToStartPosition(false);
-          //   }
-          //   if($('.lg-icon--remodal').hasClass('active')) {
-          //     $('.lg-icon--remodal').removeClass('active')
-          //   }
-          //   $(this).addClass('active');
-          // })
-          //
-          // /**
-          //  * Set fixed dynamic height to container
-          //  */
-          // $window.on('resize', $.throttle(250, function () {
-          //   $('.remodal--zoom-images .zoom-images').css({
-          //     height: ($window.height() - 60) + 'px'
-          //   });
-          // })).trigger('resize');
-
-          /**
-           * Remodal events for zoom-images remodal
-           */
-
-
-
-          // remove padding
-          $(document).on('opening', '.remodal--zoom-images', function(e) {
-
-              // if(viewerHasStarted) {
-              //   $('.zoom-scene-overlay').show();
-              //   setTimeout(function () {
-              //     $('.zoom-scene-overlay').fadeOut();
-              //   }, 3000)
-              // }
-              setTimeout(function() {
-                 $('.remodal--zoom-images').closest('.remodal-wrapper').addClass('remodal-wrapper--fixed');
-                }, 30);
-
-
-              /** hot fix for Android browser **/
-              if (is_android_default_bro) {
-                //
-                //   // Tweak the canvas opacity, causing it to redraw
-                // $("canvas").parents("*").css("overflow", "visible");
-                $('.remodal--zoom-images').closest('.remodal-wrapper').css({'position': 'fixed'})
-
-              }
-          });
-          // remove image canvas stuff after close && fadeIn overlay with preloader
-          $(document).on('closing', '.remodal--zoom-images', function(e) {
-              // $('.zoom-scene-overlay').fadeIn();
-
-                $('.zoom-images').html('');
-
-          });
-
-
-
-          // ----------------------------------------------------------------------------
-          // getProjectCases
-          // ----------------------------------------------------------------------------
-          var projectCasesList = [
-            {
-              url: 'img/project-cases/big/1-doma.jpg',
-            },
-            {
-              url: 'img/project-cases/big/2-shapki.jpg',
-
-            },
-            {
-              url: 'img/project-cases/big/3-geodezia.jpg',
-
-            },
-
-          ];
-
-          var projectCasesRemodalContainer = $('.remodal--zoom-images'),
-              // projectCasesRemodalInstance = projectCasesRemodalContainer.remodal({hashTracking: false}),
-              projectCasesBtn = $('.project__link');
-
-              projectCasesBtn.on('click', function (e) {
-                e.preventDefault();
-                // projectCasesRemodalInstance.open();
-                var projectId = $(this).data('project-id'),
-                    currentProjectCase = projectCasesList[+projectId-1];
-
-                // load image
-                // deferImage(currentProjectCase.url, function () {
-                //   $('#zoom-images').html('<img class="zoom-image" src="' + currentProjectCase.url + '" />');
-                //   $('.zoom-scene-overlay').fadeOut();
-                // });
-                //  $('.zoom-scene-overlay').fadeOut();
-                  $('#zoom-images').html('<img class="zoom-image" src="' + currentProjectCase.url + '" />');
-                // initDeepZoom("zoom-images", currentProjectCase.url, function () {
-                //   $('.zoom-scene-overlay').fadeOut();
-                //   $('#zoom-images').data('projectId', currentProjectCase.url);
-                // });
-
-
-
-                });
-
-
-          // ----------------------------------------------------------------------------
-          // getPortfolioGalley
-          // ----------------------------------------------------------------------------
-          var portfolioGalleryList = [
-            {
-              url: 'img/gallery/big/1_aviacionnyj_uchebnyj_centr_gamajun.jpg',
-            },
-            {
-              url: 'img/gallery/big/2_detskij_lageri_materik.jpg',
-
-            },
-            {
-              url: 'img/gallery/big/3_dizajnerskie_kukhni.jpg',
-
-            },
-            {
-              url: 'img/gallery/big/4_kraska_ot_kompanii_favorit.jpg',
-
-            },
-            {
-              url: 'img/gallery/big/5_kredit_pod_zalog_nedvizhimosti.jpg',
-
-            },
-            {
-              url: 'img/gallery/big/6_natjazhnye_potolki_hottabych.jpg',
-
-            },
-            {
-              url: 'img/gallery/big/7_organizacija_prazdnikov_best_event.jpg',
-
-            },
-            {
-              url: 'img/gallery/big/8_orgcentr_himki_zapravka_i_prodazha_kartridzhej.jpg',
-
-            },
-            {
-              url: 'img/gallery/big/9_osparivanie_kadastrovoj_stoimosti_nedvizhimosti.jpg',
-
-            },
-            {
-              url: 'img/gallery/big/10_prodazha_iskusstvennykh_elok.jpg',
-
-            },
-            {
-              url: 'img/gallery/big/11_remont_kvartir_pod_kljuch.jpg',
-
-            },
-            {
-              url: 'img/gallery/big/12_shc_herbinskij_liftostroitelinyj_zavod.jpg',
-
-            },
-
-          ];
-
-          var portfolioGalleryRemodalContainer = $('.remodal--zoom-images'),
-              // portfolioGalleryRemodalInstance = portfolioGalleryRemodalContainer.remodal({hashTracking: false}),
-              portfolioGalleryBtn = $('.portfolioGallery__link');
-
-              portfolioGalleryBtn.on('click', function (e) {
-                e.preventDefault();
-                // portfolioGalleryRemodalInstance.open();
-                var projectId = $(this).data('project-id'),
-                    currentPortfolioProject = portfolioGalleryList[+projectId-1];
-
-                // load image
-                // deferImage(currentPortfolioProject.url, function () {
-                //   $('#zoom-images').html('<img class="zoom-image" src="' + currentPortfolioProject.url + '" />');
-                //   $('.zoom-scene-overlay').fadeOut();
-                // });
-                $('.zoom-scene-overlay').fadeOut();
-                  $('#zoom-images').html('<img class="zoom-image" src="' + currentPortfolioProject.url + '" />');
-
-
-                // // start zoom scene
-                // initDeepZoom("zoom-images", currentPortfolioProject.url);
-                //   setTimeout(function () {
-                //     $('.zoom-scene-overlay').fadeOut();
-                //   }, 1000);
-
-                });
-
-
 
         // ----------------------------------------------------------------------------
         // Reviews slider
@@ -568,7 +269,7 @@ jQuery(document).ready(function($) {
         // ----------------------------------------------------------------------------
         // installation-and-replacement-types slider
         // ----------------------------------------------------------------------------
-        var reviewsSlider = new Swiper('.installation-and-replacement-types__slider .swiper-container', {
+        var installationSlider = new Swiper('.installation-and-replacement-types__slider .swiper-container', {
                slidesPerView: 3,
                paginationClickable: true,
                spaceBetween: 15,
@@ -589,22 +290,20 @@ jQuery(document).ready(function($) {
             });
 
 
-      // ----------------------------------------------------------------------------
-      // Init gallery for each review
-      // ----------------------------------------------------------------------------
-      var lightGalleryScene = $('.swiper-container').lightGallery({
-          selector: '.review',
-           selectWithin: $('.swiper-slide'),
-            hash: false,
-             download: false
+        // ----------------------------------------------------------------------------
+        // Init gallery for each review
+        // ----------------------------------------------------------------------------
+
+
+           $('.swiper-wrapper, .review__goal, .object__gallery, .examples__image-list, .project-mines__item-col').lightGallery({
+              thumbnail: true,
+               selector: '.imagemodal__link',
            });
-
-
 
            // ----------------------------------------------------------------------------
            // Certificates slider
            // ----------------------------------------------------------------------------
-           var reviewsSlider = new Swiper('.certificates__slider .swiper-container', {
+           var certificatesSlider = new Swiper('.certificates__slider .swiper-container', {
                   pagination: '.certificates__slider .swiper-pagination',
                   slidesPerView: 4,
                   paginationClickable: true,
@@ -628,66 +327,7 @@ jQuery(document).ready(function($) {
       // ----------------------------------------------------------------------
       //  Footer -- map settings
       // ----------------------------------------------------------------------
-      var myMap,
-          mapIsLoaded = false;
-
-
-      $('.footer-map-preview__btn').on('click', function() {
-
-          $('.site-footer').toggleClass('site-footer--map-expanded');
-
-          !mapIsLoaded && ($('.footer-map-preloader-overlay').fadeIn());
-          if (mapIsLoaded) {
-              return
-          }
-
-          load_script('//api-maps.yandex.ru/2.1/?lang=ru_RU', function() {
-
-              ymaps.ready(function() {
-                  $('.footer-map-preloader-overlay').fadeOut();
-                  YandexReadyHandlerSiteMap();
-
-                  mapIsLoaded = true;
-              });
-
-          });
-
-      });
-
-      function YandexReadyHandlerSiteMap() {
-          if (!myMap) {
-              myMap =  new ymaps.Map("site-map", {
-                  center: [55.78877202385828, 37.63363826322933],
-                  zoom: 17,
-                  controls: ["zoomControl","typeSelector"],
-                  type: "yandex#map"
-              },{
-                  suppressMapOpenBlock: true
-              });
-              myMap.geoObjects.add(new ymaps.GeoObject({
-                  geometry: {
-                      type: "Point",
-                      coordinates: [55.788814339256064,37.63339686441791]
-                  },
-                  properties: {
-                      balloonContent:decodeURIComponent("%3Cp%3E%0A%09%D0%A0%D0%B5%D0%BA%D0%BB%D0%B0%D0%BC%D0%BD%D0%BE%D0%B5%20%D0%B0%D0%B3%D0%B5%D0%BD%D1%82%D1%81%D1%82%D0%B2%D0%BE%20%22Seosintez%22.%20%D0%B3.%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%93%D0%B8%D0%BB%D1%8F%D1%80%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%B3%D0%BE%2C%2068%D1%811%3Cbr%3E%0A%3C%2Fp%3E"),
-                      iconCaption:decodeURIComponent("%D0%A0%D0%B5%D0%BA%D0%BB%D0%B0%D0%BC%D0%BD%D0%BE%D0%B5%20%D0%B0%D0%B3%D0%B5%D0%BD%D1%82%D1%81%D1%82%D0%B2%D0%BE%20%22Seosintez%22.%20%D0%B3.%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%93%D0%B8%D0%BB%D1%8F%D1%80%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%B3%D0%BE%2C%2068%D1%811"),
-                      hintCaption:decodeURIComponent("%D0%A0%D0%B5%D0%BA%D0%BB%D0%B0%D0%BC%D0%BD%D0%BE%D0%B5%20%D0%B0%D0%B3%D0%B5%D0%BD%D1%82%D1%81%D1%82%D0%B2%D0%BE%20%22Seosintez%22.%20%D0%B3.%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%93%D0%B8%D0%BB%D1%8F%D1%80%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%B3%D0%BE%2C%2068%D1%811"),
-                  }
-              }, {
-                  preset: "islands#darkOrangeDotIcon",
-              }));
-              myMap.container.fitToViewport();
-              myMap.behaviors.disable('scrollZoom');
-              myMap.behaviors.disable('wheel');
-
-              return myMap;
-          } else {
-              myMap.destroy(); // Деструктор карты
-              myMap = null;
-          }
-      }
-
+    
 
 
     // ------------------------------------------------------------------------

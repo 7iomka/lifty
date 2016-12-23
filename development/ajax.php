@@ -24,67 +24,86 @@ $admin_emails = Array("7iomka@gmail.com");
 // $row_emails = $DBH->query($sql_emails)->fetch();
 // $admin_emails = explode(";", $row_emails['emails']);
 
+// Получаем тему письма
+$form_subject = trim($_POST['form_subject']);
 
 switch($task){
 
-  // Форма с шапки - обратный звонок
+
   case "get_callback":
 
   $user_name = trim($_POST['user_name--callback']); //имя
   $user_phone = trim($_POST['user_phone--callback']); //тел
-  $task_name = "Заявка на обратный звонок (первый экран-модалка)";
   break;
 
-  // Форма с шапки - подробности об акции
-  case "get_promotion_info":
 
-  $user_name = trim($_POST['user_name--promotion']); //имя
-  $user_phone = trim($_POST['user_phone--promotion']); //тел
-  $task_name = "Заявка 'подробности об акции' (первый экран-модалка)";
+  case "get_gift":
+
+  $user_name = trim($_POST['user_name--gift']); //имя
+  $user_phone = trim($_POST['user_phone--gift']); //тел
   break;
 
-  // Форма с модалки - Условия получения гранта
-  case "get_grant":
 
-  $user_name = trim($_POST['user_name--grant']); //имя
-  $user_phone = trim($_POST['user_phone--grant']); //тел
-  $user_email = trim($_POST['user_email--grant']); //email
-  $user_site = trim($_POST['user_site--grant']); //сайт
-  $task_name = "Заявка на получения гранта";
+  case "get_prices":
+
+  $user_name = trim($_POST['user_name--prices']); //имя
+  $user_phone = trim($_POST['user_phone--prices']); //тел
   break;
 
-  // Форма с экрана - Проведем аудит сайта
-  case "get_audit":
 
-  $user_name = trim($_POST['user_name--audit']); //имя
-  $user_phone = trim($_POST['user_phone--audit']); //тел
-  $task_name = "Заявка на проведение аудита сайта";
+  case "get_consult":
+
+  $user_name = trim($_POST['user_name--consult']); //имя
+  $user_phone = trim($_POST['user_phone--consult']); //тел
+  // $user_email = trim($_POST['user_email--consult']); //email
+  // $user_site = trim($_POST['user_site--consult']); //сайт
   break;
 
-  // Форма с модалки - Seo-лендинг - расчёт стоимости
-  case "get_seo_landing":
 
-  $user_name = trim($_POST['user_name--seo-landing']); //имя
-  $user_phone = trim($_POST['user_phone--seo-landing']); //тел
-  $task_name = "Заявка на расчёт стоимости сео-лендинга";
+  case "get_visit":
+
+  $user_name = trim($_POST['user_name--visit']); //имя
+  $user_phone = trim($_POST['user_phone--visit']); //тел
+  break;
+
+
+  case "get_install":
+
+  $user_name = trim($_POST['user_name--install']); //имя
+  $user_phone = trim($_POST['user_phone--install']); //тел
+  break;
+
+
+  case "get_album":
+
+  $user_name = trim($_POST['user_name--album']); //имя
+  $user_phone = trim($_POST['user_phone--album']); //тел
+  break;
+
+
+  case "get_order":
+
+  $user_name = trim($_POST['user_name--order']); //имя
+  $user_phone = trim($_POST['user_phone--order']); //тел
   break;
 
   // Форма с модалок - Заказ разных пакетных планов
-  case "get_order":
-  $tarif_number = intval(trim($_POST['tarif']));
-  if($tarif_number == 1) {
-    $tarif = "Пакет «Начальный»";
-  } elseif($tarif_number == 2) {
-    $tarif = "Пакет «Бизнес»";
-  } elseif($tarif_number == 3) {
-    $tarif = "Пакет «Премиум»";
-  }
-  $user_name = trim($_POST['user_name--order']); //имя
-  $user_phone = trim($_POST['user_phone--order']); //тел
-  $task_name = "Заказ - " . $tarif;
-  break;
+  // case "get_order":
+  // $tarif_number = intval(trim($_POST['tarif']));
+  // if($tarif_number == 1) {
+  //   $tarif = "Пакет «Начальный»";
+  // } elseif($tarif_number == 2) {
+  //   $tarif = "Пакет «Бизнес»";
+  // } elseif($tarif_number == 3) {
+  //   $tarif = "Пакет «Премиум»";
+  // }
+  // $user_name = trim($_POST['user_name--order']); //имя
+  // $user_phone = trim($_POST['user_phone--order']); //тел
+  // $task_name = "Заказ - " . $tarif;
+  // break;
+  //
 
-  }
+}
   // turn on for bots with disabled javascript to prevent spambot actions
     // if($user_name == ""){
     //  $data['is_err'] = 1;
@@ -106,27 +125,27 @@ switch($task){
     //  exit;
     // }
 
-    $subj = "Сообщение с сайта SEOSINTEZ ".$task_name;
+    $subj = "Сообщение с сайта ЩЛЗ - ".$form_subject;
     $mes = "";
     $mes .= "<html>
                       <head>
-                        <title>Сообщение с сайта SEOSINTEZ ".$task_name."</title>
+                        <title>Сообщение с сайта ЩЛЗ - ".$form_subject."</title>
                       </head>
                     <body>";
     $mes .= "<table>";
     $mes .= "<tr><th colspan='2'>Данные с формы</th></tr>";
     $mes .= "<tr><td>Имя:</td><td>".$user_name."</td></tr>";
     $mes .= "<tr><td>Тел.:</td><td>".$user_phone."</td></tr>";
-    if($user_email!=""){
-        $mes .= "<tr><td>Вопрос:</td><td>".$user_email."</td></tr>";
-    }
-    if($user_site!=""){
-        $mes .= "<tr><td>Сайт:</td><td>".$user_site."</td></tr>";
-    }
-    if($tarif!=""){
-        $mes .= "<tr><td>Тариф:</td><td>".$tarif."</td></tr>";
-    }
-    $mes .= "<tr><td>Форма:</td><td>".$task_name."</td></tr>";
+    // if($user_email!=""){
+    //     $mes .= "<tr><td>Вопрос:</td><td>".$user_email."</td></tr>";
+    // }
+    // if($user_site!=""){
+    //     $mes .= "<tr><td>Сайт:</td><td>".$user_site."</td></tr>";
+    // }
+    // if($tarif!=""){
+    //     $mes .= "<tr><td>Тариф:</td><td>".$tarif."</td></tr>";
+    // }
+    $mes .= "<tr><td>Цель:</td><td>".$form_subject."</td></tr>";
 
     $mes .= "</table>";
     $mes .= "</body></html>";

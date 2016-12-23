@@ -11,6 +11,16 @@
       font-weight: normal;
   }
 
+  @include media("<medium") {
+    .image-block {
+      max-width: 308px;
+      text-align: center;
+      &.image-block--double {
+        max-width: none;
+      }
+    }
+  };
+
 }
 .assortiment__title-big {
     font-size: 100px;

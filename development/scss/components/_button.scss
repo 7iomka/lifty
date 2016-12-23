@@ -106,13 +106,17 @@
   }
 
   &.finished {
-    background: #ac9455 !important;
+    background: #009fe3 !important;
   }
   &.in-progress, &.finished {
     &:hover {
       background: transparent !important;
     }
     color: transparent !important;
+  }
+  
+  &.in-progress:hover {
+      background: rgba(41, 41, 41, 0.45)!important;
   }
   &.in-progress:after, &.finished:after {
     position: absolute;
@@ -134,7 +138,7 @@
     font-size: 1.2em;
   }
   .tz-bar {
-      background-color: #4c4430;
+      background-color: #009fe3;
     -webkit-background-size: 70px 70px;
            -moz-background-size: 70px 70px;
            background-size: 70px 70px;

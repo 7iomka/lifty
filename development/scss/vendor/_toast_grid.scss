@@ -40,6 +40,8 @@
 
 \*-----------------------------------*/
 
+$responsive: 'off';
+
 // Namespaces
 // This stops me from being overzealous with enforcing classes
 $toast-grid-namespace: "row" !default;
@@ -202,6 +204,8 @@ $toast-pulls: true !default;
   vertical-align: top;
 
 
+  // only if responsive ON
+  @if $responsive == "on" {
 
   /** add posibility to hide all elements less then max-width: 1199px and show necessary **/
   @media (max-width: $toast-breakpoint-large) {
@@ -401,6 +405,10 @@ $toast-pulls: true !default;
       }
 
     }
+
+
+
+   } /** endif **/
 
 }
 

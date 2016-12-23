@@ -4,8 +4,8 @@ var siteURL = 'http://lifty.cc:8081';
 
 /********* Get invironment **********/
 var gutil = require('gulp-util');
-var env = gutil.env.env || 'development';
-// var env = gutil.env.env || 'production';
+// var env = gutil.env.env || 'development';
+var env = gutil.env.env || 'production';
 console.log(env);
 var _ = require('lodash');
 
@@ -70,7 +70,14 @@ var jsFiles = [
   // paths.src.jsLibDir + 'jquery.vide.min.js',
   paths.src.jsLibDir + 'jquery.validate.all.min.js',
   paths.src.jsLibDir + 'remodal.min.js',
-  paths.src.jsLibDir + 'lightgallery-all.min.js',
+  // paths.src.jsLibDir + 'lightgallery-all.min.js',
+  paths.src.jsLibDir + 'lightgallery.min.js',
+  paths.src.jsLibDir + 'lg/lg-fullscreen.min.js',
+  paths.src.jsLibDir + 'lg/lg-thumbnail.min.js',
+  // paths.src.jsLibDir + 'lg/lg-video.min.js',
+  paths.src.jsLibDir + 'lg/lg-autoplay.min.js',
+  paths.src.jsLibDir + 'lg/lg-zoom.min.js',
+  // paths.src.jsLibDir + 'jquery.panzoom.min.js',
   // paths.src.jsLibDir + 'jquery.panzoom.min.js',
   paths.src.jsLibDir + 'jquery.mousewheel.min.js',
   paths.src.jsLibDir + 'openseadragon.min.js',

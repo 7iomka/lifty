@@ -6,6 +6,8 @@ $invalid_color_text: #f12b24;
 $invalid_color_bg: rgb(232, 208, 208);
 $label-color: #6a6a6a;
 
+$responsive: 'off';
+
 .site-form-wrapper {
   display: inline-block;
 }
@@ -55,10 +57,13 @@ $label-color: #6a6a6a;
     margin-bottom: 0;
     vertical-align: middle;
 
-    @include media('<tablet') {
-      display: block;
-      margin-bottom: 13px;
+    @if($responsive == 'on') {
+      @include media('<tablet') {
+        display: block;
+        margin-bottom: 13px;
+      }
     }
+
 
     &.form-group--first {
         margin-right: 12px;
@@ -77,8 +82,10 @@ $label-color: #6a6a6a;
       letter-spacing: 0.12em;
       text-align: left;
 
+
       &.error {
-        color: $yellow;
+        color: $invalid_color_text;
+
         position: absolute;
         font-size: 14px;
         margin-top: 3px;
@@ -114,8 +121,11 @@ $label-color: #6a6a6a;
       line-height: 21px;
       letter-spacing: 0.12em;
 
-      @include media('<tablet') {
-         width: 100%;
+
+      @if($responsive == 'on') {
+        @include media('<tablet') {
+           width: 100%;
+        }
       }
       &.notEmpty,
       &:focus {
@@ -125,6 +135,7 @@ $label-color: #6a6a6a;
 
 
       &.error {
+
         color: $invalid_color_text;
         &:focus {
           // background: $invalid_color_bg;
@@ -141,9 +152,11 @@ $label-color: #6a6a6a;
   }
   .post-comment {
       font-size: 12px;
-      @include media("<tablet"){
-        font-size: 13px;
-      };
+      @if($responsive == 'on') {
+        @include media("<tablet"){
+          font-size: 13px;
+        };
+      }
       display: block;
       margin-top: 15px;
       color: $label-color;
@@ -232,7 +245,7 @@ $label-color: #6a6a6a;
     text-transform: uppercase;
     letter-spacing: 0.12em;
     text-align: left;
-    color: #939393;
+    color: #f7f7f7;
       &.error {
         color: #feb9b9;
         position: absolute;
@@ -243,7 +256,10 @@ $label-color: #6a6a6a;
         text-align: center;
         z-index: 2;
         background: $dark-blue;
-        border-radius: 0 0 5px 5px;
+        width: 100%;
+        text-align: left;
+        padding: 5px 10px;
+        letter-spacing: 0.08em;
       }
   }
   .form-group {

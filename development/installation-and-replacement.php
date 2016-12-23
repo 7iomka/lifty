@@ -30,36 +30,8 @@
                 </div>
                 <!-- /header top items -->
                 <!-- Menu-->
-                <div id="header-nav">
-                      <!-- Small screen menu button -->
-
-                       <!-- <div id="hamburger-icon" class="hamburger">
-                          <div class="icon"></div>
-                          <div class="hamburger-text">Меню</div>
-                      </div>
-                      <div class="small-logo">
-                        <a href="#home" class="small-logo-link">
-                          <span class="logo__title">
-                              <span class="brown">seo</span>sintez.<span class="brown">ru</span>
-                          </span>
-                        </a>
-                      </div> -->
-
-                      <!-- /Small screen menu button -->
-
-                      <!-- Menu Items -->
-                      <nav id="menu" role="navigation">
-                  			<ul>
-                  				<li class="menu__item"><a href="#home">Сервисное обслуживание</a></li>
-                  				<li class="menu__item"><a href="engineering.php">Проектирование лифтов и шахт</a></li>
-                  				<li class="menu__item"><a href="#portfolio">Поставка лифтов</a></li>
-                  				<li class="menu__item"><a href="#prices">Монтаж и замена лифтов</a></li>
-                  				<li class="menu__item menu__item--last"><a href="#contacts">Контакты</a></li>
-                  			</ul>
-                  		</nav>
-                    <!-- /Menu Items -->
-              	</div>
-              <!-- /Menu -->
+                <?php require_once('inc/header-menu.php'); ?>
+                <!-- /Menu -->
               </div>
             </div>
           </div>
@@ -124,20 +96,21 @@
                   <div class="site-form-wrapper header__form-wrapper">
                     <div class="header__form site-form site-form--light inline-form inline-form--with-left-bg inline--action">
                         <form method="POST" action="/ajax.php">
-                            <input type="hidden" name="form_task" value="get_audit">
+                            <input type="hidden" name="form_task" value="get_visit">
+                            <input type="hidden" name="form_subject" value="Заявка на бесплатный выезд специалиста для обследования объекта">
                             <div class="form-legend">
                               <span class="site-form__action-prefix">Оставьте заявку</span>
                               <span class="site-form__action-result">бесплатный выезд специалиста <br/>для обследования объекта</span>
                             </div>
                             <div class="form-group form-group--first">
                                 <div class="form-input-wrapper">
-                                    <input type="text" class="form-control required" id="user_name--audit" name="user_name--audit" placeholder="Константин" aria-required="true">
+                                    <input type="text" class="form-control required" id="user_name--visit" name="user_name--visit" placeholder="Константин" aria-required="true">
                                 </div>
                             </div>
                             <div class="form-group ">
 
                                 <div class="form-input-wrapper">
-                                    <input type="text" class="form-control required" id="user_phone--audit" name="user_phone--audit" placeholder="+7 (987) 654 32 10" aria-required="true">
+                                    <input type="text" class="form-control required" id="user_phone--visit" name="user_phone--visit" placeholder="+7 (987) 654 32 10" aria-required="true">
                                 </div>
                             </div>
 
@@ -246,25 +219,26 @@
               <div class="site-form-wrapper install__form-wrapper">
                   <div class="install__form site-form site-form--light inline-form inline-form--with-left-bg inline--action">
                     <form method="POST" action="/ajax.php" novalidate="novalidate">
-                        <input type="hidden" name="form_task" value="get_audit">
+                        <input type="hidden" name="form_task" value="get_prices">
+                        <input type="hidden" name="form_subject" value="Заявка на оценку стоимости и сроков разработки проекта">
                         <div class="form-legend">
                           <span class="site-form__action-prefix">Оставьте заявку</span>
                           <span class="site-form__action-result">точные сроки и стоимость<br>разработки проекта</span>
                         </div>
                         <div class="form-group form-group--first">
                             <div class="form-input-wrapper">
-                                <input type="text" class="form-control required" id="user_name--audit" name="user_name--audit" placeholder="Константин" aria-required="true">
+                                <input type="text" class="form-control required" id="user_name--prices" name="user_name--prices" placeholder="Константин" aria-required="true">
                             </div>
                         </div>
                         <div class="form-group ">
 
                             <div class="form-input-wrapper">
-                                <input type="text" class="form-control required" id="user_phone--audit" name="user_phone--audit" placeholder="+7 (987) 654 32 10" aria-required="true">
+                                <input type="text" class="form-control required" id="user_phone--prices" name="user_phone--prices" placeholder="+7 (987) 654 32 10" aria-required="true">
                             </div>
                         </div>
 
                         <div class="form-block">
-                          <button type="submit" name="submit-btn" class="btn btn--red btn--medium btn--action-submit progress-button waves-effect waves-circle waves-float" data-loading="Отправка заявки.." data-finished="Заявка отправлена!">Оставить заявку</button>
+                          <button type="submit" name="submit-btn" class="btn btn--red btn--medium btn--action-submit progress-button" data-loading="Отправка заявки.." data-finished="Заявка отправлена!">Оставить заявку</button>
                           <div class="form-post-title">Перезвоним в течение 10 минут</div>
                         </div>
 
@@ -292,43 +266,43 @@
               <div class="image-block-list">
                   <div class="col col--4-of-12 col--m-1-of-2 col--s-1-of-2">
                     <div class="image-block">
-                        <a href="" class="image-block__link"><span class="image-block__img-wrapper"><img src="img/assortiment/1.png" alt="" class="image-block__img"></span><span class="image-block__controls"><span class="image-block__control">Пассажирские лифты</span></span></a>
+                        <a href="" data-remodal-target="get_order" data-order-name="Пассажирские лифты" class="image-block__link"><span class="image-block__img-wrapper"><img src="img/assortiment/1.png" alt="" class="image-block__img"></span><span class="image-block__controls"><span class="image-block__control">Пассажирские лифты</span></span></a>
                     </div>
                   </div>
                   <div class="col col--4-of-12 col--m-1-of-2 col--s-1-of-2">
                     <div class="image-block">
-                      <a href="" class="image-block__link"><span class="image-block__img-wrapper"><img src="img/assortiment/2.png" alt="" class="image-block__img"></span><span class="image-block__controls"><span class="image-block__control">Больничные лифты</span></span></a>
+                      <a href="" data-remodal-target="get_order" data-order-name="Больничные лифты" class="image-block__link"><span class="image-block__img-wrapper"><img src="img/assortiment/2.png" alt="" class="image-block__img"></span><span class="image-block__controls"><span class="image-block__control">Больничные лифты</span></span></a>
                     </div>
                   </div>
                 <div class="col col--4-of-12 col--m-1-of-2 col--s-1-of-2">
                     <div class="image-block">
-                    <a href="" class="image-block__link"><span class="image-block__img-wrapper"><img src="img/assortiment/3.png" alt="" class="image-block__img"></span><span class="image-block__controls"><span class="image-block__control">Лифты для инвалидов</span></span></a>
+                    <a href="" data-remodal-target="get_order" data-order-name="Лифты для инвалидов" class="image-block__link"><span class="image-block__img-wrapper"><img src="img/assortiment/3.png" alt="" class="image-block__img"></span><span class="image-block__controls"><span class="image-block__control">Лифты для инвалидов</span></span></a>
                   </div>
                 </div>
 
                 <div class="col col--4-of-12 col--m-1-of-2 col--s-1-of-2">
                     <div class="image-block">
-                    <a href="" class="image-block__link"><span class="image-block__img-wrapper"><img src="img/assortiment/4.png" alt="" class="image-block__img"></span><span class="image-block__controls"><span class="image-block__control">Грузовые лифты</span></span></a>
+                    <a href="" data-remodal-target="get_order" data-order-name="Грузовые лифты" class="image-block__link"><span class="image-block__img-wrapper"><img src="img/assortiment/4.png" alt="" class="image-block__img"></span><span class="image-block__controls"><span class="image-block__control">Грузовые лифты</span></span></a>
                   </div>
                 </div>
                   <div class="col col--4-of-12 col--m-1-of-2 col--s-1-of-2">
                     <div class="image-block">
-                      <a href="" class="image-block__link"><span class="image-block__img-wrapper"><img src="img/assortiment/5.png" alt="" class="image-block__img"></span><span class="image-block__controls"><span class="image-block__control">Лифты для автомобилей</span></span></a>
+                      <a href="" data-remodal-target="get_order" data-order-name="Лифты для автомобилей" class="image-block__link"><span class="image-block__img-wrapper"><img src="img/assortiment/5.png" alt="" class="image-block__img"></span><span class="image-block__controls"><span class="image-block__control">Лифты для автомобилей</span></span></a>
                     </div>
                   </div>
                   <div class="col col--4-of-12 col--m-1-of-2 col--s-1-of-2">
                     <div class="image-block">
-                      <a href="" class="image-block__link"><span class="image-block__img-wrapper"><img src="img/assortiment/6.png" alt="" class="image-block__img"></span><span class="image-block__controls"><span class="image-block__control">Подъемники</span></span></a>
+                      <a href="" data-remodal-target="get_order" data-order-name="Подъемники" class="image-block__link"><span class="image-block__img-wrapper"><img src="img/assortiment/6.png" alt="" class="image-block__img"></span><span class="image-block__controls"><span class="image-block__control">Подъемники</span></span></a>
                     </div>
                   </div>
                   <div class="col col--4-of-12 col--m-1-of-2 col--s-1-of-2">
                     <div class="image-block">
-                      <a href="" class="image-block__link"><span class="image-block__img-wrapper"><img src="img/assortiment/7.png" alt="" class="image-block__img"></span><span class="image-block__controls"><span class="image-block__control">Панорамные лифты</span></span></a>
+                      <a href="" data-remodal-target="get_order" data-order-name="Панорамные лифты" class="image-block__link"><span class="image-block__img-wrapper"><img src="img/assortiment/7.png" alt="" class="image-block__img"></span><span class="image-block__controls"><span class="image-block__control">Панорамные лифты</span></span></a>
                     </div>
                   </div>
                   <div class="col col--8-of-12 col--m-1-of-2 col--s-1-of-2">
                     <div class="image-block image-block--double">
-                      <a href="" class="image-block__link"><span class="image-block__img-wrapper"><img src="img/assortiment/8.png" alt="" class="image-block__img"></span><span class="image-block__controls"><span class="image-block__control">Лифты без машинного отделения</span></span></a>
+                      <a href="" data-remodal-target="get_order" data-order-name="Лифты без машинного отделения" class="image-block__link"><span class="image-block__img-wrapper"><img src="img/assortiment/8.png" alt="" class="image-block__img"></span><span class="image-block__controls"><span class="image-block__control">Лифты без машинного отделения</span></span></a>
                     </div>
                   </div>
               </div>
@@ -382,25 +356,26 @@
               <div class="site-form-wrapper install-types__form-wrapper">
                   <div class="install-types__form site-form site-form--light inline-form inline-form--with-left-bg inline--action">
                     <form method="POST" action="/ajax.php" novalidate="novalidate">
-                        <input type="hidden" name="form_task" value="get_audit">
+                        <input type="hidden" name="form_task" value="get_install">
+                        <input type="hidden" name="form_subject" value="Заявка на оценку стоимости и сроков монтажа">
                         <div class="form-legend">
                           <span class="site-form__action-prefix">Оставьте заявку</span>
                           <span class="site-form__action-result">точную стоимость и <br>сроки монтажа</span>
                         </div>
                         <div class="form-group form-group--first">
                             <div class="form-input-wrapper">
-                                <input type="text" class="form-control required" id="user_name--audit" name="user_name--audit" placeholder="Константин" aria-required="true">
+                                <input type="text" class="form-control required" id="user_name--install" name="user_name--install" placeholder="Константин" aria-required="true">
                             </div>
                         </div>
                         <div class="form-group ">
 
                             <div class="form-input-wrapper">
-                                <input type="text" class="form-control required" id="user_phone--audit" name="user_phone--audit" placeholder="+7 (987) 654 32 10" aria-required="true">
+                                <input type="text" class="form-control required" id="user_phone--install" name="user_phone--install" placeholder="+7 (987) 654 32 10" aria-required="true">
                             </div>
                         </div>
 
                         <div class="form-block">
-                          <button type="submit" name="submit-btn" class="btn btn--red btn--medium btn--action-submit progress-button waves-effect waves-circle waves-float" data-loading="Отправка заявки.." data-finished="Заявка отправлена!">Оставить заявку</button>
+                          <button type="submit" name="submit-btn" class="btn btn--red btn--medium btn--action-submit progress-button" data-loading="Отправка заявки.." data-finished="Заявка отправлена!">Оставить заявку</button>
                           <div class="form-post-title">Перезвоним в течение 10 минут</div>
                         </div>
 
@@ -563,23 +538,23 @@
               <div class="image-block-list services__list">
                       <div class="col col--6-of-12 col--m-1-of-2 col--s-1-of-1">
                         <div class="image-block">
-                            <a href="" class="image-block__link"><span class="image-block__img-wrapper"><img src="img/services/5.jpg" alt="" class="image-block__img"></span><span class="image-block__controls"><span class="image-block__control">Поставки лифтового оборудования</span></span></a>
+                            <a href="/" class="image-block__link"><span class="image-block__img-wrapper"><img src="img/services/5.jpg" alt="" class="image-block__img"></span><span class="image-block__controls"><span class="image-block__control">Поставки лифтового оборудования</span></span></a>
                         </div>
                       </div>
                       <div class="col col--6-of-12 col--m-1-of-2 col--s-1-of-2">
                         <div class="image-block">
-                          <a href="" class="image-block__link"><span class="image-block__img-wrapper"><img src="img/services/2.jpg" alt="" class="image-block__img"></span><span class="image-block__controls"><span class="image-block__control">Монтаж и замена лифтов</span></span></a>
+                          <a href="installation-and-replacement.php" class="image-block__link"><span class="image-block__img-wrapper"><img src="img/services/2.jpg" alt="" class="image-block__img"></span><span class="image-block__controls"><span class="image-block__control">Монтаж и замена лифтов</span></span></a>
                         </div>
                       </div>
                     <div class="col col--6-of-12 col--m-1-of-2 col--s-1-of-2">
                         <div class="image-block">
-                        <a href="" class="image-block__link"><span class="image-block__img-wrapper"><img src="img/services/3.jpg" alt="" class="image-block__img"></span><span class="image-block__controls"><span class="image-block__control">Сервисное обслуживание</span></span></a>
+                        <a href="service.php" class="image-block__link"><span class="image-block__img-wrapper"><img src="img/services/3.jpg" alt="" class="image-block__img"></span><span class="image-block__controls"><span class="image-block__control">Сервисное обслуживание</span></span></a>
                       </div>
                     </div>
 
                     <div class="col col--6-of-12 col--m-1-of-2 col--s-1-of-2">
                         <div class="image-block">
-                        <a href="" class="image-block__link"><span class="image-block__img-wrapper"><img src="img/services/4.jpg" alt="" class="image-block__img"></span><span class="image-block__controls"><span class="image-block__control">Поставка комплектующих</span></span></a>
+                        <a href="/" class="image-block__link"><span class="image-block__img-wrapper"><img src="img/services/4.jpg" alt="" class="image-block__img"></span><span class="image-block__controls"><span class="image-block__control">Поставка комплектующих</span></span></a>
                       </div>
                     </div>
 
@@ -593,25 +568,26 @@
               <div class="site-form-wrapper">
                 <div class="site-form site-form--light inline-form inline-form--with-inline-btn inline-form--with-left-bg inline--action">
                   <form method="POST" action="/ajax.php" novalidate="novalidate">
-                      <input type="hidden" name="form_task" value="get_audit">
+                      <input type="hidden" name="form_task" value="get_consult">
+                      <input type="hidden" name="form_subject" value="Заявка на бесплатную консультацию">
                       <div class="form-legend">
                         <span class="site-form__action-prefix">остались вопросы? Оставьте заявку</span>
                         <span class="site-form__action-result">и получите бесплатную<br>консультацию специалиста!</span>
                       </div>
                       <div class="form-group form-group--first">
                           <div class="form-input-wrapper">
-                              <input type="text" class="form-control required" id="user_name--audit" name="user_name--audit" placeholder="Константин" aria-required="true">
+                              <input type="text" class="form-control required" id="user_name--consult" name="user_name--consult" placeholder="Константин" aria-required="true">
                           </div>
                       </div>
                       <div class="form-group ">
 
                           <div class="form-input-wrapper">
-                              <input type="text" class="form-control required" id="user_phone--audit" name="user_phone--audit" placeholder="+7 (987) 654 32 10" aria-required="true">
+                              <input type="text" class="form-control required" id="user_phone--consult" name="user_phone--consult" placeholder="+7 (987) 654 32 10" aria-required="true">
                           </div>
                       </div>
 
                       <div class="form-group form-group--with-btn">
-                        <button type="submit" name="submit-btn" class="btn btn--red btn--medium btn--action-submit progress-button waves-effect waves-circle waves-float" data-loading="Отправка заявки.." data-finished="Заявка отправлена!">Оставить заявку<span class="tz-bar background-horizontal"></span><span class="tz-bar background-horizontal"></span></button>
+                        <button type="submit" name="submit-btn" class="btn btn--red btn--medium btn--action-submit progress-button " data-loading="Отправка заявки.." data-finished="Заявка отправлена!">Оставить заявку</button>
                         <div class="form-post-title">Перезвоним в течение 10 минут</div>
                       </div>
 

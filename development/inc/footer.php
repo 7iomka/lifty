@@ -1,5 +1,59 @@
         <footer class="site-footer">
-
+          <div class="footer__map">
+            <div class="footer__map-content">
+              <div style="width: auto;height: 500px" id="footer__map"></div>
+              <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&onload=loadExcursionMap" type="text/javascript"></script>
+              <script>
+                  // ------------------------------------------------------------------------
+                  // Excursion map callback
+                  // ------------------------------------------------------------------------
+                  function loadExcursionMap() {
+                      var map = new ymaps.Map("footer__map", {
+                      center: [55.50327149731009, 37.57213811202235],
+                          zoom: 15,
+                          controls: ["zoomControl","typeSelector"],
+                          type: "yandex#map"
+                      },{
+                          suppressMapOpenBlock: true
+                      });
+                      map.geoObjects.add(new ymaps.GeoObject({
+                          geometry: {
+                              type: "Point",
+                              coordinates: [55.5046242455879,37.567900502962075]
+                          },
+                          properties: {
+                              balloonContent:decodeURIComponent("<p> 108851, Россия, г. Москва, <br> г. Щербинка, <br> ул. Первомайская, д. 6 <br> (вход на территорию завода со стороны центральной проходной по ул. Спортивная) <br> <br> </p>"),
+                              iconCaption:decodeURIComponent("Первомайская улица, 6"),
+                              hintCaption:decodeURIComponent("Первомайская улица, 6"),
+                          }
+                      }, {
+                          preset: "islands#blueDotIconWithCaption",
+                      }));
+                      map.geoObjects.add(new ymaps.GeoObject({
+                          geometry: {
+                              type: "LineString",
+                              coordinates: [[55.50458697190465,37.56788356525734],[55.504341092375185,37.56752499370081],[55.49978599813529,37.56724604396331],[55.49943277353092,37.56898411540496],[55.49944495374266,37.57110842494476],[55.51167610446034,37.57476131534523]]
+                          },
+                          properties: {
+                              balloonContent:decodeURIComponent("Первомайская улица, 6"),
+                              iconCaption:decodeURIComponent("Первомайская улица, 6"),
+                              hintCaption:decodeURIComponent("Первомайская улица, 6"),
+                          }
+                      }, {
+                          fillColor: "#1e98ff",
+                          strokeColor: "#ed4543",
+                          fillOpacity: 0.35,
+                          strokeOpacity: 0.8,
+                          strokeWidth: 6,
+                      }));
+                        map.container.fitToViewport();
+                        map.behaviors.disable('scrollZoom');
+                        map.behaviors.disable('wheel');
+                      return map;
+                  }
+              </script>
+            </div>
+          </div>
           <div class="footer__panel">
               <div class="container">
                 <div class="row">
@@ -21,11 +75,11 @@
                         <!-- Menu Items -->
                         <nav id="footer_menu" role="navigation" class="footer-menu">
                     			<ul>
-                    				<li class="menu__item"><a href="#home">Сервисное обслуживание</a></li>
+                            <li class="menu__item"><a href="/">Поставка лифтов</a></li>
+                    				<li class="menu__item"><a href="service.php">Сервисное обслуживание</a></li>
                     				<li class="menu__item"><a href="engineering.php">Проектирование лифтов и шахт</a></li>
-                    				<li class="menu__item"><a href="#portfolio">Поставка лифтов</a></li>
-                    				<li class="menu__item"><a href="#prices">Монтаж и замена лифтов</a></li>
-                    				<li class="menu__item menu__item--last"><a href="#contacts">Контакты</a></li>
+                    				<li class="menu__item"><a href="installation-and-replacement.php">Монтаж и замена лифтов</a></li>
+                    				<li class="menu__item menu__item--last"><a href="contacts.php">Контакты</a></li>
                     			</ul>
                     		</nav>
                       <!-- /Menu Items -->
