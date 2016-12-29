@@ -23,7 +23,7 @@
                     <div class="col col--3-of-12 col--am">
                       <div class="header__item">
                           <ul class="header__contacts">
-                                  <li><a href="tel:74957396706" class="header__phone">+7 (495) 739 67 06</a></li>
+                                  <li><a href="tel:74950038741" class="header__phone">+7 (495) 003-87-41</a></li>
                               </ul><p class="header__small-text small-text blue"><a class="blue underline" href="#" data-remodal-target="get_callback">Заказать обратный звонок</a></p>
                       </div>
                     </div>
@@ -453,17 +453,17 @@
       <div class="image-block-list services__list">
               <div class="col col--6-of-12 col--m-1-of-2 col--s-1-of-1">
                 <div class="image-block">
-                    <a href="engineering.php" class="image-block__link"><span class="image-block__img-wrapper"><img src="img/services/1.jpg" alt="" class="image-block__img"></span><span class="image-block__controls"><span class="image-block__control">Проектирование лифтов и лифтовых шахт</span></span></a>
+                    <a href="proektirovanie_liftov_i_shaht" class="image-block__link"><span class="image-block__img-wrapper"><img src="img/services/1.jpg" alt="" class="image-block__img"></span><span class="image-block__controls"><span class="image-block__control">Проектирование лифтов и лифтовых шахт</span></span></a>
                 </div>
               </div>
               <div class="col col--6-of-12 col--m-1-of-2 col--s-1-of-2">
                 <div class="image-block">
-                  <a href="installation-and-replacement.php" class="image-block__link"><span class="image-block__img-wrapper"><img src="img/services/2.jpg" alt="" class="image-block__img"></span><span class="image-block__controls"><span class="image-block__control">Монтаж и замена лифтов</span></span></a>
+                  <a href="montazh_i_zamena_liftov" class="image-block__link"><span class="image-block__img-wrapper"><img src="img/services/2.jpg" alt="" class="image-block__img"></span><span class="image-block__controls"><span class="image-block__control">Монтаж и замена лифтов</span></span></a>
                 </div>
               </div>
             <div class="col col--6-of-12 col--m-1-of-2 col--s-1-of-2">
                 <div class="image-block">
-                <a href="service.php" class="image-block__link"><span class="image-block__img-wrapper"><img src="img/services/3.jpg" alt="" class="image-block__img"></span><span class="image-block__controls"><span class="image-block__control">Сервисное обслуживание</span></span></a>
+                <a href="servisnoe_obsluzhivanie" class="image-block__link"><span class="image-block__img-wrapper"><img src="img/services/3.jpg" alt="" class="image-block__img"></span><span class="image-block__controls"><span class="image-block__control">Сервисное обслуживание</span></span></a>
               </div>
             </div>
 
@@ -478,7 +478,7 @@
   </div>
 </section>
 
-<section class="reviews s7">
+<section class="reviews hidden s7">
     <!-- <div class="multiple-parallax-overlay">
         <div class="parallax-element" style="background: url(img/particles/triangles.png) 50% 100% no-repeat;
     transform: translate(0%, 0%); left: 0;"></div>

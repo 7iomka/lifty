@@ -19,10 +19,10 @@
       <nav id="menu" role="navigation">
         <ul>
           <li class="menu__item"><a href="/">Поставка лифтов</a></li>
-          <li class="menu__item"><a href="service.php">Сервисное обслуживание</a></li>
-          <li class="menu__item"><a href="engineering.php">Проектирование лифтов и шахт</a></li>
-          <li class="menu__item"><a href="installation-and-replacement.php">Монтаж и замена лифтов</a></li>
-          <li class="menu__item menu__item--last"><a href="contacts.php">Контакты</a></li>
+          <li class="menu__item"><a href="servisnoe_obsluzhivanie">Сервисное обслуживание</a></li>
+          <li class="menu__item"><a href="proektirovanie_liftov_i_shaht">Проектирование лифтов и шахт</a></li>
+          <li class="menu__item"><a href="montazh_i_zamena_liftov">Монтаж и замена лифтов</a></li>
+          <li class="menu__item menu__item--last"><a href="kontakty">Контакты</a></li>
         </ul>
       </nav>
     <!-- /Menu Items -->

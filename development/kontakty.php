@@ -23,7 +23,7 @@
                     <div class="col col--3-of-12 col--am">
                       <div class="header__item">
                           <ul class="header__contacts">
-                                  <li><a href="tel:74957396706" class="header__phone">+7 (495) 739 67 06</a></li>
+                                  <li><a href="tel:74950038741" class="header__phone">+7 (495) 003-87-41</a></li>
                               </ul><p class="header__small-text small-text blue"><a class="blue underline" href="#" data-remodal-target="get_callback">Заказать обратный звонок</a></p>
                       </div>
                     </div>
@@ -58,7 +58,7 @@
                   <p class="excursion__map-panel-header">Контакты Центрального управления ЩЛЗ</p>
                   <div class="excursion__map-adress">142171, Россия, г. Москва, г. Щербинка, ул. Первомайская, д. 6</div>
                   <div class="excursion__map-inline-contacts">
-                    <div class="excursion__map-inline-contact excursion__phone"><a href="tel:4957396706" class="excursion__contacts-link">+7 (495) 739 67 06</a></div>
+                    <div class="excursion__map-inline-contact excursion__phone"><a href="tel:4957396706" class="excursion__contacts-link">+7 (495) 003-87-41</a></div>
                     <div class="excursion__map-inline-contact excursion__email"><a href="mailto:lift@shlz.ru" class="excursion__contacts-link">lift@shlz.ru</a></div>
                   </div>
                 </div>
@@ -714,10 +714,10 @@
                         <nav id="footer_menu" role="navigation" class="footer-menu">
                     			<ul>
                             <li class="menu__item"><a href="/">Поставка лифтов</a></li>
-                    				<li class="menu__item"><a href="service.php">Сервисное обслуживание</a></li>
-                    				<li class="menu__item"><a href="engineering.php">Проектирование лифтов и шахт</a></li>
-                    				<li class="menu__item"><a href="installation-and-replacement.php">Монтаж и замена лифтов</a></li>
-                    				<li class="menu__item menu__item--last"><a href="contacts.php">Контакты</a></li>
+                    				<li class="menu__item"><a href="servisnoe_obsluzhivanie">Сервисное обслуживание</a></li>
+                    				<li class="menu__item"><a href="proektirovanie_liftov_i_shaht">Проектирование лифтов и шахт</a></li>
+                    				<li class="menu__item"><a href="montazh_i_zamena_liftov">Монтаж и замена лифтов</a></li>
+                    				<li class="menu__item menu__item--last"><a href="kontakty">Контакты</a></li>
                     			</ul>
                     		</nav>
                       <!-- /Menu Items -->

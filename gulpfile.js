@@ -32,6 +32,24 @@ gulp.task('run', function(callback) {
 		 callback);
 });
 
+/*********** Only BUILD task *************/
+gulp.task('build', function(callback) {
+
+	// Запускаем синхронную очередь
+	runSequence(
+		// 'build-clean', //will clean build only if ENV is production
+		'build-clean',
+		'styles',
+		'scripts',
+		'assets', // merge assets and optimize images if ENV is production
+		['mergeLibfiles', 'mergeCorefiles', 'mergeIncfiles'], // merge all other files
+
+		// 'tunnel', // generate external url from current local proxy with ngrok
+		// 'browser-sync', // turn on browserSync
+		// 'watch', // watch all files
+		 callback);
+});
+
 
 /********** SET DEFAULT TASK - RUN  ************/
 gulp.task('default', ['build-clean','run'], function () {
