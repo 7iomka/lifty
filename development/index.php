@@ -111,43 +111,43 @@
             <span class="assortiment__title-postfix">моделей лифтов</span>
           </h2>
           <div class="image-block-list">
-              <div class="col col--4-of-12 col--m-1-of-2 col--s-1-of-2">
+              <div class="col col--4-of-12 col--s-1-of-2">
                 <div class="image-block">
                     <a href="" data-remodal-target="get_order" data-order-name="Пассажирские лифты" class="image-block__link"><span class="image-block__img-wrapper"><img src="img/assortiment/1.png" alt="" class="image-block__img"></span><span class="image-block__controls"><span class="image-block__control">Пассажирские лифты</span></span></a>
                 </div>
               </div>
-              <div class="col col--4-of-12 col--m-1-of-2 col--s-1-of-2">
+              <div class="col col--4-of-12 col--s-1-of-2">
                 <div class="image-block">
                   <a href="" data-remodal-target="get_order" data-order-name="Больничные лифты" class="image-block__link"><span class="image-block__img-wrapper"><img src="img/assortiment/2.png" alt="" class="image-block__img"></span><span class="image-block__controls"><span class="image-block__control">Больничные лифты</span></span></a>
                 </div>
               </div>
-            <div class="col col--4-of-12 col--m-1-of-2 col--s-1-of-2">
+            <div class="col col--4-of-12 col--s-1-of-2">
                 <div class="image-block">
                 <a href="" data-remodal-target="get_order" data-order-name="Лифты для инвалидов" class="image-block__link"><span class="image-block__img-wrapper"><img src="img/assortiment/3.png" alt="" class="image-block__img"></span><span class="image-block__controls"><span class="image-block__control">Лифты для инвалидов</span></span></a>
               </div>
             </div>
 
-            <div class="col col--4-of-12 col--m-1-of-2 col--s-1-of-2">
+            <div class="col col--4-of-12 col--s-1-of-2">
                 <div class="image-block">
                 <a href="" data-remodal-target="get_order" data-order-name="Грузовые лифты" class="image-block__link"><span class="image-block__img-wrapper"><img src="img/assortiment/4.png" alt="" class="image-block__img"></span><span class="image-block__controls"><span class="image-block__control">Грузовые лифты</span></span></a>
               </div>
             </div>
-              <div class="col col--4-of-12 col--m-1-of-2 col--s-1-of-2">
+              <div class="col col--4-of-12 col--s-1-of-2">
                 <div class="image-block">
                   <a href="" data-remodal-target="get_order" data-order-name="Лифты для автомобилей" class="image-block__link"><span class="image-block__img-wrapper"><img src="img/assortiment/5.png" alt="" class="image-block__img"></span><span class="image-block__controls"><span class="image-block__control">Лифты для автомобилей</span></span></a>
                 </div>
               </div>
-              <div class="col col--4-of-12 col--m-1-of-2 col--s-1-of-2">
+              <div class="col col--4-of-12 col--s-1-of-2">
                 <div class="image-block">
                   <a href="" data-remodal-target="get_order" data-order-name="Подъемники" class="image-block__link"><span class="image-block__img-wrapper"><img src="img/assortiment/6.png" alt="" class="image-block__img"></span><span class="image-block__controls"><span class="image-block__control">Подъемники</span></span></a>
                 </div>
               </div>
-              <div class="col col--4-of-12 col--m-1-of-2 col--s-1-of-2">
+              <div class="col col--4-of-12 col--s-1-of-2">
                 <div class="image-block">
                   <a href="" data-remodal-target="get_order" data-order-name="Панорамные лифты" class="image-block__link"><span class="image-block__img-wrapper"><img src="img/assortiment/7.png" alt="" class="image-block__img"></span><span class="image-block__controls"><span class="image-block__control">Панорамные лифты</span></span></a>
                 </div>
               </div>
-              <div class="col col--8-of-12 col--m-1-of-2 col--s-1-of-2">
+              <div class="col col--8-of-12 col--s-1-of-2">
                 <div class="image-block image-block--double">
                   <a href="" data-remodal-target="get_order" data-order-name="Лифты без машинного отделения" class="image-block__link"><span class="image-block__img-wrapper"><img src="img/assortiment/8.png" alt="" class="image-block__img"></span><span class="image-block__controls"><span class="image-block__control">Лифты без машинного отделения</span></span></a>
                 </div>

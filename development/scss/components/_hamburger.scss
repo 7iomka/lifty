@@ -1,10 +1,10 @@
-$hamburger-color: #fef0cc;
-$hamburger-bgColor: #5e4608;
+$hamburger-color: white;
+$hamburger-bgColor: #0075a3;
 
 .hamburger-text {
     margin-left: -60px;
     position: absolute;
-    color: wheat;
+    color: #045995;
     font-family: "Bebas_Neue", sans-serif;
     font-size: 25px;
     line-height: 60px;
@@ -16,13 +16,14 @@ $hamburger-bgColor: #5e4608;
   display: block;
   width: 60px;
   height: 60px;
+  top: 39px;
   transition-duration: 0.5s;
   background: $hamburger-bgColor;
   float: right;
   -webkit-tap-highlight-color: transparent;
 
   &.active {
-    border-radius: 0 0 0 15px;
+    // border-radius: 0 0 0 15px;
   }
 
 

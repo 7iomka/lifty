@@ -32,4 +32,19 @@
         margin: 0;
         padding: 24px 35px 54px;
     }
+
+    @include media("<960px") {
+      .right-section-title {
+          top: auto;
+          position: relative;
+          float: none;
+          margin: 15px auto;
+      }
+      .square-list {
+        text-align: center;
+      }
+      .square-item__img-wrapper {
+        margin: auto;
+      }
+    };
 }

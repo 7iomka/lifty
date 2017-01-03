@@ -24,10 +24,7 @@
   }
 }
 
-.hamburger{
-  // display: block;
-  // padding: 1em;
-}
+
 
 nav[role=navigation] {
   width: 100%;
@@ -38,12 +35,7 @@ nav[role=navigation] {
   transition: all 0.3s ease-out;
 }
 
-@include media("<960px") {
-  nav[role=navigation] {
-    overflow: hidden;
-    max-height: 0;
-  }
-};
+
 
 nav[role=navigation] {
     text-align: center;
@@ -70,7 +62,6 @@ nav[role=navigation] {
     top: 0;
     left: 15px;
     color: white;
-    font-family: "Bebas_Neue", sans-serif;
     font-size: 30px;
     line-height: 60px;
 }
@@ -118,19 +109,6 @@ nav[role=navigation] {
 
 
 
-
-
-
-@include media("<960px") {
-  .menu__item {
-    border-bottom: 1px solid rgba(186, 164, 133, 0.18);
-    box-shadow: 0 1px black;
-  }
-  nav[role=navigation] ul {
-    background-color: rgb(32, 32, 32);
-    background: linear-gradient(to bottom, rgb(32, 32, 32), #352f1e);
-  }
-}
 @include media(">=960px") {
   #header-nav {
      .hamburger,
@@ -176,3 +154,30 @@ nav[role=navigation] {
     }
   }
 }
+
+@include media("<960px") {
+  nav[role=navigation] {
+    overflow: hidden;
+    max-height: 0;
+    position: relative;
+    top: 39px;
+    ul {
+        background: #0075a3;
+    }
+  }
+  .menu__item {
+    border-bottom: 1px solid rgba(186, 164, 133, 0.18);
+    box-shadow: 0 1px #0d3c69;
+  }
+
+  #header-nav {
+    text-align: left;
+  }
+
+}
+
+@include media("<x-small"){
+  nav[role=navigation] {
+    top: 150px;
+  }
+};

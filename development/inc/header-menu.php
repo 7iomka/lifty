@@ -1,17 +1,19 @@
 <div id="header-nav">
       <!-- Small screen menu button -->
 
-       <!-- <div id="hamburger-icon" class="hamburger">
+       <div id="hamburger-icon" class="hamburger">
           <div class="icon"></div>
           <div class="hamburger-text">Меню</div>
       </div>
+
       <div class="small-logo">
-        <a href="#home" class="small-logo-link">
-          <span class="logo__title">
-              <span class="brown">seo</span>sintez.<span class="brown">ru</span>
+        <a href="#home" class="small-logo-link header__link header__link--logo">
+          <img class="small-logo-img" src="img/mobile_logo.png">
+          <span class="small-logo-title">
+            <span><strong>Центральное управление</strong></span><span style="font-size: 12px;">Щербинского лифтостроительного завода</span>
           </span>
         </a>
-      </div> -->
+      </div>
 
       <!-- /Small screen menu button -->
 

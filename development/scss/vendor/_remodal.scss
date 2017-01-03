@@ -6,7 +6,7 @@
  *  Made by Ilya Makarov
  *  Under MIT License
  */
-
+$responsive: 'on';
 /* ==========================================================================
    Remodal's necessary styles
    ========================================================================== */
@@ -375,7 +375,7 @@ html.remodal-is-locked {
   }
 }
 
-$responsive: 'off';
+
 
 @if $responsive == 'on' {
 

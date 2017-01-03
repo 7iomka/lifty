@@ -94,3 +94,31 @@ $image-block__controls-color: white;
 .image-block:hover span.image-block__control {
     transform: translate(-12px,0);
 }
+
+@include media("<medium") {
+  .image-block__img-wrapper {
+      max-width: 100%;
+      overflow: hidden;
+      display: block;
+      position: relative;
+  }
+  .image-block__img {
+    max-width: none;
+    transform: translate(-50%,0);
+    margin-left: 50%;
+}
+
+  .image-block {
+      max-width: 100%;
+      margin: 9px auto;
+  }
+
+
+  .image-block__control {
+      white-space: nowrap;
+      font-size: 17px;
+      line-height: 35px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+  }
+};

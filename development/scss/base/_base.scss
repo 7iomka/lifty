@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------------
 // This file contains very basic styles.
 // -----------------------------------------------------------------------------
-
+$responsive: 'on';
 /**
  * Set up a decent box model on the root element
  */
@@ -12,8 +12,10 @@ html, body {
   width: 100%;
 }
 body {
+  @if $responsive == 'off' {
+    width: 1200px;
+  }
   min-width: 100%;
-  width: 1200px;
   table-layout: fixed;
   background: $white;
 }

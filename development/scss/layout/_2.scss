@@ -126,3 +126,39 @@
       height: 260px;
     }
 }
+
+@include media("<960px") {
+  .worksteps h2.worksteps__title {
+    text-align: center;
+  }
+  .worksteps__column {
+      display: block;
+      margin: auto;
+      padding: 0;
+      width: auto;
+  }
+
+  .worksteps__content-wrapper {
+      margin: 0;
+  }
+
+  .worksteps__content-img {
+      width: 400px;
+      max-width: 100%;
+      display: block;
+      margin: auto;
+  }
+
+  .worksteps__steps-wrapper {
+      margin-top: 9px;
+  }
+
+
+  .worksteps__title-postfix-bottom {
+      margin: 15px auto;
+  }
+
+  .worksteps__form-wrapper {
+      margin-top: 9px;
+  }
+};

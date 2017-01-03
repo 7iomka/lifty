@@ -40,7 +40,7 @@
 
 \*-----------------------------------*/
 
-$responsive: 'off';
+$responsive: 'on';
 
 // Namespaces
 // This stops me from being overzealous with enforcing classes
@@ -408,7 +408,7 @@ $toast-pulls: true !default;
 
 
 
-   } /** endif **/
+  } /** endif responsive**/
 
 }
 
@@ -547,24 +547,25 @@ $toast-pulls: true !default;
     display: table;
     clear: both;
 }
-@media (min-width:576px) {
-    .row {
-        margin-right: -15px;
-        margin-left: -15px;
-    }
-}
-@media (min-width:768px) {
-    .row {
-        margin-right: -15px;
-        margin-left: -15px;
-    }
-}
-@media (min-width:992px) {
-    .row {
-        margin-right: -15px;
-        margin-left: -15px;
-    }
-}
+// @media (min-width:576px) {
+//     .row {
+//         margin-right: -15px;
+//         margin-left: -15px;
+//     }
+// }
+// @media (min-width:768px) {
+//     .row {
+//         margin-right: -15px;
+//         margin-left: -15px;
+//     }
+// }
+// @media (min-width:992px) {
+//     .row {
+//         margin-right: -15px;
+//         margin-left: -15px;
+//     }
+// }
+
 @media (min-width:1200px) {
     .row {
         margin-right: -15px;
