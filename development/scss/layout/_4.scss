@@ -47,6 +47,9 @@
     display: table;
     text-align: center;
     margin-bottom: 20px;
+    @include media("<960px") {
+        width: 100%;
+    };
 }
 .trust__img-wrapper {
     display: table-cell;
@@ -56,3 +59,11 @@
 .trust__img {
     max-width: 90%;
 }
+
+
+@include media("<x-small") {
+
+  .trust__block {
+    width: 96%;
+  }
+};

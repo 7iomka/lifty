@@ -332,42 +332,42 @@
         </span>
       </h2>
       <div class="trust__list">
-        <div class="col col--3-of-12 col--m-1-of-2 col--s-1-of-2">
+        <div class="col col--3-of-12 col--m-1-of-3 col--s-1-of-2 col--xs-1-of-2">
           <div class="trust__block">
             <div class="trust__img-wrapper"><img src="img/trust/1.png" alt="" class="trust__img"></div>
           </div>
         </div>
-        <div class="col col--3-of-12 col--m-1-of-2 col--s-1-of-2">
+        <div class="col col--3-of-12 col--m-1-of-3 col--s-1-of-2 col--xs-1-of-2">
           <div class="trust__block">
             <div class="trust__img-wrapper"><img src="img/trust/2.png" alt="" class="trust__img"></div>
           </div>
         </div>
-        <div class="col col--3-of-12 col--m-1-of-2 col--s-1-of-2">
+        <div class="col col--3-of-12 col--m-1-of-3 col--s-1-of-2 col--xs-1-of-2">
           <div class="trust__block">
             <div class="trust__img-wrapper"><img src="img/trust/3.png" alt="" class="trust__img"></div>
           </div>
         </div>
-        <div class="col col--3-of-12 col--m-1-of-2 col--s-1-of-2">
+        <div class="col col--3-of-12 col--m-1-of-3 col--s-1-of-2 col--xs-1-of-2">
           <div class="trust__block">
             <div class="trust__img-wrapper"><img src="img/trust/4.png" alt="" class="trust__img"></div>
           </div>
         </div>
-        <div class="col col--3-of-12 col--m-1-of-2 col--s-1-of-2">
+        <div class="col col--3-of-12 col--m-1-of-3 col--s-1-of-2 col--xs-1-of-2">
           <div class="trust__block">
             <div class="trust__img-wrapper"><img src="img/trust/5.png" alt="" class="trust__img"></div>
           </div>
         </div>
-        <div class="col col--3-of-12 col--m-1-of-2 col--s-1-of-2">
+        <div class="col col--3-of-12 col--m-1-of-3 col--s-1-of-2 col--xs-1-of-2">
           <div class="trust__block">
             <div class="trust__img-wrapper"><img src="img/trust/6.png" alt="" class="trust__img"></div>
           </div>
         </div>
-        <div class="col col--3-of-12 col--m-1-of-2 col--s-1-of-2">
+        <div class="col col--3-of-12 col--m-1-of-3 col--s-1-of-2 col--xs-1-of-2">
           <div class="trust__block">
             <div class="trust__img-wrapper"><img src="img/trust/7.png" alt="" class="trust__img"></div>
           </div>
         </div>
-        <div class="col col--3-of-12 col--m-1-of-2 col--s-1-of-2">
+        <div class="col col--3-of-12 col--m-1-of-3 col--s-1-of-2 col--xs-1-of-2">
           <div class="trust__block">
             <div class="trust__img-wrapper"><img src="img/trust/8.png" alt="" class="trust__img"></div>
           </div>
