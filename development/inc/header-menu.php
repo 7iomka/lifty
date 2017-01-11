@@ -7,7 +7,7 @@
       </div>
 
       <div class="small-logo">
-        <a href="#home" class="small-logo-link header__link header__link--logo">
+        <a href="/" class="small-logo-link header__link header__link--logo">
           <img class="small-logo-img" src="img/mobile_logo.png">
           <span class="small-logo-title">
             <span><strong>Центральное управление</strong></span><span style="font-size: 12px;">Щербинского лифтостроительного завода</span>
@@ -28,5 +28,5 @@
         </ul>
       </nav>
     <!-- /Menu Items -->
-    
+
 </div>
