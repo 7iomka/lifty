@@ -262,7 +262,7 @@ jQuery(document).ready(function($) {
                      slidesPerView: 1
                  }
                },
-               onSlideChangeEnd: function (s) { s.fixLoop(); }
+               onSlideChangeEnd: function (s) { }
 
             });
 
@@ -285,7 +285,7 @@ jQuery(document).ready(function($) {
                      slidesPerView: 1,
                  }
                },
-               onSlideChangeEnd: function (s) { s.fixLoop(); }
+               onSlideChangeEnd: function (s) {  }
 
             });
 
@@ -305,6 +305,10 @@ jQuery(document).ready(function($) {
            // ----------------------------------------------------------------------------
            var certificatesSlider = new Swiper('.certificates__slider .swiper-container', {
                   pagination: '.certificates__slider .swiper-pagination',
+
+                  nextButton: '.certificates__slider .swiper-button-next',
+                  prevButton: '.certificates__slider .swiper-button-prev',
+
                   slidesPerView: 4,
                   paginationClickable: true,
                   spaceBetween: 20,
@@ -320,14 +324,14 @@ jQuery(document).ready(function($) {
                         slidesPerView: 1
                     }
                   },
-                  onSlideChangeEnd: function (s) { s.fixLoop(); }
+                  onSlideChangeEnd: function (s) {  }
 
                });
 
       // ----------------------------------------------------------------------
       //  Footer -- map settings
       // ----------------------------------------------------------------------
-    
+
 
 
     // ------------------------------------------------------------------------

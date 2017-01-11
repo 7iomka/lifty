@@ -18,7 +18,8 @@ if(isset($_POST['form_task'])){ $task = trim($_POST['form_task']);} else{
 }
 
 
-$admin_emails = Array("7iomka@gmail.com");
+//$admin_emails = Array("7iomka@gmail.com");
+$admin_emails = Array("Lp@tradelift.ru");
 
 // $sql_emails = "SELECT `emails` FROM `admins` WHERE `id` =1 LIMIT 1 ";
 // $row_emails = $DBH->query($sql_emails)->fetch();

@@ -45,6 +45,7 @@ footer.site-footer {
       @include media(">=960px") {
         background: image('particles/footer-nav-panel_and_logo.png') 50% 100% no-repeat;
         height: 180px;
+        margin-bottom: 25px;
       };
 }
 

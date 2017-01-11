@@ -54,7 +54,7 @@
           opacity: 0.3;
 
         };
-      
+
         @include media("<x-small") {
           opacity: 0.2;
         };
@@ -74,3 +74,9 @@
     text-transform: uppercase;
     text-align: center;
 }
+@include media(">=xx-small") {
+  .certificates__slider .swiper-button-next,
+  .certificates__slider .swiper-button-prev {
+    display: none;
+  }
+};
