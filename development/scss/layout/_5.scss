@@ -19,11 +19,17 @@
       right: -212px;
       bottom: -212px;
       transform: rotate(45deg);
+      @include media("<960px") {
+        content: none;
+      };
   }
 }
 
 .objects__title {
   font-weight: normal;
+  @include media("<960px") {
+    text-align: center;
+  };
 }
 
 .objects__title-big{
@@ -44,8 +50,15 @@
     span {
         display: block;
     }
+    @include media("<590px") {
+      border: none;
+      padding: 10px;
+    };
 }
-
+.object {
+    position: relative;
+    z-index: 1;
+}
 /** objects **/
 .objects__list {
     margin-top: 60px;

@@ -2,6 +2,8 @@
  * service
  */
 
+
+
  .service {
    background-image: image('particles/triangles-v2.png');
    background-position: 0 100%;
@@ -36,6 +38,14 @@
         padding-bottom: 10px;
         display: inline-block;
         width: 100%;
+        @include media("<1200px") {
+          font-size: 84px;
+          text-align: right;
+        };
+        @include media("<960px") {
+          text-align: center;
+          font-size: 62px;
+        };
         &:after {
             content: "";
             left: auto;
@@ -47,6 +57,10 @@
             position: absolute;
             background-color: #006ab2;
             width: 347px;
+            @include media("<960px") {
+              left: 0;
+              margin: auto;
+            };
         }
     }
 
@@ -56,6 +70,12 @@
         font-size: 40px;
         text-transform: uppercase;
         text-align: right;
+        @include media("<1200px") {
+          font-size: 36px;
+        };
+        @include media("<960px") {
+          text-align: center;
+        };
     }
 
 
@@ -63,11 +83,22 @@
     .square-item__desc {
       padding-left: 54px;
       padding-top: 25px;
+      @include media("<960px") {
+        padding-left: 0;
+      };
     }
     .square-item {
         padding-right: 0;
+        @include media("<small") {
+          padding: 5px;
+          margin-bottom: 60px;
+        };
     }
-
+    .square-item__img-wrapper {
+      @include media("<small") {
+        margin: auto;
+      };
+    }
 
     .service__form-wrapper {
       position: relative;
@@ -77,6 +108,9 @@
 
     .service__list {
       margin-bottom: -130px;
+      @include media("<small") {
+        text-align: center;
+      };
     }
 
  }

@@ -32,6 +32,16 @@
       padding: 0 20px;
       border: 4px solid #009fe2;
       margin-right: -0.24em;
+      @include media("<960px") {
+        margin-right: 0;
+      };
+      @include media("<small") {
+        font-size: 60px;
+        margin-bottom: 10px;
+      };
+      @include media("<xx-small") {
+        padding: 0 10px;
+      };
   }
 
   .project-mines__title-postfix {
@@ -43,18 +53,31 @@
       text-transform: uppercase;
       padding-left: 18px;
       margin-right: -0.24em;
+      @include media("<960px") {
+        padding-left: 0;
+      };
       span {
           display: block;
+
       }
   }
 
 
   .project-mines__item-col {
       padding-left: 0;
+      @include media("<960px") {
+            text-align: center;
+      };
   }
 
   .project-mines__item {
       margin-bottom: 38px;
+      @include media("<960px") {
+        margin-bottom: 19px;
+        padding-bottom: 19px;
+        border-bottom: 2px solid rgba(0,0,0,.2);
+      };
+
   }
 
   .imagemodal__link.project-mines__item-draft {

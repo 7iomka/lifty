@@ -8,6 +8,15 @@
   z-index: 1;
   padding-bottom: 0;
 
+  .image-block {
+    @include media("<960px") {
+      max-width: 308px;
+      text-align: center;
+    };
+    @include media("<xx-small") {
+      max-width: 275px;
+    };
+  }
   .image-block-list {
     margin-top: 70px;
     margin-bottom: 40px;
@@ -16,6 +25,14 @@
   /*square-items **/
   .square-list.install-types__list {
       margin-top: 40px;
+      @include media("<x-small") {
+        margin-top: 5px;
+      };
+  }
+  .square-item {
+    @include media("<x-small") {
+      margin-bottom: 10px;
+    }
   }
   .square-item__img-wrapper {
     height: 110px;
@@ -72,6 +89,13 @@
          z-index: -1;
          right: -90px;
          top: 45px;
+         @include media("<960px") {
+           right: 0;
+           left: 0;
+           opacity: 0.2;
+           z-index: -2;
+           margin: auto;
+         };
      }
  }
 
@@ -89,6 +113,10 @@
       display: block;
       padding-right: 15px;
       text-align: right;
+      @include media("<960px") {
+        padding-right: 0;
+        text-align: center;
+      };
   }
 
   .install-types__price-depend-title {
@@ -96,4 +124,5 @@
       font-weight: normal;
       text-transform: uppercase;
       text-align: center;
+      @extend [class$="title-postfix"];
   }

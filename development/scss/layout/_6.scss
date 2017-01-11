@@ -14,6 +14,9 @@
       right: -212px;
       top: -212px;
       transform: rotate(45deg);
+      @include media("<960px") {
+        content: none;
+      };
   }
 
   .services__list {
@@ -39,7 +42,18 @@
         z-index: -1;
         right: -90px;
         top: 30px;
+        @include media("<960px") {
+
+          right:0;
+          left:0;
+          margin: auto;
+          z-index: -2;
+          opacity: 0.2;
+        };
     }
+    @include media("<960px") {
+      text-align: center;
+    };
 }
 
 .services__title-big {
@@ -50,6 +64,14 @@
     text-transform: uppercase;
     position: relative;
     z-index: -1;
+    @include media("<960px") {
+        margin-bottom: 0;
+    };
+    @include media("<640px") {
+      margin-bottom: 0;
+      font-size: 55px;
+
+    };
 }
 
 .services__title-postfix {
@@ -58,4 +80,8 @@
     line-height: 60px;
     text-transform: uppercase;
     position: relative;
+    @include media("<640px") {
+      display: inline-block;
+      font-size: 45px!important;
+    };
 }

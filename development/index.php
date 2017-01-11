@@ -32,6 +32,13 @@
                 <!-- Menu-->
                 <?php require_once('inc/header-menu.php'); ?>
                 <!-- /Menu -->
+                <!-- Phone Number And Callback for mobile Layout -->
+                <div class="header__mobile-actions">
+                    <ul class="header__contacts">
+                            <li><a href="tel:74950038741" class="header__phone">+7 (495) 003-87-41</a></li>
+                        </ul><p class="header__small-text small-text blue"><a class="blue underline" href="#" data-remodal-target="get_callback">Заказать обратный звонок</a></p>
+                </div>
+                <!-- /Phone Number And Callback for mobile Layout -->
               </div>
             </div>
           </div>
@@ -451,23 +458,23 @@
         </span>
       </h2>
       <div class="image-block-list services__list">
-              <div class="col col--6-of-12 col--m-1-of-2 col--s-1-of-1">
+              <div class="col col--6-of-12 col--s-1-of-2">
                 <div class="image-block">
                     <a href="proektirovanie_liftov_i_shaht" class="image-block__link"><span class="image-block__img-wrapper"><img src="img/services/1.jpg" alt="" class="image-block__img"></span><span class="image-block__controls"><span class="image-block__control">Проектирование лифтов и лифтовых шахт</span></span></a>
                 </div>
               </div>
-              <div class="col col--6-of-12 col--m-1-of-2 col--s-1-of-2">
+              <div class="col col--6-of-12 col--s-1-of-2">
                 <div class="image-block">
                   <a href="montazh_i_zamena_liftov" class="image-block__link"><span class="image-block__img-wrapper"><img src="img/services/2.jpg" alt="" class="image-block__img"></span><span class="image-block__controls"><span class="image-block__control">Монтаж и замена лифтов</span></span></a>
                 </div>
               </div>
-            <div class="col col--6-of-12 col--m-1-of-2 col--s-1-of-2">
+            <div class="col col--6-of-12 col--s-1-of-2">
                 <div class="image-block">
                 <a href="servisnoe_obsluzhivanie" class="image-block__link"><span class="image-block__img-wrapper"><img src="img/services/3.jpg" alt="" class="image-block__img"></span><span class="image-block__controls"><span class="image-block__control">Сервисное обслуживание</span></span></a>
               </div>
             </div>
 
-            <div class="col col--6-of-12 col--m-1-of-2 col--s-1-of-2">
+            <div class="col col--6-of-12 col--s-1-of-2">
                 <div class="image-block">
                 <a href="/" class="image-block__link"><span class="image-block__img-wrapper"><img src="img/services/4.jpg" alt="" class="image-block__img"></span><span class="image-block__controls"><span class="image-block__control">Поставка комплектующих</span></span></a>
               </div>

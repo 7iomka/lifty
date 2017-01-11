@@ -10,6 +10,9 @@
 
     .examples__title-big {
         font-size: 100px;
+        @include media("<small") {
+          font-size: 60px;
+        };
         text-transform: uppercase;
         font-weight: bold;
         display: block;
@@ -27,6 +30,9 @@
             z-index:-1;
             right: 78px;
             top: 0;
+            @include media("<960px") {
+              right: 0;
+            };
         }
     }
 
@@ -44,6 +50,11 @@
             display: block;
         }
 
+        @include media("<960px") {
+          padding-left: 0;
+          top: 0;
+        };
+
     }
 
     /** examples image list **/
@@ -53,12 +64,20 @@
     }
     .imagemodal__link {
         width: 450px;
+        @include media("<small") {
+          width: 100%;
+          display: block;
+          margin: 8px auto;
+        };
     }
 
     .examples__image-item {
         border: 1px solid #e8e8e8;
         margin-bottom: 30px;
         margin: 0 0 15px -15px;
+        @include media("<small") {
+          margin-left: 0;
+        };
         padding: 15px;
     }
 

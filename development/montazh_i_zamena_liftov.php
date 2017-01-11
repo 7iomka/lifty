@@ -32,6 +32,13 @@
                 <!-- Menu-->
                 <?php require_once('inc/header-menu.php'); ?>
                 <!-- /Menu -->
+                <!-- Phone Number And Callback for mobile Layout -->
+                <div class="header__mobile-actions">
+                    <ul class="header__contacts">
+                            <li><a href="tel:74950038741" class="header__phone">+7 (495) 003-87-41</a></li>
+                        </ul><p class="header__small-text small-text blue"><a class="blue underline" href="#" data-remodal-target="get_callback">Заказать обратный звонок</a></p>
+                </div>
+                <!-- /Phone Number And Callback for mobile Layout -->
               </div>
             </div>
           </div>
@@ -308,7 +315,7 @@
               </div>
               <h3 class="install-types__price-depend-title">Стоимость монтажа зависит от</h3>
               <div class="square-list install-types__list">
-                <div class="col col--3-of-12 col--m-1-of-3 col--s-1-of-1 square-item square-item--table-layout square-item__1 square-item__first">
+                <div class="col col--3-of-12 col--m-1-of-2 col--s-1-of-1 square-item square-item--table-layout square-item__1 square-item__first">
                   <div class="square-item__img-wrapper">
                     <div class="square-item__img">
                         <img class="square-item__img-src" src="img/install-types/1.png">
@@ -319,7 +326,7 @@
                     <span>лифта</span>
                   </div>
                 </div>
-                <div class="col col--3-of-12 col--m-1-of-3 col--s-1-of-1 square-item square-item--table-layout square-item__2">
+                <div class="col col--3-of-12 col--m-1-of-2 col--s-1-of-1 square-item square-item--table-layout square-item__2">
                   <div class="square-item__img-wrapper">
                     <div class="square-item__img">
                         <img class="square-item__img-src" src="img/install-types/2.png">
@@ -330,7 +337,7 @@
                     <span>подъема</span>
                   </div>
                 </div>
-                <div class="col col--3-of-12 col--m-1-of-3 col--s-1-of-1 square-item square-item--table-layout square-item__3">
+                <div class="col col--3-of-12 col--m-1-of-2 col--s-1-of-1 square-item square-item--table-layout square-item__3">
                   <div class="square-item__img-wrapper">
                     <div class="square-item__img">
                         <img class="square-item__img-src" src="img/install-types/3.png">
@@ -341,7 +348,7 @@
                     <span>остановок</span>
                   </div>
                 </div>
-                <div class="col col--3-of-12 col--m-1-of-3 col--s-1-of-1 square-item square-item--table-layout square-item__4 square-item__last">
+                <div class="col col--3-of-12 col--m-1-of-2 col--s-1-of-1 square-item square-item--table-layout square-item__4 square-item__last">
                   <div class="square-item__img-wrapper">
                     <div class="square-item__img">
                         <img class="square-item__img-src" src="img/install-types/4.png">
@@ -403,7 +410,7 @@
               </h2>
                     <div class="review-wrapper">
                         <div class="review">
-                            <div class="col col--5-of-12">
+                            <div class="col col--5-of-12 col--s-1-of-1">
                                 <div class="row">
                                     <div class="review__video-part">
                                         <div class="review__video-container">
@@ -416,7 +423,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col col--7-of-12">
+                            <div class="col col--7-of-12 col--s-1-of-1">
                                 <div class="row">
                                     <div class="review__content-part">
                                         <div class="review__goal">
@@ -442,7 +449,7 @@
                     </div>
                     <div class="review-wrapper">
                         <div class="review">
-                            <div class="col col--5-of-12">
+                            <div class="col col--5-of-12 col--s-1-of-1">
                                 <div class="row">
                                     <div class="review__video-part">
                                         <div class="review__video-container">
@@ -455,7 +462,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col col--7-of-12">
+                            <div class="col col--7-of-12 col--s-1-of-1">
                                 <div class="row">
                                     <div class="review__content-part">
                                         <div class="review__goal">
@@ -536,7 +543,7 @@
                 </span>
               </h2>
               <div class="image-block-list services__list">
-                      <div class="col col--6-of-12 col--m-1-of-2 col--s-1-of-1">
+                      <div class="col col--6-of-12 col--m-1-of-2 col--s-1-of-2">
                         <div class="image-block">
                             <a href="/" class="image-block__link"><span class="image-block__img-wrapper"><img src="img/services/5.jpg" alt="" class="image-block__img"></span><span class="image-block__controls"><span class="image-block__control">Поставки лифтового оборудования</span></span></a>
                         </div>

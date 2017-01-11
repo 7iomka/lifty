@@ -7,6 +7,9 @@
   background-attachment: fixed;
   padding-top: 30px;
   background-color: transparent;
+  @include media("<960px") {
+    padding-bottom: 0;
+  };
   &__title {
        font-weight: normal;
      }
@@ -20,6 +23,9 @@
        padding-bottom: 10px;
        display: inline-block;
        width: 100%;
+       @include media("<900px", ">=640px") {
+             font-size: 55px!important;
+       };
        &:after {
            content: "";
            left: auto;
@@ -31,6 +37,10 @@
            position: absolute;
            background-color: #006ab2;
            width: 347px;
+           @include media("<960px") {
+             left: 0;
+             margin: auto;
+           };
        }
    }
 
@@ -42,10 +52,20 @@
        padding-top: 5px;
        text-transform: uppercase;
        text-align: right;
+       @include media("<960px") {
+         text-align: center;
+       };
    }
-
+ .mobile-sep-worlds {
+    @include media("<960px") {
+      display: block;
+    };
+ }
 .escursion__map-container {
   margin: 54px 0;
+  @include media("<960px") {
+    margin-bottom: 0;
+  };
 }
 
    /** excursion block **/

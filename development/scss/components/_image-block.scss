@@ -11,6 +11,9 @@ $image-block__controls-color: white;
     margin-right: 9px;
     display: block;
     position: relative;
+    @include media("<x-small") {
+      width: 470px;
+    };
 }
 
 .image-block-list {

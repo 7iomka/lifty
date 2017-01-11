@@ -1,0 +1,150 @@
+header.site-header {
+
+  .header__title,
+  .header__title.header__title--mod1 {
+    @include media("<640px") {
+      font-size: 55px;
+    };
+    @include media("<xx-small") {
+      font-size: 45px;
+    };
+    @include media("<415px") {
+      font-size: 36px;
+    };
+  }
+
+  .header__title-prefix {
+    @include media("<415px") {
+      font-size: 32px;
+    };
+  }
+  .header__title-postfix {
+    &:after {
+      @include media("<960px") {
+        background: #aee1f6;
+      };
+    }
+  }
+
+  /**
+   * home
+   */
+
+  &.site-header--home {
+
+  }
+
+  &.site-header--service {
+    .header__title {
+      @include media("<880px") {
+        font-size: 64px;
+      };
+      @include media("<small") {
+        font-size: 50px;
+      };
+      @include media("<640px") {
+        font-size: 40px;
+        font-size: 8vw;
+      };
+      @include media("<x-small") {
+        font-size: 36px;
+        font-size: 8vw;
+      };
+      @include media("<xx-small") {
+        font-size: 28px;
+        font-size: 8vw;
+      };
+      @include media("<375px") {
+        font-size: 25px;
+        font-size: 8vw;
+      };
+
+    }
+    .header__title-postfix {
+      @include media("<x-small") {
+        font-size: 25px;
+      };
+    }
+  }
+
+  &.site-header--installation-and-replacement {
+    @include media("<960px") {
+      .header__banner {
+          margin-top: 0;
+          background: #006ab2;
+      }
+      .header__title.header__title--mod1 {
+        text-align: center;
+        float: none;
+      }
+      .header__banner-left-stuff {
+        opacity: 1;
+        background: #006ab2;
+      }
+    };
+  }
+
+}
+
+h2 {
+  @include media("<960px") {
+    text-align: center;
+  };
+}
+
+[class$="title-big"],
+[class$="title-big-inner"],
+.examples [class$="title-big"],
+.project-mines [class$="title-big"] {
+  &:before {
+    @include media("<960px") {
+      left: 0;
+      right: 0;
+      margin: auto;
+    };
+  }
+  @include media("<960px") {
+    font-size: 62px;
+  };
+  @include media("<640px") {
+      font-size: 55px;
+  };
+  @include media("<xx-small") {
+    font-size: 45px;
+    margin-right: 0;
+  };
+  @include media("<415px") {
+    font-size: 36px;
+    overflow: hidden;
+  };
+}
+
+[class$="title-postfix"],
+.examples [class$="title-postfix"],
+.project-mines [class$="title-postfix"] {
+    @include media("<640px") {
+        font-size: 36px;
+        // padding-left: 0;
+        display: block;
+    };
+
+    @include media("<x-small") {
+      font-size: 36px;
+      font-size: 8vw;
+    };
+    @include media("<xx-small") {
+      font-size: 28px;
+      font-size: 8vw;
+    };
+    @include media("<375px") {
+      font-size: 25px;
+      font-size: 8vw;
+    };
+    &:before {
+      @include media("<960px") {
+        left: 0;
+        right: 0;
+        margin: auto;
+      };
+    }
+  }

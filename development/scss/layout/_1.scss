@@ -1,4 +1,4 @@
-// -----------------------------------------------------------------------------
+//-----------------------------------------------------------------------------
 // Assrortiment (home page)
 // -----------------------------------------------------------------------------
 .assortiment {
@@ -10,16 +10,29 @@
   h2.assortiment__title {
       font-weight: normal;
   }
+  .image-block {
 
-  @include media("<medium") {
-    .image-block {
+    @include media("<960px") {
       max-width: 308px;
       text-align: center;
-      &.image-block--double {
-        max-width: none;
+    };
+    @include media("<xx-small") {
+      max-width: 275px;
+    };
+
+
+    &.image-block--double {
+      @include media("<medium") {
+          max-width: none;
+      };
+      @include media("<small") {
+        max-width: 308px;
+      }
+      @include media("<x-small") {
+        max-width: 275px;
       }
     }
-  };
+  }
 
 }
 .assortiment__title-big {
@@ -28,6 +41,9 @@
     display: inline-block;
     font-weight: bold;
     vertical-align: baseline;
+    @include media("<640px") {
+      font-size: 55px;
+    };
 }
 
 .assortiment__title-postfix {

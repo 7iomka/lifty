@@ -13,13 +13,22 @@
       text-transform: uppercase;
       font-weight: bold;
       display: inline-block;
+      @include media("<640px") {
+        font-size: 60px!important;
+        display: block;
+      };
 }
 .trust__title-postfix {
     font-size: 45px;
+    @include media("<640px") {
+      font-size: 40px!important;
+    };
     display: inline-block;
     text-transform: uppercase;
     position: relative;
-    padding-left: 50px;
+    @include media(">=640px") {
+      padding-left: 50px;
+    };
     &:before {
         content: "";
         width: 95px;
@@ -30,6 +39,9 @@
         display: block;
         z-index: -1;
         left: 10px;
+        @include media("<640px") {
+          opacity: 0.5;
+        };
     }
     span {
         display: block;

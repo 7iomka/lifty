@@ -10,6 +10,10 @@ $responsive: 'on';
 
 .site-form-wrapper {
   display: inline-block;
+  @include media("<960px") {
+      width: 100%;
+      text-align: center;
+  };
 }
 .site-form {
     // padding: 25px;
@@ -37,11 +41,16 @@ $responsive: 'on';
           background: #00365a;
           right: -34px;
           top: 0;
+          @include media("<x-small") {
+            height: 100%!important;
+          };
       }
       form {
         position: relative;
         z-index: 1;
       }
+
+
     }
   }
   &.site-form--light {
@@ -58,7 +67,7 @@ $responsive: 'on';
     vertical-align: middle;
 
     @if($responsive == 'on') {
-      @include media('<tablet') {
+      @include media('<x-small') {
         display: block;
         margin-bottom: 13px;
       }
@@ -67,6 +76,9 @@ $responsive: 'on';
 
     &.form-group--first {
         margin-right: 12px;
+        @include media("<x-small") {
+          margin-right: 0!important;
+        };
     }
   }
   label {
@@ -169,6 +181,11 @@ $responsive: 'on';
     display: inline-block;
     position: relative;
     max-width: 100%;
+    @include media("<x-small") {
+      display: block;
+      width: 300px;
+      margin: auto;
+    };
     &:after {
       content: "";
       position: absolute;
@@ -272,6 +289,9 @@ $responsive: 'on';
       font-family: "Bebas_Neue", sans-serif;
       font-size: 40px;
       margin-right: 10px;
+      @include media("<small") {
+        margin-right: 0;
+      };
   }
 
   .site-form__action-result {
@@ -282,6 +302,10 @@ $responsive: 'on';
       margin-bottom: 20px;
       span {
           display: inline-block;
+          &.site-form__action-result {
+            text-align: left;
+            padding-top: 10px;
+          }
       }
   }
 
@@ -301,12 +325,20 @@ $responsive: 'on';
   &.inline-form--with-left-bg {
     &:before {
       height: 200px;
+      @include media("<960px") {
+        height: 100%!important;
+      };
     }
   }
   .form-group.form-group--with-btn {
       vertical-align: top;
       margin-left: 20px;
       margin-top: -3px;
+      @include media("<960px") {
+        margin-top: 25px;
+        margin-left: 0;
+        display: block;
+      };
   }
   .form-post-title {
       text-align: center;

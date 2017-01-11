@@ -26,6 +26,9 @@
     font-size: 40px;
     text-transform: uppercase;
     display: block;
+    @include media("<small") {
+      font-size: inherit;
+    };
 }
 
 .worksteps__title-postfix-bottom {
@@ -68,6 +71,9 @@
     position: relative;
     padding-top: 13px;
     text-transform: uppercase;
+    @include media("<960px") {
+      display: block;
+    };
 
 }
 .worksteps__column {
@@ -135,7 +141,7 @@
       display: block;
       margin: auto;
       padding: 0;
-      width: auto;
+      width: 70%;
   }
 
   .worksteps__content-wrapper {
@@ -161,4 +167,35 @@
   .worksteps__form-wrapper {
       margin-top: 9px;
   }
+
+  .worksteps__steps {
+      padding: 0;
+  }
+};
+
+@include media("<small") {
+  .worksteps__step {
+      padding-bottom: 10px;
+      border-bottom: 1px solid #eee;
+      margin-bottom: 10px;
+  }
+
+
+};
+@include media("<x-small") {
+    .worksteps__column {
+      width: auto;
+    }
+  .worksteps__step-icon {
+      display: block;
+      text-align: center;
+      margin: auto;
+  }
+
+  .worksteps__step-desc {
+      display: block;
+      padding: 15px 5px;
+      text-align: center;
+  }
+
 };

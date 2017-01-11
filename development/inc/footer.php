@@ -60,6 +60,14 @@
                   <!-- footer top items -->
                   <div class="footer__items">
                       <div class="col col--1-of-1 ">
+                        <div class="small-logo small-logo--footer">
+                          <a href="/" class="small-logo-link footer__link footer__link--logo">
+                            <img class="small-logo-img" src="img/mobile_logo.png">
+                            <span class="small-logo-title">
+                              <span><strong>Центральное управление</strong></span><span style="font-size: 12px;">Щербинского лифтостроительного завода</span>
+                            </span>
+                          </a>
+                        </div>
                         <div class="footer__item">
                             <a href="/" class="footer__link footer__link--logo">
                                 <span><strong>Центральное управление Щербинского лифтостроительного завода</strong></span>
@@ -85,6 +93,12 @@
                       <!-- /Menu Items -->
                 	</div>
                 <!-- /Menu -->
+                <!-- Actions -->
+                <div class="footer-actions">
+                    <a href="tel:74950038741" class="footer_phone">+7 (495) 003-87-41</a>
+                    <p class="footer__small-text small-text blue"><a class="blue underline" href="#" data-remodal-target="get_callback">Заказать обратный звонок</a></p>
+                </div>
+                <!-- /Actions -->
                 <!-- Copyright -->
                 <div class="footer__copyright">
                   Design by <a class="footer__copyright-link" target="_blank" href="http://seosintez.ru">Seosintez.ru</a>

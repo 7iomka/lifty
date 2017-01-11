@@ -55,6 +55,13 @@
     position: relative;
     padding-right: 60px;
     margin-right: -0.24em;
+    @include media("<960px") {
+      margin-right: 0;
+    };
+    @include media("<small") {
+      display: block;
+      padding-right: 0;
+    };
     &:after {
       content: "";
       position: absolute;
@@ -64,6 +71,10 @@
       width: 4px;
       height: 110px;
       background: black;
+      @include media("<960px") {
+        content: none;
+
+      };
     }
 }
 
@@ -146,6 +157,9 @@
 }
 
 
+
+
+
 /** form **/
 
 .reviews__form-wrapper {
@@ -177,3 +191,42 @@
   }
 
 }
+
+
+
+/** responsive **/
+
+@include media("<640px") {
+  .review__text,
+  .review__result-desc {
+    display: block;
+    text-align: left;
+  }
+
+  .review__goal {
+      display: block;
+      margin-bottom: 20px;
+      text-align: center;
+  }
+
+
+  .review__result {
+      display: block;
+      text-align: center;
+  }
+
+  .review__title {
+      text-align: center;
+  }
+
+  .review__title:after {
+      right: 0;
+      margin: auto;
+  }
+};
+
+@include media("<xx-small") {
+  .review-wrapper {
+    padding: 10px 5px;
+  }
+};

@@ -16,6 +16,9 @@ body {
     width: 1200px;
   }
   min-width: 100%;
+  @include media("<xx-small") {
+    min-width: 320px;
+  };
   table-layout: fixed;
   background: $white;
 }

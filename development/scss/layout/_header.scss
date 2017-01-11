@@ -149,6 +149,9 @@ a.header__link.header__link--logo span {
     position: relative;
     z-index: 2;
     padding-top: 100px;
+    @include media("<960px") {
+      text-align: center;
+    };
 }
 
 &.site-header--installation-and-replacement .header__page-content {
@@ -246,6 +249,11 @@ a.header__link.header__link--logo span {
         height: 7px;
         content: "";
         bottom: 0;
+        @include media("<960px") {
+          left: 0;
+          right: 0;
+          margin: auto;
+        };
     }
 }
 
@@ -266,6 +274,9 @@ a.header__link.header__link--logo span {
 
   .header__form-wrapper {
     margin-top: 75px;
+    @include media("<960px") {
+      margin-top: 35px;
+    };
     display: inline-block;
   }
 
@@ -600,6 +611,7 @@ a.header__link.header__link--logo span {
 
 
 
+
 /*test*/
 
  @include media('<tablet') {
@@ -640,6 +652,26 @@ a.header__link.header__link--logo span {
  };
 
 
+ /** mobile actions **/
+ .header__mobile-actions {
+     display: none;
+     @include media("<960px") {
+       display: block;
+     };
+     position: absolute;
+     right: 175px;
+     top: 60px;
+
+     @include media("<small") {
+       right: 0;
+       margin: auto;
+       left: 0;
+       top: 145px;
+     };
+ }
+
+
+
 @include media("<960px") {
 
   header.site-header {
@@ -655,6 +687,24 @@ a.header__link.header__link--logo span {
       img {
           opacity: 0.2;
       }
+    }
+    /** page service **/
+    &.site-header--service {
+      .header__banner-left-stuff {
+        background: #006ab2;
+        opacity: 1;
+        img {
+          opacity: 0.5;
+        }
+      }
+      .header__title-postfix {
+        color: #d3f0ff;
+      }
+    }
+
+    /** contacts **/
+    &.site-header--contacts {
+      overflow: visible;
     }
 
     .header__banner-page-image {
@@ -675,6 +725,9 @@ a.header__link.header__link--logo span {
     .header__panel {
         background: white;
         height: 160px;
+        @include media("<small") {
+          height: 300px;
+        };
     }
 
     .header__link.header__link--logo.small-logo-link .small-logo-title {
@@ -695,22 +748,49 @@ a.header__link.header__link--logo span {
 
 };
 
- @include media('<=576px') {
-   .top-logo {
-        margin-left: 0;
+@include media("<small") {
+  header.site-header {
+    .hamburger {
+      float: none;
+      z-index: 2;
+      top: 210px;
+      margin: auto;
+      left: 30px;
     }
-
-    .top-pushed,.top-pulled {
-        margin-left: 0;
-        margin-right: 0;
-        width: 100%;
+    nav[role=navigation] {
+      top: 210px;
     }
-
-
-    .top-pushed {
-        float: none;
+    .header__contacts,
+    .header__small-text {
+      text-align: center;
     }
- };
+    .small-logo {
+        right: 0;
+        left: 0;
+        text-align: center;
+    }
+  }
+  .top-logo {
+       margin-left: 0;
+   }
+
+   .top-pushed,.top-pulled {
+       margin-left: 0;
+       margin-right: 0;
+       width: 100%;
+   }
+    a.header__link.header__link--logo{
+       padding-left: 0!important;
+    }
+   .header__link.header__link--logo.small-logo-link .small-logo-title {
+       padding-left: 0;
+   }
+
+   .top-pushed {
+       float: none;
+   }
+};
+
 
  @include media("<x-small") {
    header.site-header {
@@ -719,17 +799,6 @@ a.header__link.header__link--logo span {
          display: block;
          margin: auto;
      }
-     .hamburger {
-      float: none;
-      z-index: 2;
-      top: 150px;
-      margin: auto;
-      left: 30px;
-    }
-
-    .header__panel {
-        height: 250px;
-    }
 
     a.header__link.header__link--logo {
         padding-left: 0;
@@ -741,9 +810,6 @@ a.header__link.header__link--logo span {
       text-align: center;
     }
 
-    .header__link.header__link--logo.small-logo-link .small-logo-title {
-        padding-left: 0;
-    }
 
    }
 

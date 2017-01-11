@@ -50,6 +50,14 @@
         z-index: -1;
         left: 10px;
         bottom: 0;
+        @include media("<960px") {
+          opacity: 0.3;
+
+        };
+      
+        @include media("<x-small") {
+          opacity: 0.2;
+        };
     }
 }
 

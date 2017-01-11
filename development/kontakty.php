@@ -32,6 +32,13 @@
                 <!-- Menu-->
                 <?php require_once('inc/header-menu.php'); ?>
                 <!-- /Menu -->
+                <!-- Phone Number And Callback for mobile Layout -->
+                <div class="header__mobile-actions">
+                    <ul class="header__contacts">
+                            <li><a href="tel:74950038741" class="header__phone">+7 (495) 003-87-41</a></li>
+                        </ul><p class="header__small-text small-text blue"><a class="blue underline" href="#" data-remodal-target="get_callback">Заказать обратный звонок</a></p>
+                </div>
+                <!-- /Phone Number And Callback for mobile Layout -->
               </div>
             </div>
           </div>
@@ -43,7 +50,7 @@
           <div class="container">
             <div class="row">
               <h2 class="excursion__title">
-                <span class="excursion__title-big">Друзья, приглашаем Вас</span>
+                <span class="excursion__title-big">Друзья, <span class="mobile-sep-worlds"></span>приглашаем Вас</span>
                 <span class="excursion__title-postfix">
                   на экскурсию на Щербинский<br/> Лифтостроительный Завод
                 </span>
@@ -140,396 +147,7 @@
             </div>
 
             <!-- <script type="text/javascript">
-                ymaps.ready(function () {
-                  var myMap = new ymaps.Map('coverage__map', {
-                          center: [54.82528769679242, 54.08669048703265],
-                          zoom: 9,
-                          size: [null, 650],
-                          type: "yandex#map",
-                          controls: ["zoomControl","typeSelector"],
-                      }, {
-                          searchControlProvider: 'yandex#search'
-                      });
-                      /**
-                       * ,
-                       myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-                           hintContent: 'Собственный значок метки',
-                           balloonContent: 'Это красивая метка'
-                       }, {
-                           // Опции.
-                           // Необходимо указать данный тип макета.
-                           iconLayout: 'default#image',
-                           // Своё изображение иконки метки.
-                           iconImageHref: 'img/map-pin.png',
-                           // Размеры метки.
-                           iconImageSize: [25, 42],
-                           // Смещение левого верхнего угла иконки относительно
-                           // её "ножки" (точки привязки).
-                           iconImageOffset: [-5, -38]
-                       })
-                       */
-
-                  var geoObjects = {
-                      "type": "FeatureCollection",
-                      "features": [{
-                          "type": "Feature",
-                          "properties": {
-                              "name": "ООО \"Верхневолжское представительство ОАО \"ЩЛЗ\", г.Ярославль\n150022, пр-т Фрунзе, д.37/18,оф. 214а\nтел. (4852) 59-32-40, 59-32-43\ne-mail: vvpshlz@mail.ru",
-                              "description": ""
-                          },
-                          "geometry": {
-                              "type": "Point",
-                              "coordinates": [39.909705, 57.583802]
-                          },
-                          "options": {
-                              "preset": "islands#blueIcon",
-                              "zIndex": 800000000
-                          }
-                      }, {
-                          "type": "Feature",
-                          "properties": {
-                              "name": "ООО ТД\"ЩЛ-Челябинск\", г. Челябинск\n454048, Омская, д. 61 а\nтел. (351) 778-15-30\ne-mail:rpk-a@yandex.ru",
-                              "description": ""
-                          },
-                          "geometry": {
-                              "type": "Point",
-                              "coordinates": [61.38483, 55.141197]
-                          },
-                          "options": {
-                              "preset": "islands#blueIcon",
-                              "zIndex": 800000001
-                          }
-                      }, {
-                          "type": "Feature",
-                          "properties": {
-                              "name": "ЗАО \"Чувашлифт\", г.Чебоксары\n428024, пр.Мира, д.58\nтел. (8352) 63-85-66\ne-mail: lenalift@mail.ru",
-                              "description": ""
-                          },
-                          "geometry": {
-                              "type": "Point",
-                              "coordinates": [47.268694, 56.114987]
-                          },
-                          "options": {
-                              "preset": "islands#blueIcon",
-                              "zIndex": 800000002
-                          }
-                      }, {
-                          "type": "Feature",
-                          "properties": {
-                              "name": "ООО ТД \"ОЛЗ-Уфа\", г.Уфа\n450022, г. Уфа, ул. Бакалинская, д.33, кв.38\nтел. (347) 256-34-37, 292-73-79",
-                              "description": ""
-                          },
-                          "geometry": {
-                              "type": "Point",
-                              "coordinates": [55.981293, 54.717891]
-                          },
-                          "options": {
-                              "preset": "islands#blueIcon",
-                              "zIndex": 800000003
-                          }
-                      }, {
-                          "type": "Feature",
-                          "properties": {
-                              "name": "ООО \"Щербинские лифты\", г.Тюмень\n625000, ул. Грибоедова, 15, корпус 2/1\nтел. (3452) 45-72-71, 45-60-03\ne-mail: sherblift.tyumen@mail.ru",
-                              "description": ""
-                          },
-                          "geometry": {
-                              "type": "Point",
-                              "coordinates": [65.534229, 57.147179]
-                          },
-                          "options": {
-                              "preset": "islands#blueIcon",
-                              "zIndex": 800000004
-                          }
-                      }, {
-                          "type": "Feature",
-                          "properties": {
-                              "name": "ООО \"Стройлифткомплект\", г.Томск\n634050, ул. Гагарина, д.7, офис 602\nтел. (3822) 51-67-57\ne-mail: slk-tomsk@bk.ru",
-                              "description": ""
-                          },
-                          "geometry": {
-                              "type": "Point",
-                              "coordinates": [84.951044, 56.483154]
-                          },
-                          "options": {
-                              "preset": "islands#blueIcon",
-                              "zIndex": 800000005
-                          }
-                      }, {
-                          "type": "Feature",
-                          "properties": {
-                              "name": "ООО \"ЛифтТехника\", г. Тверь\n170001, 4-й переулок Пески, д.10\nтел. (4822) 42-72-79\ne-mail: lift69@lifteh.ru",
-                              "description": ""
-                          },
-                          "geometry": {
-                              "type": "Point",
-                              "coordinates": [35.87432, 56.849832]
-                          },
-                          "options": {
-                              "preset": "islands#blueIcon",
-                              "zIndex": 800000006
-                          }
-                      }, {
-                          "type": "Feature",
-                          "properties": {
-                              "name": "ООО «Тамбовсоюзлифтмонтаж», г.Тамбов\n392000, ул. Монтажников, д. 9\nтел. (4752) 71-91-64, 71-91-62\ne-mail: lift@tamb.ru",
-                              "description": ""
-                          },
-                          "geometry": {
-                              "type": "Point",
-                              "coordinates": [41.47183, 52.744247]
-                          },
-                          "options": {
-                              "preset": "islands#blueIcon",
-                              "zIndex": 800000007
-                          }
-                      }, {
-                          "type": "Feature",
-                          "properties": {
-                              "name": "ООО \"Санкт-Петербургское представительство ОАО \"ЩЛЗ\", г. Санкт-Петербург\n198013, ул. Введенский канал, д.7\nтел. (812) 326-40-34\ne-mail: 3264034@mail.ru",
-                              "description": ""
-                          },
-                          "geometry": {
-                              "type": "Point",
-                              "coordinates": [30.32901, 59.917669]
-                          },
-                          "options": {
-                              "preset": "islands#blueIcon",
-                              "zIndex": 800000008
-                          }
-                      }, {
-                          "type": "Feature",
-                          "properties": {
-                              "name": "ООО «Приволжское управление ОАО \"ЩЛЗ\", г.Самара\n443035, ул.Ставропольская, д.204, оф.4\nтел. (846) 331-57-47/57\ne-mail: lift@lift-63.ru",
-                              "description": ""
-                          },
-                          "geometry": {
-                              "type": "Point",
-                              "coordinates": [50.252682, 53.232454]
-                          },
-                          "options": {
-                              "preset": "islands#blueIcon",
-                              "zIndex": 800000009
-                          }
-                      }, {
-                          "type": "Feature",
-                          "properties": {
-                              "name": "ООО \"Щербинские лифты\", г.Рязань\n390023, пр. Яблочкова, д. 5,к.1\nтел. (4912) 28-27-58\ne-mail: lift@neiron.ryazan.ru",
-                              "description": ""
-                          },
-                          "geometry": {
-                              "type": "Point",
-                              "coordinates": [39.762713, 54.61339]
-                          },
-                          "options": {
-                              "preset": "islands#blueIcon",
-                              "zIndex": 800000010
-                          }
-                      }, {
-                          "type": "Feature",
-                          "properties": {
-                              "name": "ЗАО «Союзлифтмонтаж-Юг», г.Ростов-на-Дону\n344002, ул. Красноармейская, 166\nтел. (863) 240-42-53, 240-42-68(ф)\ne-mail: info@semug.ru",
-                              "description": ""
-                          },
-                          "geometry": {
-                              "type": "Point",
-                              "coordinates": [39.712264, 47.227555]
-                          },
-                          "options": {
-                              "preset": "islands#blueIcon",
-                              "zIndex": 800000011
-                          }
-                      }, {
-                          "type": "Feature",
-                          "properties": {
-                              "name": "ООО \"Камский лифтостроительный завод\", Республика Татарстан, г.Набережные Челны\n423814, Промкомзона-2, а/я 30\nтел. (8552) 53-75-91, 53-75-94\ne-mail: liftmark@mail.ru",
-                              "description": ""
-                          },
-                          "geometry": {
-                              "type": "Point",
-                              "coordinates": [52.430854, 55.707887]
-                          },
-                          "options": {
-                              "preset": "islands#blueIcon",
-                              "zIndex": 800000012
-                          }
-                      }, {
-                          "type": "Feature",
-                          "properties": {
-                              "name": "ООО ТД «Щербинские лифты-Пермь», г.Пермь\n614068, ул. Кирова, 200\nтел. (342) 236-37-97, 236-03-61\ne-mail: lift@perm.ru",
-                              "description": ""
-                          },
-                          "geometry": {
-                              "type": "Point",
-                              "coordinates": [56.21613, 58.005749]
-                          },
-                          "options": {
-                              "preset": "islands#blueIcon",
-                              "zIndex": 800000013
-                          }
-                      }, {
-                          "type": "Feature",
-                          "properties": {
-                              "name": "ООО \"Запсиблифт\", г.Новокузнецк\n654066, ул. Грдины, 37\nтел. (3843) 35-38-37\ne-mail: zapsiblift@mail.ru",
-                              "description": ""
-                          },
-                          "geometry": {
-                              "type": "Point",
-                              "coordinates": [87.172776, 53.75628]
-                          },
-                          "options": {
-                              "preset": "islands#blueIcon",
-                              "zIndex": 800000014
-                          }
-                      }, {
-                          "type": "Feature",
-                          "properties": {
-                              "name": "ООО \"Лифтсервис\", г. Нижний Новгород\n603146, ул. Бекетова, д.63/34, пом. П3\nтел.: (831) 255-95-15, (831) 255-77-16\nЕ-mail: lift@mail.ru",
-                              "description": ""
-                          },
-                          "geometry": {
-                              "type": "Point",
-                              "coordinates": [44.024752, 56.294341]
-                          },
-                          "options": {
-                              "preset": "islands#blueIcon",
-                              "zIndex": 800000015
-                          }
-                      }, {
-                          "type": "Feature",
-                          "properties": {
-                              "name": "ООО \"СМУ Лифтстрой\", г.Краснодар\n350065, ул.Снесарева, 2, оф.2\nтел. (861) 263-51-46, 263-51-47\ne-mail: liftstroy@inbox.ru",
-                              "description": ""
-                          },
-                          "geometry": {
-                              "type": "Point",
-                              "coordinates": [39.079113, 44.999586]
-                          },
-                          "options": {
-                              "preset": "islands#blueIcon",
-                              "zIndex": 800000016
-                          }
-                      }, {
-                          "type": "Feature",
-                          "properties": {
-                              "name": "ООО «Лифт групп сервис», г.Казань\n420124, ул. Родины, д.18, оф.203 \nтел. (843) 272-13-89, 204-10-00\ne-mail: kasanlift@mail.ru",
-                              "description": ""
-                          },
-                          "geometry": {
-                              "type": "Point",
-                              "coordinates": [49.197791, 55.768415]
-                          },
-                          "options": {
-                              "preset": "islands#blueIcon",
-                              "zIndex": 800000017
-                          }
-                      }, {
-                          "type": "Feature",
-                          "properties": {
-                              "name": "ЗАО \"Удмуртлифт\", г. Ижевск\n426073, ул. Союзная, 121\nтел. (3412) 37-09-44, 37-13-44, 37-07-79 \ne-mail: tradenshlz@udm.net",
-                              "description": ""
-                          },
-                          "geometry": {
-                              "type": "Point",
-                              "coordinates": [53.302499, 56.853134]
-                          },
-                          "options": {
-                              "preset": "islands#blueIcon",
-                              "zIndex": 800000018
-                          }
-                      }, {
-                          "type": "Feature",
-                          "properties": {
-                              "name": "ООО «Средураллифт», г.Екатеринбург\n620149 ул. Зоологическая, д. 7\nтел. (343) 240-22-22, 240-89-70\ne-mail: sul@ulift.ru",
-                              "description": ""
-                          },
-                          "geometry": {
-                              "type": "Point",
-                              "coordinates": [60.537224, 56.811502]
-                          },
-                          "options": {
-                              "preset": "islands#blueIcon",
-                              "zIndex": 800000019
-                          }
-                      }, {
-                          "type": "Feature",
-                          "properties": {
-                              "name": "ООО \"Рослифт\", г.Владимир\n600001 ул. Студеная гора, 36А, оф.323\nтел. (4922) 32-10-08\ne-mail: vladimirlift@mail.ru",
-                              "description": ""
-                          },
-                          "geometry": {
-                              "type": "Point",
-                              "coordinates": [40.383386, 56.122756]
-                          },
-                          "options": {
-                              "preset": "islands#blueIcon",
-                              "zIndex": 800000020
-                          }
-                      }, {
-                          "type": "Feature",
-                          "properties": {
-                              "name": "ООО «Щербинка Лифт ДВ» г. Владивосток\n690068, Приморский кай, г. Владивосток, ул. Кирова, д. 25Д, оф. 47\nПочтовый адрес: 690068, г. Владивосток, ул. Кирова, д. 25Д, оф. 47\nтел.: 8 (423) 230-21-51, 230-21-43\nE-mail: lift@vladivostok.com, lift@shldv.ru\nсайт : www.evrolifts.ru\n\nГенеральный директор Дюндик Алексей Анатольевич",
-                              "description": ""
-                          },
-                          "geometry": {
-                              "type": "Point",
-                              "coordinates": [131.908562, 43.176426]
-                          },
-                          "options": {
-                              "preset": "islands#blueIcon",
-                              "zIndex": 800000021
-                          }
-                      }, {
-                          "type": "Feature",
-                          "properties": {
-                              "name": "ООО \"Евро-Лифт\", г. Барнаул\n656066, ул. Новгородская, 22 Н 18\nтел. 8 (3852) 53-64-74, 8 (3852) 53-64-72\ne-mail: aslift@mail.ru",
-                              "description": ""
-                          },
-                          "geometry": {
-                              "type": "Point",
-                              "coordinates": [83.692927, 53.356589]
-                          },
-                          "options": {
-                              "preset": "islands#blueIcon",
-                              "zIndex": 800000022
-                          }
-                      }, {
-                          "type": "Feature",
-                          "properties": {
-                              "name": "ООО «Астрахань-Лифт», г.Астрахань\n414024 ул. Боевая 4-й проезд/2-й проезд, 13/4\nтел. (8512) 30-08-90, 30-08-91\ne-mail: olga_zim@mail.ru",
-                              "description": ""
-                          },
-                          "geometry": {
-                              "type": "Point",
-                              "coordinates": [48.019839, 46.324474]
-                          },
-                          "options": {
-                              "preset": "islands#blueIcon",
-                              "zIndex": 800000023
-                          }
-                      }]
-                  };
-                  var  objectManager = new ymaps.ObjectManager({
-                    // Чтобы метки начали кластеризоваться, выставляем опцию.
-                          clusterize: true,
-                          // ObjectManager принимает те же опции, что и кластеризатор.
-                          gridSize: 32
-                      });
-
-                  // Чтобы задать опции одиночным объектам и кластерам,
-                  // обратимся к дочерним коллекциям ObjectManager.
-                  objectManager.objects.options.set('preset', 'islands#greenDotIcon');
-                  objectManager.clusters.options.set('preset', 'islands#greenClusterIcons');
-                  myMap.geoObjects.add(objectManager);
-
-
-                  objectManager.add(geoObjects);
-                  myMap.geoObjects.add(objectManager);
-                  // var result = ymaps.geoQuery(geoObjects);
-                  // myMap.geoObjects.add(result.search('geometry.type == "Point"').clusterize());
-                  // myMap.geoObjects.add(myPlacemark);
-                  // myMap.geoObjects.add(geoObjects);
-                });
+                ymaps.ready(function () { var myMap = new ymaps.Map('coverage__map', { center: [54.82528769679242, 54.08669048703265], zoom: 9, size: [null, 650], type: "yandex#map", controls: ["zoomControl","typeSelector"], }, { searchControlProvider: 'yandex#search' }); /** * , myPlacemark = new ymaps.Placemark(myMap.getCenter(), { hintContent: 'Собственный значок метки', balloonContent: 'Это красивая метка' }, { // Опции. // Необходимо указать данный тип макета. iconLayout: 'default#image', // Своё изображение иконки метки. iconImageHref: 'img/map-pin.png', // Размеры метки. iconImageSize: [25, 42], // Смещение левого верхнего угла иконки относительно // её "ножки" (точки привязки). iconImageOffset: [-5, -38] }) */ var geoObjects = { "type": "FeatureCollection", "features": [{ "type": "Feature", "properties": { "name": "ООО \"Верхневолжское представительство ОАО \"ЩЛЗ\", г.Ярославль\n150022, пр-т Фрунзе, д.37/18,оф. 214а\nтел. (4852) 59-32-40, 59-32-43\ne-mail: vvpshlz@mail.ru", "description": "" }, "geometry": { "type": "Point", "coordinates": [39.909705, 57.583802] }, "options": { "preset": "islands#blueIcon", "zIndex": 800000000 } }, { "type": "Feature", "properties": { "name": "ООО ТД\"ЩЛ-Челябинск\", г. Челябинск\n454048, Омская, д. 61 а\nтел. (351) 778-15-30\ne-mail:rpk-a@yandex.ru", "description": "" }, "geometry": { "type": "Point", "coordinates": [61.38483, 55.141197] }, "options": { "preset": "islands#blueIcon", "zIndex": 800000001 } }, { "type": "Feature", "properties": { "name": "ЗАО \"Чувашлифт\", г.Чебоксары\n428024, пр.Мира, д.58\nтел. (8352) 63-85-66\ne-mail: lenalift@mail.ru", "description": "" }, "geometry": { "type": "Point", "coordinates": [47.268694, 56.114987] }, "options": { "preset": "islands#blueIcon", "zIndex": 800000002 } }, { "type": "Feature", "properties": { "name": "ООО ТД \"ОЛЗ-Уфа\", г.Уфа\n450022, г. Уфа, ул. Бакалинская, д.33, кв.38\nтел. (347) 256-34-37, 292-73-79", "description": "" }, "geometry": { "type": "Point", "coordinates": [55.981293, 54.717891] }, "options": { "preset": "islands#blueIcon", "zIndex": 800000003 } }, { "type": "Feature", "properties": { "name": "ООО \"Щербинские лифты\", г.Тюмень\n625000, ул. Грибоедова, 15, корпус 2/1\nтел. (3452) 45-72-71, 45-60-03\ne-mail: sherblift.tyumen@mail.ru", "description": "" }, "geometry": { "type": "Point", "coordinates": [65.534229, 57.147179] }, "options": { "preset": "islands#blueIcon", "zIndex": 800000004 } }, { "type": "Feature", "properties": { "name": "ООО \"Стройлифткомплект\", г.Томск\n634050, ул. Гагарина, д.7, офис 602\nтел. (3822) 51-67-57\ne-mail: slk-tomsk@bk.ru", "description": "" }, "geometry": { "type": "Point", "coordinates": [84.951044, 56.483154] }, "options": { "preset": "islands#blueIcon", "zIndex": 800000005 } }, { "type": "Feature", "properties": { "name": "ООО \"ЛифтТехника\", г. Тверь\n170001, 4-й переулок Пески, д.10\nтел. (4822) 42-72-79\ne-mail: lift69@lifteh.ru", "description": "" }, "geometry": { "type": "Point", "coordinates": [35.87432, 56.849832] }, "options": { "preset": "islands#blueIcon", "zIndex": 800000006 } }, { "type": "Feature", "properties": { "name": "ООО «Тамбовсоюзлифтмонтаж», г.Тамбов\n392000, ул. Монтажников, д. 9\nтел. (4752) 71-91-64, 71-91-62\ne-mail: lift@tamb.ru", "description": "" }, "geometry": { "type": "Point", "coordinates": [41.47183, 52.744247] }, "options": { "preset": "islands#blueIcon", "zIndex": 800000007 } }, { "type": "Feature", "properties": { "name": "ООО \"Санкт-Петербургское представительство ОАО \"ЩЛЗ\", г. Санкт-Петербург\n198013, ул. Введенский канал, д.7\nтел. (812) 326-40-34\ne-mail: 3264034@mail.ru", "description": "" }, "geometry": { "type": "Point", "coordinates": [30.32901, 59.917669] }, "options": { "preset": "islands#blueIcon", "zIndex": 800000008 } }, { "type": "Feature", "properties": { "name": "ООО «Приволжское управление ОАО \"ЩЛЗ\", г.Самара\n443035, ул.Ставропольская, д.204, оф.4\nтел. (846) 331-57-47/57\ne-mail: lift@lift-63.ru", "description": "" }, "geometry": { "type": "Point", "coordinates": [50.252682, 53.232454] }, "options": { "preset": "islands#blueIcon", "zIndex": 800000009 } }, { "type": "Feature", "properties": { "name": "ООО \"Щербинские лифты\", г.Рязань\n390023, пр. Яблочкова, д. 5,к.1\nтел. (4912) 28-27-58\ne-mail: lift@neiron.ryazan.ru", "description": "" }, "geometry": { "type": "Point", "coordinates": [39.762713, 54.61339] }, "options": { "preset": "islands#blueIcon", "zIndex": 800000010 } }, { "type": "Feature", "properties": { "name": "ЗАО «Союзлифтмонтаж-Юг», г.Ростов-на-Дону\n344002, ул. Красноармейская, 166\nтел. (863) 240-42-53, 240-42-68(ф)\ne-mail: info@semug.ru", "description": "" }, "geometry": { "type": "Point", "coordinates": [39.712264, 47.227555] }, "options": { "preset": "islands#blueIcon", "zIndex": 800000011 } }, { "type": "Feature", "properties": { "name": "ООО \"Камский лифтостроительный завод\", Республика Татарстан, г.Набережные Челны\n423814, Промкомзона-2, а/я 30\nтел. (8552) 53-75-91, 53-75-94\ne-mail: liftmark@mail.ru", "description": "" }, "geometry": { "type": "Point", "coordinates": [52.430854, 55.707887] }, "options": { "preset": "islands#blueIcon", "zIndex": 800000012 } }, { "type": "Feature", "properties": { "name": "ООО ТД «Щербинские лифты-Пермь», г.Пермь\n614068, ул. Кирова, 200\nтел. (342) 236-37-97, 236-03-61\ne-mail: lift@perm.ru", "description": "" }, "geometry": { "type": "Point", "coordinates": [56.21613, 58.005749] }, "options": { "preset": "islands#blueIcon", "zIndex": 800000013 } }, { "type": "Feature", "properties": { "name": "ООО \"Запсиблифт\", г.Новокузнецк\n654066, ул. Грдины, 37\nтел. (3843) 35-38-37\ne-mail: zapsiblift@mail.ru", "description": "" }, "geometry": { "type": "Point", "coordinates": [87.172776, 53.75628] }, "options": { "preset": "islands#blueIcon", "zIndex": 800000014 } }, { "type": "Feature", "properties": { "name": "ООО \"Лифтсервис\", г. Нижний Новгород\n603146, ул. Бекетова, д.63/34, пом. П3\nтел.: (831) 255-95-15, (831) 255-77-16\nЕ-mail: lift@mail.ru", "description": "" }, "geometry": { "type": "Point", "coordinates": [44.024752, 56.294341] }, "options": { "preset": "islands#blueIcon", "zIndex": 800000015 } }, { "type": "Feature", "properties": { "name": "ООО \"СМУ Лифтстрой\", г.Краснодар\n350065, ул.Снесарева, 2, оф.2\nтел. (861) 263-51-46, 263-51-47\ne-mail: liftstroy@inbox.ru", "description": "" }, "geometry": { "type": "Point", "coordinates": [39.079113, 44.999586] }, "options": { "preset": "islands#blueIcon", "zIndex": 800000016 } }, { "type": "Feature", "properties": { "name": "ООО «Лифт групп сервис», г.Казань\n420124, ул. Родины, д.18, оф.203 \nтел. (843) 272-13-89, 204-10-00\ne-mail: kasanlift@mail.ru", "description": "" }, "geometry": { "type": "Point", "coordinates": [49.197791, 55.768415] }, "options": { "preset": "islands#blueIcon", "zIndex": 800000017 } }, { "type": "Feature", "properties": { "name": "ЗАО \"Удмуртлифт\", г. Ижевск\n426073, ул. Союзная, 121\nтел. (3412) 37-09-44, 37-13-44, 37-07-79 \ne-mail: tradenshlz@udm.net", "description": "" }, "geometry": { "type": "Point", "coordinates": [53.302499, 56.853134] }, "options": { "preset": "islands#blueIcon", "zIndex": 800000018 } }, { "type": "Feature", "properties": { "name": "ООО «Средураллифт», г.Екатеринбург\n620149 ул. Зоологическая, д. 7\nтел. (343) 240-22-22, 240-89-70\ne-mail: sul@ulift.ru", "description": "" }, "geometry": { "type": "Point", "coordinates": [60.537224, 56.811502] }, "options": { "preset": "islands#blueIcon", "zIndex": 800000019 } }, { "type": "Feature", "properties": { "name": "ООО \"Рослифт\", г.Владимир\n600001 ул. Студеная гора, 36А, оф.323\nтел. (4922) 32-10-08\ne-mail: vladimirlift@mail.ru", "description": "" }, "geometry": { "type": "Point", "coordinates": [40.383386, 56.122756] }, "options": { "preset": "islands#blueIcon", "zIndex": 800000020 } }, { "type": "Feature", "properties": { "name": "ООО «Щербинка Лифт ДВ» г. Владивосток\n690068, Приморский кай, г. Владивосток, ул. Кирова, д. 25Д, оф. 47\nПочтовый адрес: 690068, г. Владивосток, ул. Кирова, д. 25Д, оф. 47\nтел.: 8 (423) 230-21-51, 230-21-43\nE-mail: lift@vladivostok.com, lift@shldv.ru\nсайт : www.evrolifts.ru\n\nГенеральный директор Дюндик Алексей Анатольевич", "description": "" }, "geometry": { "type": "Point", "coordinates": [131.908562, 43.176426] }, "options": { "preset": "islands#blueIcon", "zIndex": 800000021 } }, { "type": "Feature", "properties": { "name": "ООО \"Евро-Лифт\", г. Барнаул\n656066, ул. Новгородская, 22 Н 18\nтел. 8 (3852) 53-64-74, 8 (3852) 53-64-72\ne-mail: aslift@mail.ru", "description": "" }, "geometry": { "type": "Point", "coordinates": [83.692927, 53.356589] }, "options": { "preset": "islands#blueIcon", "zIndex": 800000022 } }, { "type": "Feature", "properties": { "name": "ООО «Астрахань-Лифт», г.Астрахань\n414024 ул. Боевая 4-й проезд/2-й проезд, 13/4\nтел. (8512) 30-08-90, 30-08-91\ne-mail: olga_zim@mail.ru", "description": "" }, "geometry": { "type": "Point", "coordinates": [48.019839, 46.324474] }, "options": { "preset": "islands#blueIcon", "zIndex": 800000023 } }] }; var  objectManager = new ymaps.ObjectManager({ // Чтобы метки начали кластеризоваться, выставляем опцию. clusterize: true, // ObjectManager принимает те же опции, что и кластеризатор. gridSize: 32 }); // Чтобы задать опции одиночным объектам и кластерам, // обратимся к дочерним коллекциям ObjectManager. objectManager.objects.options.set('preset', 'islands#greenDotIcon'); objectManager.clusters.options.set('preset', 'islands#greenClusterIcons'); myMap.geoObjects.add(objectManager); objectManager.add(geoObjects); myMap.geoObjects.add(objectManager); // var result = ymaps.geoQuery(geoObjects); // myMap.geoObjects.add(result.search('geometry.type == "Point"').clusterize()); // myMap.geoObjects.add(myPlacemark); // myMap.geoObjects.add(geoObjects); });
             </script> -->
           </div>
           <div class="coverage__filials-wrapper">
@@ -698,6 +316,14 @@
                   <!-- footer top items -->
                   <div class="footer__items">
                       <div class="col col--1-of-1 ">
+                        <div class="small-logo small-logo--footer">
+                          <a href="/" class="small-logo-link footer__link footer__link--logo">
+                            <img class="small-logo-img" src="img/mobile_logo.png">
+                            <span class="small-logo-title">
+                              <span><strong>Центральное управление</strong></span><span style="font-size: 12px;">Щербинского лифтостроительного завода</span>
+                            </span>
+                          </a>
+                        </div>
                         <div class="footer__item">
                             <a href="/" class="footer__link footer__link--logo">
                                 <span><strong>Центральное управление Щербинского лифтостроительного завода</strong></span>
@@ -723,6 +349,12 @@
                       <!-- /Menu Items -->
                 	</div>
                 <!-- /Menu -->
+                <!-- Actions -->
+                <div class="footer-actions">
+                    <a href="tel:74950038741" class="footer_phone">+7 (495) 003-87-41</a>
+                    <p class="footer__small-text small-text blue"><a class="blue underline" href="#" data-remodal-target="get_callback">Заказать обратный звонок</a></p>
+                </div>
+                <!-- /Actions -->
                 <!-- Copyright -->
                 <div class="footer__copyright">
                   Design by <a class="footer__copyright-link" href="http://seosintez.ru">Seosintez.ru</a>

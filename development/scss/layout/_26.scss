@@ -21,6 +21,13 @@
          z-index: 1;
          right: -80px;
          top: 45px;
+         @include media("<small") {
+             z-index: -2;
+             right: 0;
+             left: 0;
+             margin: auto;
+             opacity: 0.3;
+         };
      }
  }
 
@@ -39,6 +46,9 @@
       text-align: right;
       position: relative;
       z-index: 2;
+      @include media("<small") {
+          text-align: center;
+      };
   }
   .coverage__map-container {
       margin: 65px 0 45px;

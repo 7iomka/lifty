@@ -33,6 +33,12 @@
        padding-bottom: 10px;
        display: inline-block;
        width: 100%;
+
+        @include media("<960px") {
+          text-align: center;
+          font-size: 62px;
+           padding-right: 0;
+        };
        &:after {
            content: "";
            left: auto;
@@ -44,6 +50,10 @@
            position: absolute;
            background-color: #006ab2;
            width: 347px;
+           @include media("<960px") {
+             left:0;
+             margin: auto;
+           };
        }
    }
 
@@ -53,6 +63,9 @@
        font-size: 40px;
        text-transform: uppercase;
        text-align: right;
+       @include media("<960px") {
+         text-align: center;
+       };
    }
 
    /** square-list **/
@@ -64,8 +77,18 @@
     display: table;
   }
 
+
   .square-item {
     margin-bottom: 35px;
+        @include media("<small") {
+          padding: 5px;
+          margin-bottom: 60px;
+        };
+  }
+  .square-item__img-wrapper {
+    @include media("<medium") {
+      margin: auto;
+    };
   }
 
   .square-item__img-src {
@@ -92,6 +115,11 @@
       padding-left: 112px;
       font-size: 18px;
       line-height: 20px;
+      padding-top: 25px;
+      @include media("<medium") {
+        padding-left: 0;
+        text-align: center;
+      };
   }
 
   /** reverse - only for large **/
